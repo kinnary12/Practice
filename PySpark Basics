@@ -1,0 +1,18 @@
+-------Spark DataFrames
+
+from pyspark.sql import SQLContext
+sqlContext = SQLContext(sc)
+
+# Build a dataframe from Python Lists.
+empDF = sqlContext.read.csv("employees.csv")
+empDF.show()
+
++---+---+---+---+---+---+---+--+
+|  emp|  did   |   fn  |  Sal  |
++---+---+---+---+---+---+---+--+
+|  100|  Steven| King  | 5000  |
+|  109| Meena  | Dochar| 6000  |
+|  109|Shmriti | Irani | 5000  |
+|  200| Uma    | Bharti| 8000  |
++---+---+---+---+---+---+---+--+
+
