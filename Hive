@@ -1,0 +1,33 @@
+
+##Concepts of Hive
+
+----Partitioning
+
+Create table P
+(
+Schema)
+Row format delimitated
+fields terminated by ','
+Lines terminated by '\n'
+
+Load data local inpath 'Path of file' into table emp
+
+Create table emp_P(
+Schema)
+Partitioned by 'Manager Id'
+Row format delimitated
+fields terminated by ','
+Lines terminated by '\n'
+
+Insert into table emp_P
+Partition(Managet Id)
+select * from emp
+
+
+---Bucketing
+
+
+----Right Shift [if your file has extra ',']
+
+
+
