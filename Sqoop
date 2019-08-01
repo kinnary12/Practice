@@ -1,0 +1,31 @@
+
+### Sqoop import commands
+
+----- Import data from RDBMS to HDFS using default pallalism factor 4 and having primary key
+
+sqoop import jdbc:mysql://localhost:3306/database_name --usename name --password pw --table emp --target-dir /sqoop/imp1 
+*** This command will divide the data into 4 part files using emp ID as a primary key column 
+
+----- Import data from RDBMS to HDFS using pallalism factor 1 and not having primary key
+
+sqoop import jdbc:mysql://localhost:3306/database_name --usename name --password pw --table emp --target-dir /sqoop/imp1 -m 1 
+--split-by 'Emp ID' 
+*** This command will divide the data into 1 part files using emp ID as a unique column in case we don not have primary key 
+need to specify unique column and if we do not have both(primary and unique column) apply rank function to divide it else keep
+it in one part file.
+
+----Import data having salary > 5000
+
+sqoop import jdbc:mysql://localhost:3306/database_name --usename name --password pw --table emp --target-dir /sqoop/imp1 -m 1 
+--where 'salary > 5000 '
+
+---Import data using LIKE function will have double quotes
+
+sqoop import jdbc:mysql://localhost:3306/database_name --usename name --password pw --table emp --target-dir /sqoop/imp1 -m 1 
+--where 'name LIKE "A%" '
+
+---Import using query
+
+sqoop import jdbc:mysql://localhost:3306/database_name --usename name --password pw --target-dir /sqoop/imp1 -m 1 
+--query 'select empID, avg(salary) from emp, group by empID having $CONDITION'
+
