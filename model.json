@@ -1,0 +1,1915 @@
+[
+  {
+    "@id": "dtmi:example:ConceptScheme;1",
+    "@type": "Interface",
+    "displayName": "Concept Scheme",
+    "contents": [],
+    "description": "SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts.",
+    "individuals": [
+      "AlloyAddition",
+      "AluminiumCharging",
+      "Sampling",
+      "ScrapCharging",
+      "Skimming",
+      "Stirring",
+      "Unknown"
+    ]
+  },
+  {
+    "@id": "dtmi:example:TemporalEntity;1",
+    "@type": "Interface",
+    "displayName": "TemporalEntity",
+    "contents": []
+  },
+  {
+    "@id": "dtmi:example:TemporalPosition;1",
+    "@type": "Interface",
+    "displayName": "TemporalPosition",
+    "contents": []
+  },
+  {
+    "@id": "dtmi:example:ActuatingFunction;1",
+    "@type": "Interface",
+    "displayName": "Actuating Function",
+    "contents": [],
+    "description": "A function that allows to transmit data to device, binary switching (e.g., open/close, on/off), etc.",
+    "extends": [
+      "dtmi:example:Function;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:AirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": "Air Flow Sensor",
+    "contents": [],
+    "description": "Measurement device for Air flow",
+    "extends": [
+      "dtmi:example:Sensor;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:AirSupply;1",
+    "@type": "Interface",
+    "displayName": "Air Supply",
+    "contents": [],
+    "description": "Device that provides regulated Air flow to achieve optimal combustion ratio with gas",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Aluminium;1",
+    "@type": "Interface",
+    "displayName": "Aluminium",
+    "contents": [],
+    "description": "Primary raw material processed in Furnance",
+    "extends": [
+      "dtmi:example:MaterialBatch;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Burner;1",
+    "@type": "Interface",
+    "displayName": "Burner",
+    "contents": [],
+    "description": "Heating device that combusts gas and air mixtures to generate and control heat within the furnace",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:CastingStatusSensor;1",
+    "@type": "Interface",
+    "displayName": "Casting Status Sensor",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Sensor;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:CastingSystem;1",
+    "@type": "Interface",
+    "displayName": "Casting System",
+    "contents": [],
+    "description": "Downstream component that receives processed aluminium to form final products (billets, sheets, ingots)",
+    "extends": [
+      "dtmi:example:IndustrySystem;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:CloseCommand;1",
+    "@type": "Interface",
+    "displayName": "Close Command",
+    "contents": [],
+    "description": "Represents a command to close a device",
+    "extends": [
+      "dtmi:example:Command;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:CoolingSystem;1",
+    "@type": "Interface",
+    "displayName": "Cooling System",
+    "contents": [],
+    "description": "Heat management infrastructure that prevents overheating of furnace components",
+    "extends": [
+      "dtmi:example:IndustrySystem;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Door;1",
+    "@type": "Interface",
+    "displayName": "Door",
+    "contents": [],
+    "description": "Access portal for material loading and sampling operations",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Furnace;1",
+    "@type": "Interface",
+    "displayName": "Furnace",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasProcess",
+        "target": "dtmi:example:Process;1",
+        "displayName": "has process",
+        "description": "Links a Furnace to process"
+      }
+    ],
+    "description": "Primary aluminium processing unit that maintains and controls metal temperature and composition",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:GasFlowSensor;1",
+    "@type": "Interface",
+    "displayName": "Gas Flow Sensor",
+    "contents": [],
+    "description": "Measurement Sensor device for Gas flow",
+    "extends": [
+      "dtmi:example:Sensor;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:GasSupply;1",
+    "@type": "Interface",
+    "displayName": "Gas Supply",
+    "contents": [],
+    "description": "Device that delivers regulated gas to the burner for combustion",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:IndustrySystem;1",
+    "@type": "Interface",
+    "displayName": "IndustrySystem",
+    "contents": [],
+    "description": "It's designed a group of Device of Feature of Interest which has an objective or functional around the activity of furnance",
+    "extends": [
+      "dtmi:example:System;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Lining;1",
+    "@type": "Interface",
+    "displayName": "Lining",
+    "contents": [],
+    "description": "Refractory brick assembly that insulates the tank, protecting the structure and maintaining thermal efficiency",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Metals;1",
+    "@type": "Interface",
+    "displayName": "Metals",
+    "contents": [],
+    "description": "Alloying elements added to aluminum to achieve specific chemical composition and physical properties in the final product",
+    "extends": [
+      "dtmi:example:MaterialBatch;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:OpenCloseFunction;1",
+    "@type": "Interface",
+    "displayName": "Open Close Function",
+    "contents": [],
+    "description": "An actuating function that allows to open and close a device",
+    "extends": [
+      "dtmi:example:ActuatingFunction;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:OpenCloseState;1",
+    "@type": "Interface",
+    "displayName": "OpenCloseState",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasOpenReason",
+        "target": "dtmi:example:OpenReason;1",
+        "displayName": "has open reason",
+        "description": "Links a StateValue to a Reason ex: Open Door for a reason Sampling duringa Process etc..."
+      }
+    ],
+    "extends": [
+      "dtmi:example:State;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:OpenCloseStateValue;1",
+    "@type": "Interface",
+    "displayName": "Open Close State Value",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "OpenCloseStateValueEnum",
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "CLOSE"
+            },
+            {
+              "name": "OPEN"
+            }
+          ]
+        }
+      }
+    ],
+    "description": "A controlled vocabulary representing the possible states of an open/close mechanism. Typical values include: OPEN and CLOSE.",
+    "extends": [
+      "dtmi:example:StateValue;1"
+    ],
+    "individuals": [
+      "CLOSE",
+      "OPEN"
+    ]
+  },
+  {
+    "@id": "dtmi:example:OpenCommand;1",
+    "@type": "Interface",
+    "displayName": "Open Command",
+    "contents": [],
+    "description": "Represents a command to open a device",
+    "extends": [
+      "dtmi:example:Command;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:OpenReason;1",
+    "@type": "Interface",
+    "displayName": "Open Reason",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "OpenReasonEnum",
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "AlloyAddition"
+            },
+            {
+              "name": "AluminiumCharging"
+            },
+            {
+              "name": "Sampling"
+            },
+            {
+              "name": "ScrapCharging"
+            },
+            {
+              "name": "Skimming"
+            },
+            {
+              "name": "Stirring"
+            },
+            {
+              "name": "Unknown"
+            }
+          ]
+        }
+      }
+    ],
+    "description": "A subclass of 'Reason' that specifies the causes for  openings. This includes enumerated reasons such as: Casting, Skimming, Sampling, Unknow, etc.. These reasons may relate to technical interventions, events, or manual actions.\" It's a controlled vocabulary representing opening reasons",
+    "extends": [
+      "dtmi:example:Reason;1"
+    ],
+    "individuals": [
+      "AlloyAddition",
+      "AluminiumCharging",
+      "Sampling",
+      "ScrapCharging",
+      "Skimming",
+      "Stirring",
+      "Unknown"
+    ]
+  },
+  {
+    "@id": "dtmi:example:OxygenSensor;1",
+    "@type": "Interface",
+    "displayName": "Oxygen Sensor",
+    "contents": [],
+    "description": "Measurement device for Oxygen",
+    "extends": [
+      "dtmi:example:Sensor;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:PowerSensor;1",
+    "@type": "Interface",
+    "displayName": "Power Sensor",
+    "contents": [],
+    "description": "Measurement device for Power",
+    "extends": [
+      "dtmi:example:Sensor;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:PressureSensor;1",
+    "@type": "Interface",
+    "displayName": "Pressure Sensor",
+    "contents": [],
+    "description": "Measurement device for Pressure",
+    "extends": [
+      "dtmi:example:Sensor;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:RawMaterialBatch;1",
+    "@type": "Interface",
+    "displayName": "Raw Material Batch",
+    "contents": [],
+    "description": "Specific raw material or elements used in creating a batch",
+    "extends": [
+      "dtmi:example:MaterialBatch;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:RawMaterialFeederSystem;1",
+    "@type": "Interface",
+    "displayName": "Raw Material Feeder System",
+    "contents": [],
+    "description": "Delivery system for introducing aluminium and alloying elements into the furnace",
+    "extends": [
+      "dtmi:example:IndustrySystem;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Reason;1",
+    "@type": "Interface",
+    "displayName": "Reason",
+    "contents": [],
+    "description": "A general category representing various reasons related to actions or states within the system, such as door openings or security alerts.",
+    "extends": [
+      "dtmi:example:ConceptScheme;1"
+    ],
+    "individuals": [
+      "AlloyAddition",
+      "AluminiumCharging",
+      "Sampling",
+      "ScrapCharging",
+      "Skimming",
+      "Stirring",
+      "Unknown"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Scrap;1",
+    "@type": "Interface",
+    "displayName": "Scrap",
+    "contents": [],
+    "description": "Recycled aluminium material reintroduced into the production process",
+    "extends": [
+      "dtmi:example:MaterialBatch;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:StartStopFunction;1",
+    "@type": "Interface",
+    "displayName": "Start Stop Function",
+    "contents": [],
+    "description": "An actuating function that allows to start and stop a device",
+    "extends": [
+      "dtmi:example:ActuatingFunction;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Tank;1",
+    "@type": "Interface",
+    "displayName": "Tank",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "contains",
+        "target": "dtmi:example:RawMaterialBatch;1",
+        "displayName": "contains",
+        "description": "Indicates that a production equipment, Device temporarily contains material during processing"
+      }
+    ],
+    "description": "Main vessel component that contains the molten aluminum during processing",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:TemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": "Temperature Sensor",
+    "contents": [],
+    "description": "Measurement device for temperature",
+    "extends": [
+      "dtmi:example:Sensor;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:DimensionlessProperty;1",
+    "@type": "Interface",
+    "displayName": "Dimensionless Property",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Property;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:NumberUnit;1",
+      "dtmi:example:PercentUnit;1",
+      "dtmi:example:PowerUnit;1",
+      "dtmi:example:PressureUnit;1",
+      "dtmi:example:TemperatureUnit;1",
+      "dtmi:example:VolumeFlowRateUnit;1",
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:DimensionlessRatioProperty;1",
+    "@type": "Interface",
+    "displayName": "Dimensionless Ratio Property",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Property;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:NumberUnit;1",
+      "dtmi:example:PercentUnit;1",
+      "dtmi:example:PowerUnit;1",
+      "dtmi:example:PressureUnit;1",
+      "dtmi:example:TemperatureUnit;1",
+      "dtmi:example:VolumeFlowRateUnit;1",
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:ElectricCurrentProperty;1",
+    "@type": "Interface",
+    "displayName": "ElectricCurrent Property",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Property;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:NumberUnit;1",
+      "dtmi:example:PercentUnit;1",
+      "dtmi:example:PowerUnit;1",
+      "dtmi:example:PressureUnit;1",
+      "dtmi:example:TemperatureUnit;1",
+      "dtmi:example:VolumeFlowRateUnit;1",
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:EventFunction;1",
+    "@type": "Interface",
+    "displayName": "EventFunction",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasSpecificState",
+        "target": "dtmi:example:State;1",
+        "displayName": "has specific state",
+        "description": "A relationship associated with an event function to notify that a state  had certains state value"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasThresholdPropertyValue",
+        "target": "dtmi:example:PropertyValue;1",
+        "displayName": "has threshold property value",
+        "description": "A relationship associated with an event function to notify that a certain threshold measurement has been exceeded"
+      }
+    ],
+    "description": "A function that allows to notify about some relevant activity; e.g., that a certain threshold value has been exceeded, that some object has moved or the state of Object is changed",
+    "extends": [
+      "dtmi:example:Function;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:NumberUnit;1",
+    "@type": "Interface",
+    "displayName": "Number Unit",
+    "contents": [],
+    "extends": [
+      "dtmi:example:UnitOfMeasure;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:OxygenProperty;1",
+      "dtmi:example:PowerProperty;1",
+      "dtmi:example:PressureProperty;1",
+      "dtmi:example:SpeedProperty;1",
+      "dtmi:example:TemperatureProperty;1",
+      "dtmi:example:VolumeFlowRateProperty;1",
+      "dtmi:example:Property;1",
+      "dtmi:example:Size;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:OxygenProperty;1",
+    "@type": "Interface",
+    "displayName": "Oxygen Property",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Property;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:PercentUnit;1",
+      "dtmi:example:PowerUnit;1",
+      "dtmi:example:PressureUnit;1",
+      "dtmi:example:TemperatureUnit;1",
+      "dtmi:example:VolumeFlowRateUnit;1",
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:PercentUnit;1",
+    "@type": "Interface",
+    "displayName": "Percent Unit",
+    "contents": [],
+    "extends": [
+      "dtmi:example:UnitOfMeasure;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:PowerProperty;1",
+      "dtmi:example:PressureProperty;1",
+      "dtmi:example:SpeedProperty;1",
+      "dtmi:example:TemperatureProperty;1",
+      "dtmi:example:VolumeFlowRateProperty;1",
+      "dtmi:example:Property;1",
+      "dtmi:example:Size;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:PowerProperty;1",
+    "@type": "Interface",
+    "displayName": "Power Property",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Property;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:PowerUnit;1",
+      "dtmi:example:PressureUnit;1",
+      "dtmi:example:TemperatureUnit;1",
+      "dtmi:example:VolumeFlowRateUnit;1",
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:PowerUnit;1",
+    "@type": "Interface",
+    "displayName": "Power Unit",
+    "contents": [],
+    "extends": [
+      "dtmi:example:UnitOfMeasure;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:PressureProperty;1",
+      "dtmi:example:SpeedProperty;1",
+      "dtmi:example:TemperatureProperty;1",
+      "dtmi:example:VolumeFlowRateProperty;1",
+      "dtmi:example:Property;1",
+      "dtmi:example:Size;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:PressureProperty;1",
+    "@type": "Interface",
+    "displayName": "Pressure Property",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Property;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:PressureUnit;1",
+      "dtmi:example:TemperatureUnit;1",
+      "dtmi:example:VolumeFlowRateUnit;1",
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:PressureUnit;1",
+    "@type": "Interface",
+    "displayName": "Pressure Unit",
+    "contents": [],
+    "extends": [
+      "dtmi:example:UnitOfMeasure;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:SpeedProperty;1",
+      "dtmi:example:TemperatureProperty;1",
+      "dtmi:example:VolumeFlowRateProperty;1",
+      "dtmi:example:Property;1",
+      "dtmi:example:Size;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:SpeedProperty;1",
+    "@type": "Interface",
+    "displayName": "Speed Property",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Property;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:TemperatureUnit;1",
+      "dtmi:example:VolumeFlowRateUnit;1",
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:TemperatureProperty;1",
+    "@type": "Interface",
+    "displayName": "Temperature Property",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Property;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:TemperatureUnit;1",
+      "dtmi:example:VolumeFlowRateUnit;1",
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:TemperatureUnit;1",
+    "@type": "Interface",
+    "displayName": "Temperature Unit",
+    "contents": [],
+    "extends": [
+      "dtmi:example:UnitOfMeasure;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:VolumeFlowRateProperty;1",
+      "dtmi:example:Property;1",
+      "dtmi:example:Size;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:VolumeFlowRateProperty;1",
+    "@type": "Interface",
+    "displayName": "Volume Flow Rate Property",
+    "contents": [],
+    "extends": [
+      "dtmi:example:Property;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:VolumeFlowRateUnit;1",
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:VolumeFlowRateUnit;1",
+    "@type": "Interface",
+    "displayName": "Volume Flow Rate Unit",
+    "contents": [],
+    "extends": [
+      "dtmi:example:UnitOfMeasure;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:Property;1",
+      "dtmi:example:Size;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Condition;1",
+    "@type": "Interface",
+    "displayName": "Condition",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "conditionAchieved",
+        "schema": "boolean",
+        "displayName": "condition achieved"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isTriggeredBy",
+        "target": "dtmi:example:EventFunction;1",
+        "displayName": "is triggered by"
+      }
+    ],
+    "description": "A condition holds the result of a logical expression thanks to data property conditionAchieved. This result is a boolean value. Logical expression is computed by an EventFunction individual."
+  },
+  {
+    "@id": "dtmi:example:ConditionalSubProcess;1",
+    "@type": "Interface",
+    "displayName": "ConditionalSubProcess",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasNextSubProcessOnFailure",
+        "target": "dtmi:example:SubProcess;1",
+        "displayName": "has next subprocess onfailure"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasNextSubProcessOnSuccess",
+        "target": "dtmi:example:SubProcess;1",
+        "displayName": "has next subprocess onsuccess"
+      },
+      {
+        "@type": "Relationship",
+        "name": "pathDependsOnStep",
+        "target": "dtmi:example:IterativeStep;1",
+        "displayName": "path depends"
+      }
+    ],
+    "extends": [
+      "dtmi:example:SubProcess;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:SequentialSubProcess;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:IterativeStep;1",
+    "@type": "Interface",
+    "displayName": "IterativeStep",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "isIterationCompleted",
+        "schema": "boolean",
+        "displayName": "is iteration completed",
+        "description": "Links IterativeStep to loop condition true or false, if it's true the Step loop"
+      },
+      {
+        "@type": "Property",
+        "name": "iterationCount",
+        "schema": "integer",
+        "displayName": "has iteration counter",
+        "description": "It's IterativeStep loop counter"
+      }
+    ],
+    "description": "it is a Step that implements the notion of a condition based loop, a step that manage a loop",
+    "extends": [
+      "dtmi:example:Step;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:NormalStep;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:NormalStep;1",
+    "@type": "Interface",
+    "displayName": "NormalStep",
+    "contents": [],
+    "description": "It's a Step without loop concept",
+    "extends": [
+      "dtmi:example:Step;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Process;1",
+    "@type": "Interface",
+    "displayName": "Process",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "hasAlloyCode",
+        "schema": "integer",
+        "displayName": "has alloy code"
+      },
+      {
+        "@type": "Property",
+        "name": "hasAlloyCodeId",
+        "schema": "integer",
+        "displayName": "has alloy code id"
+      },
+      {
+        "@type": "Property",
+        "name": "hasBatchId",
+        "schema": "integer",
+        "displayName": "has batch id"
+      },
+      {
+        "@type": "Property",
+        "name": "hasBatchNo",
+        "schema": "string",
+        "displayName": "has batch no"
+      },
+      {
+        "@type": "Property",
+        "name": "isRunning",
+        "schema": "boolean",
+        "displayName": "is running"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasCurrentSubProcess",
+        "target": "dtmi:example:SubProcess;1",
+        "displayName": "has current subprocess"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasSubProcess",
+        "target": "dtmi:example:SubProcess;1",
+        "displayName": "has subprocess",
+        "description": "Links a Process to SubProcecess"
+      }
+    ],
+    "description": "Represents a complete Process."
+  },
+  {
+    "@id": "dtmi:example:SequentialSubProcess;1",
+    "@type": "Interface",
+    "displayName": "SequentialSubProcess",
+    "contents": [],
+    "extends": [
+      "dtmi:example:SubProcess;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Step;1",
+    "@type": "Interface",
+    "displayName": "Step",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "hasStepId",
+        "schema": "integer",
+        "displayName": "has step id"
+      },
+      {
+        "@type": "Property",
+        "name": "isCurrentStep",
+        "schema": "boolean",
+        "displayName": "is current step",
+        "description": "Indicate if a Step is Sub Process current Step, it's boolean type"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasCondition",
+        "target": "dtmi:example:Condition;1",
+        "displayName": "has condition"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasNextStep",
+        "target": "dtmi:example:Step;1",
+        "displayName": "has next step",
+        "description": "connects a step to its successor step"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasPreviousStep",
+        "target": "dtmi:example:Step;1",
+        "displayName": "has previous step",
+        "description": "connects a step to its predecessor"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasStepType",
+        "target": "dtmi:example:StepType;1",
+        "displayName": "has step type",
+        "description": "Links a Step to StepType."
+      }
+    ],
+    "description": "Atomic action unit of a process"
+  },
+  {
+    "@id": "dtmi:example:StepType;1",
+    "@type": "Interface",
+    "displayName": "StepType",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "StepTypeEnum",
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "Machine"
+            },
+            {
+              "name": "Operator"
+            }
+          ]
+        }
+      }
+    ],
+    "description": "Classification of the type of action performed in a step",
+    "individuals": [
+      "Machine",
+      "Operator"
+    ]
+  },
+  {
+    "@id": "dtmi:example:SubProcess;1",
+    "@type": "Interface",
+    "displayName": "SubProcess",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "hasSubProcessId",
+        "schema": "integer",
+        "displayName": "has sub process id"
+      },
+      {
+        "@type": "Property",
+        "name": "isCurrentSubProcess",
+        "schema": "boolean",
+        "displayName": "is current subprocess"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasCurrentStep",
+        "target": "dtmi:example:Step;1",
+        "displayName": "has current step"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasEndStep",
+        "target": "dtmi:example:Step;1",
+        "displayName": "has end step"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasNextSubProcess",
+        "target": "dtmi:example:SubProcess;1",
+        "displayName": "has next subprocess",
+        "description": "Links a Subprocess to its next process"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasStartStep",
+        "target": "dtmi:example:Step;1",
+        "displayName": "has start step",
+        "description": "Links a Subprocess to  its initial step of subprocess"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasStep",
+        "target": "dtmi:example:Step;1",
+        "displayName": "has step",
+        "description": "Links a SubProcess to Step"
+      }
+    ],
+    "description": "a Logical grouping of related steps of process"
+  },
+  {
+    "@id": "dtmi:example:Actuation;1",
+    "@type": "Interface",
+    "displayName": "Actuation",
+    "contents": [],
+    "description": "A saref:Actuation is the act of carrying out a procedure to control the state of the world using an actuator. It links to an actuator to describe what made the actuation, and to the controlled feature, property, property of interest, state, or state of interest. Typically, its input is a property value or a state. An actuation of a state (OP saref:controls) should have a state as input (OP saref:hasInput). Respectively, an actuation of a property should have a property value as input.",
+    "extends": [
+      "dtmi:example:ProcedureExecution;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Actuator;1",
+    "@type": "Interface",
+    "displayName": "Actuator",
+    "contents": [],
+    "description": "A device designed to control one or more properties or states of one or more features of interest.",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Appliance;1",
+    "@type": "Interface",
+    "displayName": "Appliance",
+    "contents": [],
+    "description": "A device designed to accomplish a particular task for occupant use. It consumes, produces, or stores, some commodity.",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Command;1",
+    "@type": "Interface",
+    "displayName": "Command",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "isCommandOf",
+        "target": "dtmi:example:Function;1",
+        "displayName": "is command of",
+        "description": "Links a command and a function or function of interest that supports it."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isCommandOf",
+        "target": "dtmi:example:FunctionOfInterest;1",
+        "displayName": "is command of",
+        "description": "Links a command and a function or function of interest that supports it."
+      }
+    ],
+    "description": "The lowest-level directives a function exposes to some network. Commands can target (OP saref:targets and its sub-properties) features, properties, or states. An instance of saref:Command is independent of any device."
+  },
+  {
+    "@id": "dtmi:example:CommandExecution;1",
+    "@type": "Interface",
+    "displayName": "Command Execution",
+    "contents": [],
+    "description": "Describes the execution of a command. Typically, its inputs and outputs are human understandable and relate to some feature of interest, such as its state (e.g., s4abcd:On), or the value of its temperature (e.g., property value 21.0 \u00b0C).",
+    "extends": [
+      "dtmi:example:ProcedureExecution;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:CommandOfInterest;1",
+    "@type": "Interface",
+    "displayName": "Command Of Interest",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasCommandKind",
+        "target": "dtmi:example:Command;1",
+        "displayName": "has command kind",
+        "description": "links a command of interest to its kind, a command."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isCommandOfInterestOf",
+        "target": "dtmi:example:FunctionOfInterest;1",
+        "displayName": "is command of interest of",
+        "description": "Links a command of interest to the function of interest it is a command of."
+      }
+    ],
+    "description": "The lowest-level directives a device supports and exposes to some network. Commands can target (OP saref:targets and its sub-properties) features, properties, or states. A saref:CommandOfInterest is a directives actually supported by a device and exposed to some network."
+  },
+  {
+    "@id": "dtmi:example:Commodity;1",
+    "@type": "Interface",
+    "displayName": "Commodity",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "isConsumedBy",
+        "target": "dtmi:example:Device;1",
+        "displayName": "is consumed by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that consumes it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isConsumedBy",
+        "target": "dtmi:example:DeviceKind;1",
+        "displayName": "is consumed by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that consumes it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isConsumedBy",
+        "target": "dtmi:example:FeatureKind;1",
+        "displayName": "is consumed by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that consumes it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isConsumedBy",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is consumed by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that consumes it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isProducedBy",
+        "target": "dtmi:example:Device;1",
+        "displayName": "is produced by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that produces it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isProducedBy",
+        "target": "dtmi:example:DeviceKind;1",
+        "displayName": "is produced by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that produces it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isProducedBy",
+        "target": "dtmi:example:FeatureKind;1",
+        "displayName": "is produced by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that produces it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isProducedBy",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is produced by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that produces it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isStoredBy",
+        "target": "dtmi:example:Device;1",
+        "displayName": "is stored by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that stores it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isStoredBy",
+        "target": "dtmi:example:DeviceKind;1",
+        "displayName": "is stored by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that stores it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isStoredBy",
+        "target": "dtmi:example:FeatureKind;1",
+        "displayName": "is stored by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that stores it"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isStoredBy",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is stored by",
+        "description": "Links a commodity to the feature kind, feature of interest, or device, that stores it"
+      }
+    ],
+    "description": "A marketable item which may be supplied without qualitative differentiation."
+  },
+  {
+    "@id": "dtmi:example:Device;1",
+    "@type": "Interface",
+    "displayName": "Device",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasDeviceKind",
+        "target": "dtmi:example:DeviceKind;1",
+        "displayName": "has device kind",
+        "description": "Links a device to its kind, a device kind. Kinds of devices describe models of devices, with common properties and common states having the same value, targeting the same properties and states, common functions, and common services."
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasFunctionOfInterest",
+        "target": "dtmi:example:FunctionOfInterest;1",
+        "displayName": "has function of interest",
+        "description": "Links a device to one of its functions of interest."
+      },
+      {
+        "@type": "Relationship",
+        "name": "offers",
+        "target": "dtmi:example:Service;1",
+        "displayName": "offers",
+        "description": "Links a device to a service it exposes to a network."
+      }
+    ],
+    "description": "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. An instance of saref:Device represents one specific real world entity.",
+    "extends": [
+      "dtmi:example:FeatureOfInterest;1",
+      "dtmi:example:System;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:DeviceKind;1",
+    "@type": "Interface",
+    "displayName": "Device kinds",
+    "contents": [],
+    "description": "Device kinds allow to describe kinds of devices, with common properties and common states having the same value, targeting the same properties and states, common functions, and common services. Devices kinds may be used to describe models of devices in online catalogues.",
+    "extends": [
+      "dtmi:example:FeatureKind;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:FeatureKind;1",
+    "@type": "Interface",
+    "displayName": "Feature kinds",
+    "contents": [],
+    "description": "Feature kinds allow to describe kinds of features of interest, with common properties having the same value, and common states being the same. An instance of saref:FeatureKind represents an archetype of real world entities, for example to populate product catalogs."
+  },
+  {
+    "@id": "dtmi:example:FeatureOfInterest;1",
+    "@type": "Interface",
+    "displayName": "Feature of interest",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasFeatureKind",
+        "target": "dtmi:example:FeatureKind;1",
+        "displayName": "has feature kind",
+        "description": "links a feature of interest to its kind, a feature kind"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasPropertyOfInterest",
+        "target": "dtmi:example:PropertyOfInterest;1",
+        "displayName": "has property of interest",
+        "description": "Links a feature of interest to one of its properties of interest."
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasStateOfInterest",
+        "target": "dtmi:example:StateOfInterest;1",
+        "displayName": "has state of interest",
+        "description": "Links a feature of interest to one of its states of interest."
+      },
+      {
+        "@type": "Relationship",
+        "name": "madeExecution",
+        "target": "dtmi:example:ProcedureExecution;1",
+        "displayName": "made execution",
+        "description": "Links an entity (e.g., device) to the procedure execution it made."
+      }
+    ],
+    "description": "A feature of interest represents any real world entity from which a property is measured."
+  },
+  {
+    "@id": "dtmi:example:Function;1",
+    "@type": "Interface",
+    "displayName": "Function",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "isFunctionOf",
+        "target": "dtmi:example:FeatureKind;1",
+        "displayName": "is function of",
+        "description": "Links a function to the feature kind or device it is a function of."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isFunctionOf",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is function of",
+        "description": "Links a function to the feature kind or device it is a function of."
+      }
+    ],
+    "description": "Logical groups of commands that devices support to accomplish their tasks. Function can target (OP saref:targets and its sub-properties) features, properties, or states. An instance of saref:Function can apply to different devices."
+  },
+  {
+    "@id": "dtmi:example:FunctionOfInterest;1",
+    "@type": "Interface",
+    "displayName": "Function of Interest",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasCommandOfInterest",
+        "target": "dtmi:example:CommandOfInterest;1",
+        "displayName": "has command of interest",
+        "description": "Links a function of interest to one of its commands of interest."
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasFunctionKind",
+        "target": "dtmi:example:Function;1",
+        "displayName": "has function kind",
+        "description": "links a function of interest to its kind, a function"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isFunctionOfInterestOf",
+        "target": "dtmi:example:Device;1",
+        "displayName": "is function of interest of",
+        "description": "Links a function of interest to the device it is a function of."
+      }
+    ],
+    "description": "Logical groups of commands that devices support to accomplish their tasks. Function can target (OP saref:targets and its sub-properties) features, properties, or states. An instance of saref:FunctionOfInterest is supported by exactly one device."
+  },
+  {
+    "@id": "dtmi:example:Measurement;1",
+    "@type": "Interface",
+    "displayName": "Measurement",
+    "contents": [],
+    "description": "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."
+  },
+  {
+    "@id": "dtmi:example:Meter;1",
+    "@type": "Interface",
+    "displayName": "Meter",
+    "contents": [],
+    "description": "A device designed to observe and additionally do some computation and/or display one or more properties of one or more features of interest.",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Observation;1",
+    "@type": "Interface",
+    "displayName": "Observation",
+    "contents": [],
+    "description": "A saref:Observation is the act of carrying out a procedure to estimate or calculate a value of a property of a feature of interest, or a state of a feature of interest. It links to a sensor to describe what made the observation, and to the observed feature, property, property of interest, state, or state of interest. Typically, its result is a property value or a state. An observation of a state (OP saref:observes) should have a state as a result (OP saref:hasResult). Respectively, an observation of a property should have a property value as a result.",
+    "extends": [
+      "dtmi:example:ProcedureExecution;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Operation;1",
+    "@type": "Interface",
+    "displayName": "Operation",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "isOperationOf",
+        "target": "dtmi:example:Service;1",
+        "displayName": "is operation of",
+        "description": "Links an operation to the service it belongs to."
+      }
+    ],
+    "description": "A saref:Operation is the means of a service to communicate in a procedure-type manner over the network (i.e. transmit data to/from other devices). It is the \u2013machine interpretable\u2013 exposure of a \u2013human understandable\u2013 command to a network."
+  },
+  {
+    "@id": "dtmi:example:OperationExecution;1",
+    "@type": "Interface",
+    "displayName": "Operation Execution",
+    "contents": [],
+    "description": "Describes the execution of an operation in a network: the\u2013machine interpretable\u2013  description of a communication between devices over the network. Typically, its input and result are network messages, that conform to the input and output of the executed operation.",
+    "extends": [
+      "dtmi:example:ProcedureExecution;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:ProcedureExecution;1",
+    "@type": "Interface",
+    "displayName": "Procedure Execution",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "hasResultTime",
+        "schema": "dateTime",
+        "displayName": "has result time",
+        "description": "Links a procedure execution to the instant of time when the activity was completed, expressed as an xsd:dateTime literal."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isExecutionOf",
+        "target": "dtmi:example:Command;1",
+        "displayName": "is execution of",
+        "description": "Links a command execution to the command or command of interest that was executed. Also liks an operation execution to the operation that was executed"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isExecutionOf",
+        "target": "dtmi:example:CommandOfInterest;1",
+        "displayName": "is execution of",
+        "description": "Links a command execution to the command or command of interest that was executed. Also liks an operation execution to the operation that was executed"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isExecutionOf",
+        "target": "dtmi:example:Operation;1",
+        "displayName": "is execution of",
+        "description": "Links a command execution to the command or command of interest that was executed. Also liks an operation execution to the operation that was executed"
+      },
+      {
+        "@type": "Relationship",
+        "name": "madeBy",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "made by",
+        "description": "Links a procedure execution to the entity (e.g., device) that made it."
+      }
+    ],
+    "description": "Represents the act of carrying out a procedure."
+  },
+  {
+    "@id": "dtmi:example:Profile;1",
+    "@type": "Interface",
+    "displayName": "Profile",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "isProfileOf",
+        "target": "dtmi:example:Device;1",
+        "displayName": "is profile of",
+        "description": "Links a profile to the device it describes. The device should be linked to a certain commodity using OP saref:consumes, saref:produces, or saref:stores, and optionally to some property or state using OP saref:targets or its sub-properties."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isProfileOf",
+        "target": "dtmi:example:DeviceKind;1",
+        "displayName": "is profile of",
+        "description": "Links a profile to the device it describes. The device should be linked to a certain commodity using OP saref:consumes, saref:produces, or saref:stores, and optionally to some property or state using OP saref:targets or its sub-properties."
+      },
+      {
+        "@type": "Relationship",
+        "name": "profileHasPrice",
+        "target": "dtmi:example:PropertyValue;1",
+        "displayName": "has price",
+        "description": "Links a profile to the money earned (negative values) or paid (positive values) for the use (production or consumption) of the commodity by the device"
+      },
+      {
+        "@type": "Relationship",
+        "name": "whenPropertyValue",
+        "target": "dtmi:example:PropertyValue;1",
+        "displayName": "when property value",
+        "description": "Links a profile to a property value that contributes to restricting its applicable context."
+      },
+      {
+        "@type": "Relationship",
+        "name": "whenState",
+        "target": "dtmi:example:State;1",
+        "displayName": "when state",
+        "description": "Links a profile to a state that contributes to restricting its applicable context."
+      }
+    ],
+    "description": "A saref:Profile describes the money earned (negative values) or paied (positive values) for the use (production or consumption) of a commodity by a device in a certain context."
+  },
+  {
+    "@id": "dtmi:example:Property;1",
+    "@type": "Interface",
+    "displayName": "Property",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "isPropertyOf",
+        "target": "dtmi:example:FeatureKind;1",
+        "displayName": "is property of",
+        "description": "Links a property to the feature kind or feature of interest it is a property of."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isPropertyOf",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is property of",
+        "description": "Links a property to the feature kind or feature of interest it is a property of."
+      }
+    ],
+    "description": "An aspect of an entity that can be observable by a sensor.",
+    "disjointWith": [
+      "dtmi:example:UnitOfMeasure;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:PropertyOfInterest;1",
+    "@type": "Interface",
+    "displayName": "Property of Interest",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasPropertyKind",
+        "target": "dtmi:example:Property;1",
+        "displayName": "has property kind",
+        "description": "links a property of interest to its kind, a property."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isPropertyOfInterestOf",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is property of interest of",
+        "description": "Links a property of interest to the feature of interest it is a property of."
+      }
+    ],
+    "description": "Identifiable qualities of features of interest that can be target of devices, such as observed or controlled. An instance of saref:PropertyOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."
+  },
+  {
+    "@id": "dtmi:example:PropertyValue;1",
+    "@type": "Interface",
+    "displayName": "Property Value",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "isValueOfProperty",
+        "target": "dtmi:example:FeatureKind;1",
+        "displayName": "is value of property",
+        "description": "Links a property value to the property or property of interest it is a value of."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isValueOfProperty",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is value of property",
+        "description": "Links a property value to the property or property of interest it is a value of."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isValueOfProperty",
+        "target": "dtmi:example:Property;1",
+        "displayName": "is value of property",
+        "description": "Links a property value to the property or property of interest it is a value of."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isValueOfProperty",
+        "target": "dtmi:example:PropertyOfInterest;1",
+        "displayName": "is value of property",
+        "description": "Links a property value to the property or property of interest it is a value of."
+      }
+    ],
+    "description": "Describes the value for a property. The property value is optionally linked to its value expressed as an RDF literal (DP saref:hasValue), optionally to the unit of measurement (OP saref:isMeasuredIn), and optionally to the properties or properties of interest it is a value of (OP saref:isValueOfProperty)."
+  },
+  {
+    "@id": "dtmi:example:Sensor;1",
+    "@type": "Interface",
+    "displayName": "Sensor",
+    "contents": [],
+    "description": "A device designed to observe and measure one or more properties or states of one or more features of interest.",
+    "extends": [
+      "dtmi:example:Device;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Service;1",
+    "@type": "Interface",
+    "displayName": "Service",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasOperation",
+        "target": "dtmi:example:Operation;1",
+        "displayName": "has operation",
+        "description": "Links a service to one of its operations."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isOfferedBy",
+        "target": "dtmi:example:Device;1",
+        "displayName": "is offered by",
+        "description": "Links a service to the device that exposes it to a network"
+      }
+    ],
+    "description": "A saref:Service is a digital representation of a function in a network, making it discoverable, registerable and remotely controllable in the network."
+  },
+  {
+    "@id": "dtmi:example:State;1",
+    "@type": "Interface",
+    "displayName": "State",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "isStateOf",
+        "target": "dtmi:example:FeatureKind;1",
+        "displayName": "is state of",
+        "description": "Links a state to the feature kind or feature of interest it is a state of."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isStateOf",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is state of",
+        "description": "Links a state to the feature kind or feature of interest it is a state of."
+      }
+    ],
+    "description": "Identifiable conditions that features of interest are or may be in, and that can be target of devices, such as observed and controlled. A state can apply to different features of interest."
+  },
+  {
+    "@id": "dtmi:example:StateOfInterest;1",
+    "@type": "Interface",
+    "displayName": "State of Interest",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "hasStateKind",
+        "target": "dtmi:example:State;1",
+        "displayName": "has state kind",
+        "description": "links a state of interest to its kind, a state"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isStateOfInterestOf",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is state of interest of",
+        "description": "Links a state of interest to the feature of interest it is a state of."
+      }
+    ],
+    "description": "Identifiable conditions that features of interest are or may be in, and that can be target of devices, such as observed and controlled. An instance of saref:StateOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."
+  },
+  {
+    "@id": "dtmi:example:StateValue;1",
+    "@type": "Interface",
+    "displayName": "State Value",
+    "contents": [
+      {
+        "@type": "Relationship",
+        "name": "isValueOfState",
+        "target": "dtmi:example:FeatureKind;1",
+        "displayName": "is value of state",
+        "description": "Links a state value to the state or state of interest it is a value of."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isValueOfState",
+        "target": "dtmi:example:FeatureOfInterest;1",
+        "displayName": "is value of state",
+        "description": "Links a state value to the state or state of interest it is a value of."
+      },
+      {
+        "@type": "Relationship",
+        "name": "isValueOfState",
+        "target": "dtmi:example:StateOfInterest;1",
+        "displayName": "is value of state",
+        "description": "Links a state value to the state or state of interest it is a value of."
+      }
+    ],
+    "description": "Describes the value for a state. The state value is optionally linked the states or states of interest it is a value of (OP saref:isValueOfState).",
+    "individuals": [
+      "CLOSE",
+      "OPEN"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Task;1",
+    "@type": "Interface",
+    "displayName": "Task",
+    "contents": [],
+    "description": "The goal for which a device is designed, from a user perspective."
+  },
+  {
+    "@id": "dtmi:example:UnitOfMeasure;1",
+    "@type": "Interface",
+    "displayName": "Unit of measure",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "hasSymbol",
+        "schema": "string",
+        "displayName": "has symbol",
+        "description": "Represents the symbol of unit of measure ex: Temperature unit in \u00b0C or Pressure  in B (Bar)"
+      }
+    ],
+    "description": "The unit of measure is a standard for measurement of a quantity, such as a Property.",
+    "disjointWith": [
+      "dtmi:example:Size;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Building;1",
+    "@type": "Interface",
+    "displayName": "Building",
+    "contents": [],
+    "description": "A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space)."
+  },
+  {
+    "@id": "dtmi:example:BuildingSpace;1",
+    "@type": "Interface",
+    "displayName": "Building space",
+    "contents": [],
+    "description": "An entity used to define the physical spaces of the building. A building space contains devices or building objects."
+  },
+  {
+    "@id": "dtmi:example:PhysicalObject;1",
+    "@type": "Interface",
+    "displayName": "Physical object",
+    "contents": [],
+    "description": "Any Object that has a proper space region.  (Definition extracted from DUL ontology)"
+  },
+  {
+    "@id": "dtmi:example:ActualMeasurement;1",
+    "@type": "Interface",
+    "displayName": "Actual measurement",
+    "contents": [],
+    "description": "Describes whether the measurement is actually measured during the production process. Disjoint with ExpectedMeasurement.",
+    "extends": [
+      "dtmi:example:Measurement;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:ExpectedMeasurement;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Area;1",
+    "@type": "Interface",
+    "displayName": "Area",
+    "contents": [],
+    "description": "A subclass of s4bldg:BuildingSpace used to define the physical spaces of the building. According to IEC 62264, areas are physical, geographical or logical groupings of resources determined by the site. A site can be divided in areas, whereas areas contain work centers.s.",
+    "extends": [
+      "dtmi:example:BuildingSpace;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:Site;1",
+      "dtmi:example:WorkCenter;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Batch;1",
+    "@type": "Interface",
+    "displayName": "Batch",
+    "contents": [],
+    "description": "A uniform collection of tangible objects or Lot. This can either be a collection of produced items (i.e. the outflow of products) or a collection of raw material or required material (i.e. the inflow of products). It is assumed that the objects in a batch are similar and thus have shared attributes. Note that this definition is broader than the definition in IEC 61512, which defines a batch as the material that is being produced (whereas in SAREF4INMA a batch can be items or materials). ",
+    "extends": [
+      "dtmi:example:Thing;1",
+      "dtmi:example:FeatureOfInterest;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:ExpectedMeasurement;1",
+    "@type": "Interface",
+    "displayName": "Expected measurement",
+    "contents": [],
+    "description": "Describes whether the measurement is expected (i.e., planned before the production process). Disjoint with ActualMeasurement.",
+    "extends": [
+      "dtmi:example:Measurement;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Factory;1",
+    "@type": "Interface",
+    "displayName": "Factory",
+    "contents": [],
+    "description": "A subclass of s4bldg:Building specialized for the purpose of SAREF4INMA, a factory represents one or more organizations sharing a definit mission, goals and objectives which provides an output such as a product (definition taken from IEC 62264). A factory can be divided in one or multiple sites. ",
+    "extends": [
+      "dtmi:example:Building;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:GTIN12ID;1",
+    "@type": "Interface",
+    "displayName": "GTIN12ID",
+    "contents": [],
+    "description": "GTIN-12 (UPC-A) is a 12-digit number used primarily in North America",
+    "extends": [
+      "dtmi:example:ID;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:GTIN13ID;1",
+    "@type": "Interface",
+    "displayName": "GTIN13ID",
+    "contents": [],
+    "description": "GTIN-13 (EAN/UCC-13) is a 13-digit number used predominately outside of North America",
+    "extends": [
+      "dtmi:example:ID;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:GTIN14ID;1",
+    "@type": "Interface",
+    "displayName": "GTIN14ID",
+    "contents": [],
+    "description": "GTIN-14 (EAN/UCC-14 or ITF-14 or also known as ITF Symbol, SCC-14, DUN-14, UPC Case Code, UPC Shipping Container Code, UCC Code 128, EAN Code 128) is a 14-digit number used to identify trade items at various packaging levels.",
+    "extends": [
+      "dtmi:example:ID;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:GTIN8ID;1",
+    "@type": "Interface",
+    "displayName": "GTIN18ID",
+    "contents": [],
+    "description": "GTIN-8 (EAN/UCC-8) is an 8-digit number used predominately outside of North America.",
+    "extends": [
+      "dtmi:example:ID;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:ID;1",
+    "@type": "Interface",
+    "displayName": "Identifier",
+    "contents": [],
+    "description": "A unique identifier.",
+    "extends": [
+      "dtmi:example:ConceptScheme;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:IRDI;1",
+    "@type": "Interface",
+    "displayName": "IRDI",
+    "contents": [],
+    "description": "International Registration Data Identifier (IRDI) is based on the international standards ISO/IEC 11179-6, ISO 29002 and ISO 6532 and used in eCl@ss and the Asset Administration Shell as unique identifier.",
+    "extends": [
+      "dtmi:example:ID;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Item;1",
+    "@type": "Interface",
+    "displayName": "Item",
+    "contents": [],
+    "description": "A tangible object which can be unique identified, for example, with a GTIN in the form of a barcode/QR/RFID tag. An item product can be the result of the organization's production process (i.e. outflow of objects/goods) or can be uniquely identifiable material (i.e. inflow of objects/supplies). Each item is part of exactly one ItemBatch, whereas each ItemBatch contains only Items which have similar properties. An item can consists of multiple Batches and other Items (i.e. subassemblies).",
+    "extends": [
+      "dtmi:example:FeatureOfInterest;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:ItemBatch;1",
+    "@type": "Interface",
+    "displayName": "Item Batch",
+    "contents": [],
+    "description": "A uniform collection of tangible objects which are relevant for the prodcution process. The ItemBatch consists of a set of objects with similar properties (e.g. a certain type of sensors or metal sheets). The difference between ItemBatch and MaterialBatch is that individual items can be traced in a ItemBatch, whereas this is not possible in a MaterialBatch, meaning that, for example, it is possible to trace the individual metal sheet used in a ItemBatch. This implies that the objects in an ItemBatch have an unique identifier (e.g. a GTIN code in the form of a barcode/QR-code or RFID tag).",
+    "extends": [
+      "dtmi:example:Batch;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:ItemCategory;1",
+    "@type": "Interface",
+    "displayName": "Item category",
+    "contents": [],
+    "description": "An ItemCategory describes a single type of item in terms of its static properties. Each ItemCategory can have multiple related ItemBatches, which all contain individual Items. The essential properties of each Item in all ItemBatches are the same. However, each batch might use different MaterialBatches and/or different ProductionEquipment. Therefore, small deviations between batches might occur, while the essential properties of all Items related to an ItemCategory are similar."
+  },
+  {
+    "@id": "dtmi:example:MaterialBatch;1",
+    "@type": "Interface",
+    "displayName": "Material Batch",
+    "contents": [],
+    "description": "A uniform collection of tangible raw material which are relevant for the prodcution process. The MaterialBatch can consists of a set of objects with similar properties (e.g. a certain type of screws) or a stock of homogeen material (e.g. oil, water). The difference between MaterialBatch and ItemBatch is that individual items cannot be traced in a MaterialBatch, whereas this is possible in an ItemBatch, meaning that, for example, it is not possible to trace the individual screw used in a MaterialBatch.",
+    "extends": [
+      "dtmi:example:Batch;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:MaterialCategory;1",
+    "@type": "Interface",
+    "displayName": "Material category",
+    "contents": [],
+    "description": "A MaterialCategory describes a category of material in terms of its static properties. Examples are: a certain category of steel or plastic. Each MaterialCategory can have multiple related MaterialBatches, which represent the physical material. The essential properties of the material in all MaterialBatches are the same. However, each batch might use different MaterialBatches and/or different ProductionEquipment. Therefore, small deviations between batches might occur, while the essential properties of the material related to an MaterialCategory are similar."
+  },
+  {
+    "@id": "dtmi:example:Measurement;1",
+    "@type": "Interface",
+    "displayName": "Measurement",
+    "contents": [],
+    "description": "A subclass of saref:Measurement that represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement. The saref4imna:Measurement can be linked to individual Batches or Items. Moreover, the Measurement can be an ExpectedMeasurement (i.e. the value which is planned) or the ActualMeasurement (i.e. the value measured during production), which enables to check for deviations between the planned and actual values.",
+    "extends": [
+      "dtmi:example:Measurement;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:ProductionEquipment;1",
+    "@type": "Interface",
+    "displayName": "ProductionEquipment",
+    "contents": [],
+    "description": "A production equipment is a specialization of a saref:Device and s4bldg:PhysicalObject that can produce items in a manufacturing process. This class represents an individual production equipment device and includes their specification in terms of functions, states and services. Different types of machines can be defined under this class as needed, for example, LaserCuttingMachine (i.e., a type of production equipment to cut steel material), MillingMachine (i.e., to drill holes in steel material), MouldingMachine (i.e., to mold liquid material, such as iron or plastic, and let it harden in a certain shape), WeldingMachine (i.e., join parts of material, such as steel, together), etc.",
+    "extends": [
+      "dtmi:example:Device;1",
+      "dtmi:example:PhysicalObject;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:ProductionEquipmentCategory;1",
+    "@type": "Interface",
+    "displayName": "Production equipment category",
+    "contents": [],
+    "description": "A ProductionEquipmentCategory represents a certain type of production equipment, which is generally static over time. More concretely, the ProductionEquipmentCategory represents a certain model and brand of a production equipment. Each ProductionEquipmentCategory can have multiple related ProductionEquipment, which represent the actual individual machines. Moreover, each ItemCategory can be produced by multiple ProductionEquipmentCategories."
+  },
+  {
+    "@id": "dtmi:example:ProductionEquipmentFunction;1",
+    "@type": "Interface",
+    "displayName": "Production equipment function",
+    "contents": [],
+    "description": "Functionallity neccessary to accomplish the task for which a production equipment is designed.",
+    "extends": [
+      "dtmi:example:Thing;1",
+      "dtmi:example:Function;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Site;1",
+    "@type": "Interface",
+    "displayName": "Site",
+    "contents": [],
+    "description": "A subclass of s4bldg:BuildingSpace used to define the physical spaces of the building. According to IEC 62264, sites are identified physical, geographical, and/or logical component groupings of a manufacturing enterprise. A factory can be divided in sites, whereas sites can be divided areas",
+    "extends": [
+      "dtmi:example:BuildingSpace;1"
+    ],
+    "disjointWith": [
+      "dtmi:example:WorkCenter;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:Size;1",
+    "@type": "Interface",
+    "displayName": "Size",
+    "contents": [],
+    "description": "The amount of certain objects in a collection (e.g., size of a material batch).",
+    "extends": [
+      "dtmi:example:Property;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:UUID;1",
+    "@type": "Interface",
+    "displayName": "UUID",
+    "contents": [],
+    "description": "A universally unique identifier (UUID) is a 128-bit number used to identify items and is also known as: globally unique identifier (GUID). In its canonical textual representation, the sixteen octets of a UUID are represented as 32 hexadecimal (base 16) digits, displayed in five groups separated by hyphens, in the form 8-4-4-4-12 for a total of 36 characters (32 alphanumeric characters and four hyphens). UUID are documented in ISO/IEC 11578:1996 \"Information technology \u2013 Open Systems Interconnection \u2013 Remote Procedure Call (RPC)\" and in ITU-T Rec. X.667 | ISO/IEC 9834-8:2005.",
+    "extends": [
+      "dtmi:example:ID;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:WorkCenter;1",
+    "@type": "Interface",
+    "displayName": "Work center",
+    "contents": [],
+    "description": "A subclass of s4inma:ProductionEquipment (and therefore of s4bld:PhysicalObject). It is an equipment element under an area in a role-based equipment hierarchy that performs production, storage or material movement (definition taken from IEC 62264). An Area contains work centers.",
+    "extends": [
+      "dtmi:example:ProductionEquipment;1"
+    ]
+  },
+  {
+    "@id": "dtmi:example:System;1",
+    "@type": "Interface",
+    "displayName": "System",
+    "contents": []
+  }
+]
