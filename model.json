@@ -4,16 +4,7 @@
     "@type": "Interface",
     "displayName": "Concept Scheme",
     "contents": [],
-    "description": "SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts.",
-    "individuals": [
-      "AlloyAddition",
-      "AluminiumCharging",
-      "Sampling",
-      "ScrapCharging",
-      "Skimming",
-      "Stirring",
-      "Unknown"
-    ]
+    "description": "SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts."
   },
   {
     "@id": "dtmi:example:TemporalEntity;1",
@@ -132,9 +123,9 @@
     "displayName": "Furnace",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasProcess",
-        "target": "dtmi:example:Process;1",
+        "schema": "dtmi:example:Process;1",
         "displayName": "has process",
         "description": "Links a Furnace to process"
       }
@@ -210,9 +201,9 @@
     "displayName": "OpenCloseState",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasOpenReason",
-        "target": "dtmi:example:OpenReason;1",
+        "schema": "dtmi:example:OpenReason;1",
         "displayName": "has open reason",
         "description": "Links a StateValue to a Reason ex: Open Door for a reason Sampling duringa Process etc..."
       }
@@ -246,10 +237,6 @@
     "description": "A controlled vocabulary representing the possible states of an open/close mechanism. Typical values include: OPEN and CLOSE.",
     "extends": [
       "dtmi:example:StateValue;1"
-    ],
-    "individuals": [
-      "CLOSE",
-      "OPEN"
     ]
   },
   {
@@ -302,15 +289,6 @@
     "description": "A subclass of 'Reason' that specifies the causes for  openings. This includes enumerated reasons such as: Casting, Skimming, Sampling, Unknow, etc.. These reasons may relate to technical interventions, events, or manual actions.\" It's a controlled vocabulary representing opening reasons",
     "extends": [
       "dtmi:example:Reason;1"
-    ],
-    "individuals": [
-      "AlloyAddition",
-      "AluminiumCharging",
-      "Sampling",
-      "ScrapCharging",
-      "Skimming",
-      "Stirring",
-      "Unknown"
     ]
   },
   {
@@ -371,15 +349,6 @@
     "description": "A general category representing various reasons related to actions or states within the system, such as door openings or security alerts.",
     "extends": [
       "dtmi:example:ConceptScheme;1"
-    ],
-    "individuals": [
-      "AlloyAddition",
-      "AluminiumCharging",
-      "Sampling",
-      "ScrapCharging",
-      "Skimming",
-      "Stirring",
-      "Unknown"
     ]
   },
   {
@@ -408,9 +377,9 @@
     "displayName": "Tank",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "contains",
-        "target": "dtmi:example:RawMaterialBatch;1",
+        "schema": "dtmi:example:RawMaterialBatch;1",
         "displayName": "contains",
         "description": "Indicates that a production equipment, Device temporarily contains material during processing"
       }
@@ -490,16 +459,16 @@
     "displayName": "EventFunction",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasSpecificState",
-        "target": "dtmi:example:State;1",
+        "schema": "dtmi:example:State;1",
         "displayName": "has specific state",
         "description": "A relationship associated with an event function to notify that a state  had certains state value"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasThresholdPropertyValue",
-        "target": "dtmi:example:PropertyValue;1",
+        "schema": "dtmi:example:PropertyValue;1",
         "displayName": "has threshold property value",
         "description": "A relationship associated with an event function to notify that a certain threshold measurement has been exceeded"
       }
@@ -721,15 +690,15 @@
     "displayName": "ConditionalSubProcess",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasNextSubProcessOnFailure",
-        "target": "dtmi:example:SubProcess;1",
+        "schema": "dtmi:example:SubProcess;1",
         "displayName": "has next subprocess onfailure"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasNextSubProcessOnSuccess",
-        "target": "dtmi:example:SubProcess;1",
+        "schema": "dtmi:example:SubProcess;1",
         "displayName": "has next subprocess onsuccess"
       },
       {
@@ -820,15 +789,15 @@
         "displayName": "is running"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasCurrentSubProcess",
-        "target": "dtmi:example:SubProcess;1",
+        "schema": "dtmi:example:SubProcess;1",
         "displayName": "has current subprocess"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasSubProcess",
-        "target": "dtmi:example:SubProcess;1",
+        "schema": "dtmi:example:SubProcess;1",
         "displayName": "has subprocess",
         "description": "Links a Process to SubProcecess"
       }
@@ -863,29 +832,29 @@
         "description": "Indicate if a Step is Sub Process current Step, it's boolean type"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasCondition",
-        "target": "dtmi:example:Condition;1",
+        "schema": "dtmi:example:Condition;1",
         "displayName": "has condition"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasNextStep",
-        "target": "dtmi:example:Step;1",
+        "schema": "dtmi:example:Step;1",
         "displayName": "has next step",
         "description": "connects a step to its successor step"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasPreviousStep",
-        "target": "dtmi:example:Step;1",
+        "schema": "dtmi:example:Step;1",
         "displayName": "has previous step",
         "description": "connects a step to its predecessor"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasStepType",
-        "target": "dtmi:example:StepType;1",
+        "schema": "dtmi:example:StepType;1",
         "displayName": "has step type",
         "description": "Links a Step to StepType."
       }
@@ -914,11 +883,7 @@
         }
       }
     ],
-    "description": "Classification of the type of action performed in a step",
-    "individuals": [
-      "Machine",
-      "Operator"
-    ]
+    "description": "Classification of the type of action performed in a step"
   },
   {
     "@id": "dtmi:example:SubProcess;1",
@@ -938,35 +903,35 @@
         "displayName": "is current subprocess"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasCurrentStep",
-        "target": "dtmi:example:Step;1",
+        "schema": "dtmi:example:Step;1",
         "displayName": "has current step"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasEndStep",
-        "target": "dtmi:example:Step;1",
+        "schema": "dtmi:example:Step;1",
         "displayName": "has end step"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasNextSubProcess",
-        "target": "dtmi:example:SubProcess;1",
+        "schema": "dtmi:example:SubProcess;1",
         "displayName": "has next subprocess",
         "description": "Links a Subprocess to its next process"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasStartStep",
-        "target": "dtmi:example:Step;1",
+        "schema": "dtmi:example:Step;1",
         "displayName": "has start step",
         "description": "Links a Subprocess to  its initial step of subprocess"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasStep",
-        "target": "dtmi:example:Step;1",
+        "schema": "dtmi:example:Step;1",
         "displayName": "has step",
         "description": "Links a SubProcess to Step"
       }
@@ -1041,9 +1006,9 @@
     "displayName": "Command Of Interest",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasCommandKind",
-        "target": "dtmi:example:Command;1",
+        "schema": "dtmi:example:Command;1",
         "displayName": "has command kind",
         "description": "links a command of interest to its kind, a command."
       },
@@ -1155,16 +1120,16 @@
     "displayName": "Device",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasDeviceKind",
-        "target": "dtmi:example:DeviceKind;1",
+        "schema": "dtmi:example:DeviceKind;1",
         "displayName": "has device kind",
         "description": "Links a device to its kind, a device kind. Kinds of devices describe models of devices, with common properties and common states having the same value, targeting the same properties and states, common functions, and common services."
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasFunctionOfInterest",
-        "target": "dtmi:example:FunctionOfInterest;1",
+        "schema": "dtmi:example:FunctionOfInterest;1",
         "displayName": "has function of interest",
         "description": "Links a device to one of its functions of interest."
       },
@@ -1205,23 +1170,23 @@
     "displayName": "Feature of interest",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasFeatureKind",
-        "target": "dtmi:example:FeatureKind;1",
+        "schema": "dtmi:example:FeatureKind;1",
         "displayName": "has feature kind",
         "description": "links a feature of interest to its kind, a feature kind"
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasPropertyOfInterest",
-        "target": "dtmi:example:PropertyOfInterest;1",
+        "schema": "dtmi:example:PropertyOfInterest;1",
         "displayName": "has property of interest",
         "description": "Links a feature of interest to one of its properties of interest."
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasStateOfInterest",
-        "target": "dtmi:example:StateOfInterest;1",
+        "schema": "dtmi:example:StateOfInterest;1",
         "displayName": "has state of interest",
         "description": "Links a feature of interest to one of its states of interest."
       },
@@ -1263,16 +1228,16 @@
     "displayName": "Function of Interest",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasCommandOfInterest",
-        "target": "dtmi:example:CommandOfInterest;1",
+        "schema": "dtmi:example:CommandOfInterest;1",
         "displayName": "has command of interest",
         "description": "Links a function of interest to one of its commands of interest."
       },
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasFunctionKind",
-        "target": "dtmi:example:Function;1",
+        "schema": "dtmi:example:Function;1",
         "displayName": "has function kind",
         "description": "links a function of interest to its kind, a function"
       },
@@ -1455,9 +1420,9 @@
     "displayName": "Property of Interest",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasPropertyKind",
-        "target": "dtmi:example:Property;1",
+        "schema": "dtmi:example:Property;1",
         "displayName": "has property kind",
         "description": "links a property of interest to its kind, a property."
       },
@@ -1523,9 +1488,9 @@
     "displayName": "Service",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasOperation",
-        "target": "dtmi:example:Operation;1",
+        "schema": "dtmi:example:Operation;1",
         "displayName": "has operation",
         "description": "Links a service to one of its operations."
       },
@@ -1567,9 +1532,9 @@
     "displayName": "State of Interest",
     "contents": [
       {
-        "@type": "Relationship",
+        "@type": "Component",
         "name": "hasStateKind",
-        "target": "dtmi:example:State;1",
+        "schema": "dtmi:example:State;1",
         "displayName": "has state kind",
         "description": "links a state of interest to its kind, a state"
       },
@@ -1610,11 +1575,7 @@
         "description": "Links a state value to the state or state of interest it is a value of."
       }
     ],
-    "description": "Describes the value for a state. The state value is optionally linked the states or states of interest it is a value of (OP saref:isValueOfState).",
-    "individuals": [
-      "CLOSE",
-      "OPEN"
-    ]
+    "description": "Describes the value for a state. The state value is optionally linked the states or states of interest it is a value of (OP saref:isValueOfState)."
   },
   {
     "@id": "dtmi:example:Task;1",
