@@ -7,7 +7,21 @@
     "comment": "Burner Air Supply  Air Sensor"
   },
   {
+    "$dtId": "sensorFlowAir_12",
+    "$metadata": {
+      "$model": "dtmi:example:AirFlowSensor;1"
+    },
+    "comment": "Burner Air Supply  Air Sensor"
+  },
+  {
     "$dtId": "airSupply_10",
+    "$metadata": {
+      "$model": "dtmi:example:AirSupply;1"
+    },
+    "comment": "Burner Air Supply"
+  },
+  {
+    "$dtId": "airSupply_12",
     "$metadata": {
       "$model": "dtmi:example:AirSupply;1"
     },
@@ -20,7 +34,20 @@
     }
   },
   {
+    "$dtId": "burner_12",
+    "$metadata": {
+      "$model": "dtmi:example:Burner;1"
+    }
+  },
+  {
     "$dtId": "sensorCastingStatusFurnace_10",
+    "$metadata": {
+      "$model": "dtmi:example:CastingStatusSensor;1"
+    },
+    "comment": "Sensor that Obserse Casting Status"
+  },
+  {
+    "$dtId": "sensorCastingStatusFurnace_12",
     "$metadata": {
       "$model": "dtmi:example:CastingStatusSensor;1"
     },
@@ -33,13 +60,32 @@
     }
   },
   {
+    "$dtId": "castingSystem_12",
+    "$metadata": {
+      "$model": "dtmi:example:CastingSystem;1"
+    }
+  },
+  {
     "$dtId": "coolingSystem_10",
     "$metadata": {
       "$model": "dtmi:example:CoolingSystem;1"
     }
   },
   {
+    "$dtId": "coolingSystem_12",
+    "$metadata": {
+      "$model": "dtmi:example:CoolingSystem;1"
+    }
+  },
+  {
     "$dtId": "door_10",
+    "$metadata": {
+      "$model": "dtmi:example:Door;1"
+    },
+    "comment": "it'is instance of Furnace Door"
+  },
+  {
+    "$dtId": "door_12",
     "$metadata": {
       "$model": "dtmi:example:Door;1"
     },
@@ -53,7 +99,21 @@
     "comment": "it's an Instance of a Furnace "
   },
   {
+    "$dtId": "furnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:Furnace;1"
+    },
+    "comment": "it's an Instance of a Furnace "
+  },
+  {
     "$dtId": "sensorFlowGas_10",
+    "$metadata": {
+      "$model": "dtmi:example:GasFlowSensor;1"
+    },
+    "comment": "Burner Gas Supply Sensor"
+  },
+  {
+    "$dtId": "sensorFlowGas_12",
     "$metadata": {
       "$model": "dtmi:example:GasFlowSensor;1"
     },
@@ -67,7 +127,20 @@
     "comment": "Burner Gas Supply"
   },
   {
+    "$dtId": "gasSupply_12",
+    "$metadata": {
+      "$model": "dtmi:example:GasSupply;1"
+    },
+    "comment": "Burner Gas Supply"
+  },
+  {
     "$dtId": "castingSystem_10",
+    "$metadata": {
+      "$model": "dtmi:example:IndustrySystem;1"
+    }
+  },
+  {
+    "$dtId": "castingSystem_12",
     "$metadata": {
       "$model": "dtmi:example:IndustrySystem;1"
     }
@@ -79,7 +152,19 @@
     }
   },
   {
+    "$dtId": "coolingSystem_12",
+    "$metadata": {
+      "$model": "dtmi:example:IndustrySystem;1"
+    }
+  },
+  {
     "$dtId": "rawMaterialFeederSystem_10",
+    "$metadata": {
+      "$model": "dtmi:example:IndustrySystem;1"
+    }
+  },
+  {
+    "$dtId": "rawMaterialFeederSystem_12",
     "$metadata": {
       "$model": "dtmi:example:IndustrySystem;1"
     }
@@ -91,15 +176,48 @@
     }
   },
   {
+    "$dtId": "lining_12",
+    "$metadata": {
+      "$model": "dtmi:example:Lining;1"
+    }
+  },
+  {
     "$dtId": "stateOpenCloseDoor_10",
     "$metadata": {
       "$model": "dtmi:example:OpenCloseState;1"
     },
-    "hasTag": "fce_door_closed",
+    "hasTag": [
+      "fce_door_closed",
+      "fce_door_open_reason"
+    ],
+    "hasOpenReason": "Unknown",
+    "hasStateValue": "CLOSE",
+    "isStateOf": "door_10",
+    "comment": "Open Close State of Furnace Door"
+  },
+  {
+    "$dtId": "stateOpenCloseDoor_12",
+    "$metadata": {
+      "$model": "dtmi:example:OpenCloseState;1"
+    },
+    "hasTag": [
+      "fce_door_closed",
+      "fce_door_open_reason"
+    ],
+    "hasOpenReason": "Unknown",
+    "hasStateValue": "CLOSE",
+    "isStateOf": "door_12",
     "comment": "Open Close State of Furnace Door"
   },
   {
     "$dtId": "sensorOxygen_10",
+    "$metadata": {
+      "$model": "dtmi:example:OxygenSensor;1"
+    },
+    "comment": "Burner Air Supply Oxygen sensor"
+  },
+  {
+    "$dtId": "sensorOxygen_12",
     "$metadata": {
       "$model": "dtmi:example:OxygenSensor;1"
     },
@@ -113,7 +231,21 @@
     "comment": "Sensor Power of Power Percent of Tank Bath"
   },
   {
+    "$dtId": "sensorPowerPercentBathTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PowerSensor;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Bath"
+  },
+  {
     "$dtId": "sensorPowerPercentRoofTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:PowerSensor;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Roof"
+  },
+  {
+    "$dtId": "sensorPowerPercentRoofTank_12",
     "$metadata": {
       "$model": "dtmi:example:PowerSensor;1"
     },
@@ -126,7 +258,20 @@
     }
   },
   {
+    "$dtId": "sensorPressureFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:PressureSensor;1"
+    }
+  },
+  {
     "$dtId": "rawMaterialBatch_10",
+    "$metadata": {
+      "$model": "dtmi:example:RawMaterialBatch;1"
+    },
+    "comment": "Raw Material in Tank"
+  },
+  {
+    "$dtId": "rawMaterialBatch_12",
     "$metadata": {
       "$model": "dtmi:example:RawMaterialBatch;1"
     },
@@ -139,7 +284,20 @@
     }
   },
   {
+    "$dtId": "rawMaterialFeederSystem_12",
+    "$metadata": {
+      "$model": "dtmi:example:RawMaterialFeederSystem;1"
+    }
+  },
+  {
     "$dtId": "tank_10",
+    "$metadata": {
+      "$model": "dtmi:example:Tank;1"
+    },
+    "comment": "it's an instance of a Furnace Tank"
+  },
+  {
+    "$dtId": "tank_12",
     "$metadata": {
       "$model": "dtmi:example:Tank;1"
     },
@@ -153,7 +311,21 @@
     "comment": "Sensor Tempetature of Tank Bath"
   },
   {
+    "$dtId": "sensorTemperatureBathTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:TemperatureSensor;1"
+    },
+    "comment": "Sensor Tempetature of Tank Bath"
+  },
+  {
     "$dtId": "sensorTemperatureExhaustFurnace_10",
+    "$metadata": {
+      "$model": "dtmi:example:TemperatureSensor;1"
+    },
+    "comment": "Sensor Tempetature of Furnace"
+  },
+  {
+    "$dtId": "sensorTemperatureExhaustFurnace_12",
     "$metadata": {
       "$model": "dtmi:example:TemperatureSensor;1"
     },
@@ -167,39 +339,20 @@
     "comment": "Sensor Tempetature of Tank Root"
   },
   {
-    "$dtId": "Dimensionless",
+    "$dtId": "sensorTemperatureRoofTank_12",
     "$metadata": {
-      "$model": "dtmi:example:DimensionlessProperty;1"
+      "$model": "dtmi:example:TemperatureSensor;1"
     },
-    "description": "In dimensional analysis, a dimensionless quantity or quantity of dimension one is a quantity without an associated physical dimension. It is thus a \"pure\" number, and as such always has a dimension of 1. Dimensionless quantities are widely used in mathematics, physics, engineering, economics, and in everyday life (such as in counting). Numerous well-known quantities, such as $\\pi$, $\\epsilon$, and $\\psi$, are dimensionless. By contrast, non-dimensionless quantities are measured in units of length, area, time, etc. Dimensionless quantities are often defined as products or ratios of quantities that are not dimensionless, but whose dimensions cancel out when their powers are multiplied.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Dimensionless_quantity",
-    "informativeReference": "http://en.wikipedia.org/wiki/Dimensionless_quantity",
-    "symbol": "U",
-    "comment": "Applicable units are those of quantitykind:Dimensionless",
-    "label": "Dimensionless"
-  },
-  {
-    "$dtId": "DimensionlessRatio",
-    "$metadata": {
-      "$model": "dtmi:example:DimensionlessRatioProperty;1"
-    },
-    "comment": "Applicable units are those of quantitykind:DimensionlessRatio",
-    "label": "Dimensionless Ratio"
-  },
-  {
-    "$dtId": "ElectricCurrent",
-    "$metadata": {
-      "$model": "dtmi:example:ElectricCurrentProperty;1"
-    },
-    "description": "\n  The quantity kind $\\textit{Electric Current}$ is the flow (movement) of electric charge. \n  The amount of electric current through some surface, for example, a section through a copper conductor,\n   is defined as the amount of electric charge flowing through that surface over time. \n  Current is a scalar-valued quantity. \n  Electric current is one of the base quantities in the International System of Quantities, ISQ,\n   on which the International System of Units, SI, is based.\n  ",
-    "dbpediaMatch": "http://dbpedia.org/resource/Electric_current",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec61987/iec61987.nsf/ListsOfUnitsAllVersions/0112-2---62720%23UAD039",
-    "symbol": "I",
-    "comment": "Applicable units are those of quantitykind:ElectricCurrent",
-    "label": "electric current"
+    "comment": "Sensor Tempetature of Tank Root"
   },
   {
     "$dtId": "eventFunctionCasting_10",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionCasting_12",
     "$metadata": {
       "$model": "dtmi:example:EventFunction;1"
     }
@@ -211,7 +364,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionHolding_12",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionLaboratoryAnalysis_10",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionLaboratoryAnalysis_12",
     "$metadata": {
       "$model": "dtmi:example:EventFunction;1"
     }
@@ -223,7 +388,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionLoadingScrapAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionLoadingScrap_10",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionLoadingScrap_12",
     "$metadata": {
       "$model": "dtmi:example:EventFunction;1"
     }
@@ -235,7 +412,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionPouringAluminiumAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionPouringAluminium_10",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionPouringAluminium_12",
     "$metadata": {
       "$model": "dtmi:example:EventFunction;1"
     }
@@ -247,7 +436,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionPouringMetalsAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionPouringMetals_10",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionPouringMetals_12",
     "$metadata": {
       "$model": "dtmi:example:EventFunction;1"
     }
@@ -259,7 +460,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionPreheating_12",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionSampling_10",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionSampling_12",
     "$metadata": {
       "$model": "dtmi:example:EventFunction;1"
     }
@@ -271,689 +484,1112 @@
     }
   },
   {
+    "$dtId": "eventFunctionSkimming_12",
+    "$metadata": {
+      "$model": "dtmi:example:EventFunction;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionStirring_10",
     "$metadata": {
       "$model": "dtmi:example:EventFunction;1"
     }
   },
   {
-    "$dtId": "NUM",
+    "$dtId": "eventFunctionStirring_12",
     "$metadata": {
-      "$model": "dtmi:example:NumberUnit;1"
-    },
-    "hasSymbol": "#",
-    "description": "\"Number\" is a unit for  'Dimensionless' expressed as (\\#$.",
-    "symbol": "#",
-    "label": "Number"
-  },
-  {
-    "$dtId": "PERCENT",
-    "$metadata": {
-      "$model": "dtmi:example:PercentUnit;1"
-    },
-    "hasSymbol": "%",
-    "description": "\"Percent\" is a unit for  'Dimensionless Ratio' expressed as $\\%$.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Percentage",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA000",
-    "symbol": "%",
-    "label": "Percent"
-  },
-  {
-    "$dtId": "Power",
-    "$metadata": {
-      "$model": "dtmi:example:PowerProperty;1"
-    },
-    "description": "Power is the rate at which work is performed or energy is transmitted, or the amount of energy required or expended for a given unit of time. As a rate of change of work done or the energy of a subsystem, power is: $P = W/t$, where $P$ is power, $W$ is work and {t} is time.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Power",
-    "informativeReference": "http://en.wikipedia.org/wiki/Power_%28physics%29",
-    "symbol": "P",
-    "comment": "Applicable units are those of quantitykind:Power",
-    "label": "power"
-  },
-  {
-    "$dtId": "W",
-    "$metadata": {
-      "$model": "dtmi:example:PowerUnit;1"
-    },
-    "hasSymbol": "W",
-    "description": "The SI unit of power. Power is the rate at which work is done, or (equivalently) the rate at which energy is expended. One watt is equal to a power rate of one joule of work per second of time. This unit is used both in mechanics and in electricity, so it links the mechanical and electrical units to one another. In mechanical terms, one watt equals about 0.001 341 02 horsepower (hp) or 0.737 562 foot-pound per second (lbf/s). In electrical terms, one watt is the power produced by a current of one ampere flowing through an electric potential of one volt. The name of the unit honors James Watt (1736-1819), the British engineer whose improvements to the steam engine are often credited with igniting the Industrial Revolution.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Watt",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA306",
-    "symbol": "W",
-    "label": "watt"
-  },
-  {
-    "$dtId": "Pressure",
-    "$metadata": {
-      "$model": "dtmi:example:PressureProperty;1"
-    },
-    "description": "Pressure is an effect which occurs when a force is applied on a surface. Pressure is the amount of force acting on a unit area. Pressure is distinct from stress, as the former is the ratio of the component of force normal to a surface to the surface area. Stress is a tensor that relates the vector force to the vector area.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Pressure",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec61987/iec61987.nsf/ListsOfUnitsAllVersions/0112-2---62720%23UAD142",
-    "comment": "Applicable units are those of quantitykind:ForcePerArea",
-    "label": "pressure"
-  },
-  {
-    "$dtId": "MilliBAR",
-    "$metadata": {
-      "$model": "dtmi:example:PressureUnit;1"
-    },
-    "hasSymbol": "mbar",
-    "description": "The bar is a non-SI unit of pressure, defined by the IUPAC as exactly equal to 100,000 Pa. It is about equal to the atmospheric pressure on Earth at sea level, and since 1982 the IUPAC has recommended that the standard for atmospheric pressure should be harmonized to $100,000 Pa = 1 bar \\approx 750.0616827 Torr$. Units derived from the bar are the megabar (symbol: Mbar), kilobar (symbol: kbar), decibar (symbol: dbar), centibar (symbol: cbar), and millibar (symbol: mbar or mb). They are not SI or cgs units, but they are accepted for use with the SI.",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA810",
-    "symbol": "mbar",
-    "label": "Millibar"
-  },
-  {
-    "$dtId": "Speed",
-    "$metadata": {
-      "$model": "dtmi:example:SpeedProperty;1"
-    },
-    "description": "Speed is the magnitude of velocity.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Speed",
-    "comment": "Applicable units are those of quantitykind:Speed",
-    "label": "Speed"
-  },
-  {
-    "$dtId": "Temperature",
-    "$metadata": {
-      "$model": "dtmi:example:TemperatureProperty;1"
-    },
-    "description": "Temperature is a physical property of matter that quantitatively expresses the common notions of hot and cold. Objects of low temperature are cold, while various degrees of higher temperatures are referred to as warm or hot. Heat spontaneously flows from bodies of a higher temperature to bodies of lower temperature, at a rate that increases with the temperature difference and the thermal conductivity.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Temperature",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec61987/iec61987.nsf/ListsOfUnitsAllVersions/0112-2---62720%23UAD374",
-    "comment": "Applicable units are those of quantitykind:Temperature",
-    "label": "Temperature"
-  },
-  {
-    "$dtId": "DEG_C",
-    "$metadata": {
-      "$model": "dtmi:example:TemperatureUnit;1"
-    },
-    "hasSymbol": "\u00b0C",
-    "description": "\n  The unit $\\textit{Celsius}$, also known as centigrade, is a scale and unit of measurement for temperature. \n  It can refer to a specific temperature on the Celsius scale as well as a unit to indicate a temperature interval, \n  a difference between two temperatures or an uncertainty. \n  This definition fixes the magnitude of both the degree Celsius and the kelvin as precisely 1 part \n  in 273.16 (approximately 0.00366) of the difference between absolute zero and the triple point of water. \n  Thus, it sets the magnitude of one degree Celsius and that of one kelvin as exactly the same. \n  Additionally, it establishes the difference between the two scales' null points as being precisely $273.15^{\\circ}\\text{C}$.\n  ",
-    "dbpediaMatch": "http://dbpedia.org/resource/Celsius",
-    "expression": "$degC$",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA033",
-    "symbol": "\u00b0C",
-    "label": "degree Celsius"
-  },
-  {
-    "$dtId": "K",
-    "$metadata": {
-      "$model": "dtmi:example:TemperatureUnit;1"
-    },
-    "hasSymbol": "K",
-    "description": "\n  The unit $\\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin. \n  One kelvin represents the same temperature difference as one degree Celsius. \n  In 1967 the General Conference on Weights and Measures defined the temperature of the triple point of water\n   (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins. \n  Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius. \n  The kelvin equals exactly 1.8 degrees Fahrenheit. \n  The unit is named for the British mathematician and physicist William Thomson (1824-1907),\n   later known as Lord Kelvin after he was named Baron Kelvin of Largs.\n  ",
-    "dbpediaMatch": "http://dbpedia.org/resource/Kelvin",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA185",
-    "symbol": "K",
-    "label": "kelvin"
-  },
-  {
-    "$dtId": "VolumeFlowRate",
-    "$metadata": {
-      "$model": "dtmi:example:VolumeFlowRateProperty;1"
-    },
-    "description": "Volumetric Flow Rate, (also known as volume flow rate, rate of fluid flow or volume velocity) is the volume of fluid which passes through a given surface per unit time.",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec61987/iec61987.nsf/ListsOfUnitsAllVersions/0112-2---62720%23UAD239",
-    "symbol": "q_V",
-    "comment": "Applicable units are those of quantitykind:VolumeFlowRate",
-    "label": "Volume Flow Rate"
-  },
-  {
-    "$dtId": "CentiM3-PER-HR",
-    "$metadata": {
-      "$model": "dtmi:example:VolumeFlowRateUnit;1"
-    },
-    "hasSymbol": "cm\u00b3/h",
-    "description": "0,000 001-fold of the power of the SI base unit metre with the exponent 3 divided by the unit hour",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA391",
-    "symbol": "cm\u00b3/h",
-    "label": "Cubic Centimetre per Hour"
+      "$model": "dtmi:example:EventFunction;1"
+    }
   },
   {
     "$dtId": "conditionCasting_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionCasting_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionHolding_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionHolding_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionLaboratoryAnalysis_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionLaboratoryAnalysis_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionLoadingScrapAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionLoadingScrapAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionLoadingScrap_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionLoadingScrap_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionPouringAluminiumAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionPouringAluminiumAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionPouringAluminium_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionPouringAluminium_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionPouringMetalsAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionPouringMetalsAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionPouringMetals_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionPouringMetals_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionPreheating_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionPreheating_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionSampling_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionSampling_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionSkimming_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionSkimming_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "conditionStirring_10",
     "$metadata": {
       "$model": "dtmi:example:Condition;1"
     },
-    "conditionAchieved": false,
-    "comment": "Condition of Step"
+    "comment": "Condition of Step",
+    "conditionAchieved": false
+  },
+  {
+    "$dtId": "conditionStirring_12",
+    "$metadata": {
+      "$model": "dtmi:example:Condition;1"
+    },
+    "comment": "Condition of Step",
+    "conditionAchieved": false
   },
   {
     "$dtId": "subProcessSampleCheck_10",
     "$metadata": {
       "$model": "dtmi:example:ConditionalSubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Process of sample collection and testing",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 4.0,
-    "isCurrentSubProcess": false,
-    "comment": "Process of sample collection and testing"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessSampleCheck_12",
+    "$metadata": {
+      "$model": "dtmi:example:ConditionalSubProcess;1"
+    },
+    "comment": "Process of sample collection and testing",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 4.0,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "stepLaboratoryAnalysis_10",
     "$metadata": {
       "$model": "dtmi:example:IterativeStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Chemical and physical testing of samples",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 9.0,
     "isCurrentStep": false,
     "isIterationCompleted": false,
-    "iterationCount": 0,
-    "comment": "Chemical and physical testing of samples"
+    "iterationCount": 0
+  },
+  {
+    "$dtId": "stepLaboratoryAnalysis_12",
+    "$metadata": {
+      "$model": "dtmi:example:IterativeStep;1"
+    },
+    "comment": "Chemical and physical testing of samples",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 9.0,
+    "isCurrentStep": false,
+    "isIterationCompleted": false,
+    "iterationCount": 0
   },
   {
     "$dtId": "stepCastingStep_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Step of transfer of final metal to casting system",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 13.0,
-    "isCurrentStep": false,
-    "comment": "Step of transfer of final metal to casting system"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepCastingStep_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Step of transfer of final metal to casting system",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 13.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepHolding_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Maintaining stable temperature for homogenization",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 7.0,
-    "isCurrentStep": false,
-    "comment": "Maintaining stable temperature for homogenization"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepHolding_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Maintaining stable temperature for homogenization",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 7.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepLoadingScrapAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Introduction of recycled aluminium after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 10.0,
-    "isCurrentStep": false,
-    "comment": "Introduction of recycled aluminium after a laboratory analysis"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepLoadingScrapAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Introduction of recycled aluminium after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 10.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepLoadingScrap_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Introduction of recycled aluminium",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 3.0,
-    "isCurrentStep": false,
-    "comment": "Introduction of recycled aluminium"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepLoadingScrap_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Introduction of recycled aluminium",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 3.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPouringAluminiumAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Addition of primary liquid aluminium after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 11.0,
-    "isCurrentStep": false,
-    "comment": "Addition of primary liquid aluminium after a laboratory analysis"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPouringAluminiumAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Addition of primary liquid aluminium after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 11.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPouringAluminium_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Addition of primary liquid aluminium",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 4.0,
-    "isCurrentStep": false,
-    "comment": "Addition of primary liquid aluminium"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPouringAluminium_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Addition of primary liquid aluminium",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 4.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPouringMetalsAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Addition of alloying elements after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 12.0,
-    "isCurrentStep": false,
-    "comment": "Addition of alloying elements after a laboratory analysis"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPouringMetalsAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Addition of alloying elements after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 12.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPouringMetals_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Addition of alloying elements",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 5.0,
-    "isCurrentStep": false,
-    "comment": "Addition of alloying elements"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPouringMetals_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Addition of alloying elements",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 5.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPreheating_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Bringing furnace to operational temperature",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 1.0,
-    "isCurrentStep": false,
-    "comment": "Bringing furnace to operational temperature"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPreheating_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Bringing furnace to operational temperature",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 1.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepSampling_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Collection of material samples",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 8.0,
-    "isCurrentStep": false,
-    "comment": "Collection of material samples"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepSampling_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Collection of material samples",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 8.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepSkimming_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Removal of oxidized material (dross) from surface",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 2.0,
-    "isCurrentStep": false,
-    "comment": "Removal of oxidized material (dross) from surface"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepSkimming_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Removal of oxidized material (dross) from surface",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 2.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepStirring_10",
     "$metadata": {
       "$model": "dtmi:example:NormalStep;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Mechanical mixing to ensure uniform composition",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 6.0,
-    "isCurrentStep": false,
-    "comment": "Mechanical mixing to ensure uniform composition"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepStirring_12",
+    "$metadata": {
+      "$model": "dtmi:example:NormalStep;1"
+    },
+    "comment": "Mechanical mixing to ensure uniform composition",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 6.0,
+    "isCurrentStep": false
   },
   {
     "$dtId": "processFurnace_10",
     "$metadata": {
       "$model": "dtmi:example:Process;1"
     },
+    "comment": "Overall aluminum furnace process managing the complete material processing cycle",
     "hasAlloyCode": 0,
     "hasAlloyCodeId": 0,
     "hasBatchId": 0,
     "hasBatchNo": "",
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
-    "isRunning": false,
-    "comment": "Overall aluminum furnace process managing the complete material processing cycle"
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
+    "isRunning": false
+  },
+  {
+    "$dtId": "processFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:Process;1"
+    },
+    "comment": "Overall aluminum furnace process managing the complete material processing cycle",
+    "hasAlloyCode": 0,
+    "hasAlloyCodeId": 0,
+    "hasBatchId": 0,
+    "hasBatchNo": "",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "isRunning": false
   },
   {
     "$dtId": "SubProcessCasting_10",
     "$metadata": {
       "$model": "dtmi:example:SequentialSubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Transfer of final metal to casting system",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 6.0,
-    "isCurrentSubProcess": false,
-    "comment": "Transfer of final metal to casting system"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "SubProcessCasting_12",
+    "$metadata": {
+      "$model": "dtmi:example:SequentialSubProcess;1"
+    },
+    "comment": "Transfer of final metal to casting system",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 6.0,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "subProcessAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:SequentialSubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Correction of alloy composition based on test results",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 5.0,
-    "isCurrentSubProcess": false,
-    "comment": "Correction of alloy composition based on test results"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:SequentialSubProcess;1"
+    },
+    "comment": "Correction of alloy composition based on test results",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 5.0,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "subProcessMaterialLoading_10",
     "$metadata": {
       "$model": "dtmi:example:SequentialSubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Process of loading various materials into the furnace",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 2.0,
-    "isCurrentSubProcess": false,
-    "comment": "Process of loading various materials into the furnace"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessMaterialLoading_12",
+    "$metadata": {
+      "$model": "dtmi:example:SequentialSubProcess;1"
+    },
+    "comment": "Process of loading various materials into the furnace",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 2.0,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "subProcessMelting_10",
     "$metadata": {
       "$model": "dtmi:example:SequentialSubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Process of transforming solid materials to liquid",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 3.0,
-    "isCurrentSubProcess": false,
-    "comment": "Process of transforming solid materials to liquid"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessMelting_12",
+    "$metadata": {
+      "$model": "dtmi:example:SequentialSubProcess;1"
+    },
+    "comment": "Process of transforming solid materials to liquid",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 3.0,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "subProcessPreparation_10",
     "$metadata": {
       "$model": "dtmi:example:SequentialSubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Initial setup of furnace for a new batch",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 1.0,
-    "isCurrentSubProcess": false,
-    "comment": "Initial setup of furnace for a new batch"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessPreparation_12",
+    "$metadata": {
+      "$model": "dtmi:example:SequentialSubProcess;1"
+    },
+    "comment": "Initial setup of furnace for a new batch",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 1.0,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "stepCastingStep_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Step of transfer of final metal to casting system",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 13,
-    "isCurrentStep": false,
-    "comment": "Step of transfer of final metal to casting system"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepCastingStep_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Step of transfer of final metal to casting system",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 13,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepHolding_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Maintaining stable temperature for homogenization",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 7,
-    "isCurrentStep": false,
-    "comment": "Maintaining stable temperature for homogenization"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepHolding_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Maintaining stable temperature for homogenization",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 7,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepLaboratoryAnalysis_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Chemical and physical testing of samples",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 9,
     "isCurrentStep": false,
     "isIterationCompleted": false,
-    "iterationCount": 0,
-    "comment": "Chemical and physical testing of samples"
+    "iterationCount": 0
+  },
+  {
+    "$dtId": "stepLaboratoryAnalysis_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Chemical and physical testing of samples",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 9,
+    "isCurrentStep": false,
+    "isIterationCompleted": false,
+    "iterationCount": 0
   },
   {
     "$dtId": "stepLoadingScrapAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Introduction of recycled aluminium after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 10,
-    "isCurrentStep": false,
-    "comment": "Introduction of recycled aluminium after a laboratory analysis"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepLoadingScrapAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Introduction of recycled aluminium after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 10,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepLoadingScrap_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Introduction of recycled aluminium",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 3,
-    "isCurrentStep": false,
-    "comment": "Introduction of recycled aluminium"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepLoadingScrap_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Introduction of recycled aluminium",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 3,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPouringAluminiumAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Addition of primary liquid aluminium after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 11,
-    "isCurrentStep": false,
-    "comment": "Addition of primary liquid aluminium after a laboratory analysis"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPouringAluminiumAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Addition of primary liquid aluminium after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 11,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPouringAluminium_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Addition of primary liquid aluminium",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 4,
-    "isCurrentStep": false,
-    "comment": "Addition of primary liquid aluminium"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPouringAluminium_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Addition of primary liquid aluminium",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 4,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPouringMetalsAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Addition of alloying elements after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 12,
-    "isCurrentStep": false,
-    "comment": "Addition of alloying elements after a laboratory analysis"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPouringMetalsAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Addition of alloying elements after a laboratory analysis",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 12,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPouringMetals_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Addition of alloying elements",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 5,
-    "isCurrentStep": false,
-    "comment": "Addition of alloying elements"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPouringMetals_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Addition of alloying elements",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 5,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepPreheating_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Bringing furnace to operational temperature",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 1,
-    "isCurrentStep": false,
-    "comment": "Bringing furnace to operational temperature"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepPreheating_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Bringing furnace to operational temperature",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 1,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepSampling_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Collection of material samples",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 8,
-    "isCurrentStep": false,
-    "comment": "Collection of material samples"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepSampling_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Collection of material samples",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 8,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepSkimming_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Removal of oxidized material (dross) from surface",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 2,
-    "isCurrentStep": false,
-    "comment": "Removal of oxidized material (dross) from surface"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepSkimming_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Removal of oxidized material (dross) from surface",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 2,
+    "isCurrentStep": false
   },
   {
     "$dtId": "stepStirring_10",
     "$metadata": {
       "$model": "dtmi:example:Step;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Mechanical mixing to ensure uniform composition",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasStepId": 6,
-    "isCurrentStep": false,
-    "comment": "Mechanical mixing to ensure uniform composition"
+    "isCurrentStep": false
+  },
+  {
+    "$dtId": "stepStirring_12",
+    "$metadata": {
+      "$model": "dtmi:example:Step;1"
+    },
+    "comment": "Mechanical mixing to ensure uniform composition",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStepId": 6,
+    "isCurrentStep": false
   },
   {
     "$dtId": "SubProcessCasting_10",
     "$metadata": {
       "$model": "dtmi:example:SubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Transfer of final metal to casting system",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 6,
-    "isCurrentSubProcess": false,
-    "comment": "Transfer of final metal to casting system"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "SubProcessCasting_12",
+    "$metadata": {
+      "$model": "dtmi:example:SubProcess;1"
+    },
+    "comment": "Transfer of final metal to casting system",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 6,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "subProcessAdjustment_10",
     "$metadata": {
       "$model": "dtmi:example:SubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Correction of alloy composition based on test results",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 5,
-    "isCurrentSubProcess": false,
-    "comment": "Correction of alloy composition based on test results"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:SubProcess;1"
+    },
+    "comment": "Correction of alloy composition based on test results",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 5,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "subProcessMaterialLoading_10",
     "$metadata": {
       "$model": "dtmi:example:SubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Process of loading various materials into the furnace",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 2,
-    "isCurrentSubProcess": false,
-    "comment": "Process of loading various materials into the furnace"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessMaterialLoading_12",
+    "$metadata": {
+      "$model": "dtmi:example:SubProcess;1"
+    },
+    "comment": "Process of loading various materials into the furnace",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 2,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "subProcessMelting_10",
     "$metadata": {
       "$model": "dtmi:example:SubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Process of transforming solid materials to liquid",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 3,
-    "isCurrentSubProcess": false,
-    "comment": "Process of transforming solid materials to liquid"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessMelting_12",
+    "$metadata": {
+      "$model": "dtmi:example:SubProcess;1"
+    },
+    "comment": "Process of transforming solid materials to liquid",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 3,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "subProcessPreparation_10",
     "$metadata": {
       "$model": "dtmi:example:SubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Initial setup of furnace for a new batch",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 1,
-    "isCurrentSubProcess": false,
-    "comment": "Initial setup of furnace for a new batch"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessPreparation_12",
+    "$metadata": {
+      "$model": "dtmi:example:SubProcess;1"
+    },
+    "comment": "Initial setup of furnace for a new batch",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 1,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "subProcessSampleCheck_10",
     "$metadata": {
       "$model": "dtmi:example:SubProcess;1"
     },
-    "hasEndTimestamp": "2025-05-26T20:34:34.553731",
-    "hasStartTimestamp": "2025-05-26T20:34:34.553731",
+    "comment": "Process of sample collection and testing",
+    "hasEndTimestamp": "2025-05-28T17:06:09.350029",
+    "hasStartTimestamp": "2025-05-28T17:06:09.350029",
     "hasSubProcessId": 4,
-    "isCurrentSubProcess": false,
-    "comment": "Process of sample collection and testing"
+    "isCurrentSubProcess": false
+  },
+  {
+    "$dtId": "subProcessSampleCheck_12",
+    "$metadata": {
+      "$model": "dtmi:example:SubProcess;1"
+    },
+    "comment": "Process of sample collection and testing",
+    "hasEndTimestamp": "2025-05-28T17:06:10.154653",
+    "hasStartTimestamp": "2025-05-28T17:06:10.154653",
+    "hasSubProcessId": 4,
+    "isCurrentSubProcess": false
   },
   {
     "$dtId": "airSupply_10",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Burner Air Supply"
+  },
+  {
+    "$dtId": "airSupply_12",
     "$metadata": {
       "$model": "dtmi:example:Device;1"
     },
@@ -966,7 +1602,20 @@
     }
   },
   {
+    "$dtId": "burner_12",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    }
+  },
+  {
     "$dtId": "door_10",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "it'is instance of Furnace Door"
+  },
+  {
+    "$dtId": "door_12",
     "$metadata": {
       "$model": "dtmi:example:Device;1"
     },
@@ -980,7 +1629,21 @@
     "comment": "it's an Instance of a Furnace "
   },
   {
+    "$dtId": "furnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "it's an Instance of a Furnace "
+  },
+  {
     "$dtId": "gasSupply_10",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Burner Gas Supply"
+  },
+  {
+    "$dtId": "gasSupply_12",
     "$metadata": {
       "$model": "dtmi:example:Device;1"
     },
@@ -993,7 +1656,20 @@
     }
   },
   {
+    "$dtId": "lining_12",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    }
+  },
+  {
     "$dtId": "sensorCastingStatusFurnace_10",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Sensor that Obserse Casting Status"
+  },
+  {
+    "$dtId": "sensorCastingStatusFurnace_12",
     "$metadata": {
       "$model": "dtmi:example:Device;1"
     },
@@ -1007,7 +1683,21 @@
     "comment": "Burner Air Supply  Air Sensor"
   },
   {
+    "$dtId": "sensorFlowAir_12",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Burner Air Supply  Air Sensor"
+  },
+  {
     "$dtId": "sensorFlowGas_10",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Burner Gas Supply Sensor"
+  },
+  {
+    "$dtId": "sensorFlowGas_12",
     "$metadata": {
       "$model": "dtmi:example:Device;1"
     },
@@ -1021,7 +1711,21 @@
     "comment": "Burner Air Supply Oxygen sensor"
   },
   {
+    "$dtId": "sensorOxygen_12",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Burner Air Supply Oxygen sensor"
+  },
+  {
     "$dtId": "sensorPowerPercentBathTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Bath"
+  },
+  {
+    "$dtId": "sensorPowerPercentBathTank_12",
     "$metadata": {
       "$model": "dtmi:example:Device;1"
     },
@@ -1035,13 +1739,33 @@
     "comment": "Sensor Power of Power Percent of Tank Roof"
   },
   {
+    "$dtId": "sensorPowerPercentRoofTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Roof"
+  },
+  {
     "$dtId": "sensorPressureFurnace_10",
     "$metadata": {
       "$model": "dtmi:example:Device;1"
     }
   },
   {
+    "$dtId": "sensorPressureFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    }
+  },
+  {
     "$dtId": "sensorTemperatureBathTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Sensor Tempetature of Tank Bath"
+  },
+  {
+    "$dtId": "sensorTemperatureBathTank_12",
     "$metadata": {
       "$model": "dtmi:example:Device;1"
     },
@@ -1055,7 +1779,21 @@
     "comment": "Sensor Tempetature of Furnace"
   },
   {
+    "$dtId": "sensorTemperatureExhaustFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Sensor Tempetature of Furnace"
+  },
+  {
     "$dtId": "sensorTemperatureRoofTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "Sensor Tempetature of Tank Root"
+  },
+  {
+    "$dtId": "sensorTemperatureRoofTank_12",
     "$metadata": {
       "$model": "dtmi:example:Device;1"
     },
@@ -1069,7 +1807,21 @@
     "comment": "it's an instance of a Furnace Tank"
   },
   {
+    "$dtId": "tank_12",
+    "$metadata": {
+      "$model": "dtmi:example:Device;1"
+    },
+    "comment": "it's an instance of a Furnace Tank"
+  },
+  {
     "$dtId": "airSupply_10",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Burner Air Supply"
+  },
+  {
+    "$dtId": "airSupply_12",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     },
@@ -1082,13 +1834,32 @@
     }
   },
   {
+    "$dtId": "burner_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    }
+  },
+  {
     "$dtId": "coolingSystem_10",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     }
   },
   {
+    "$dtId": "coolingSystem_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    }
+  },
+  {
     "$dtId": "door_10",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "it'is instance of Furnace Door"
+  },
+  {
+    "$dtId": "door_12",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     },
@@ -1102,7 +1873,21 @@
     "comment": "it's an Instance of a Furnace "
   },
   {
+    "$dtId": "furnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "it's an Instance of a Furnace "
+  },
+  {
     "$dtId": "gasSupply_10",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Burner Gas Supply"
+  },
+  {
+    "$dtId": "gasSupply_12",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     },
@@ -1115,7 +1900,20 @@
     }
   },
   {
+    "$dtId": "lining_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    }
+  },
+  {
     "$dtId": "rawMaterialBatch_10",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Raw Material in Tank"
+  },
+  {
+    "$dtId": "rawMaterialBatch_12",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     },
@@ -1129,7 +1927,21 @@
     "comment": "Sensor that Obserse Casting Status"
   },
   {
+    "$dtId": "sensorCastingStatusFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Sensor that Obserse Casting Status"
+  },
+  {
     "$dtId": "sensorFlowAir_10",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Burner Air Supply  Air Sensor"
+  },
+  {
+    "$dtId": "sensorFlowAir_12",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     },
@@ -1143,7 +1955,21 @@
     "comment": "Burner Gas Supply Sensor"
   },
   {
+    "$dtId": "sensorFlowGas_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Burner Gas Supply Sensor"
+  },
+  {
     "$dtId": "sensorOxygen_10",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Burner Air Supply Oxygen sensor"
+  },
+  {
+    "$dtId": "sensorOxygen_12",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     },
@@ -1157,7 +1983,21 @@
     "comment": "Sensor Power of Power Percent of Tank Bath"
   },
   {
+    "$dtId": "sensorPowerPercentBathTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Bath"
+  },
+  {
     "$dtId": "sensorPowerPercentRoofTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Roof"
+  },
+  {
+    "$dtId": "sensorPowerPercentRoofTank_12",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     },
@@ -1170,7 +2010,20 @@
     }
   },
   {
+    "$dtId": "sensorPressureFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    }
+  },
+  {
     "$dtId": "sensorTemperatureBathTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Sensor Tempetature of Tank Bath"
+  },
+  {
+    "$dtId": "sensorTemperatureBathTank_12",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     },
@@ -1184,7 +2037,21 @@
     "comment": "Sensor Tempetature of Furnace"
   },
   {
+    "$dtId": "sensorTemperatureExhaustFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Sensor Tempetature of Furnace"
+  },
+  {
     "$dtId": "sensorTemperatureRoofTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "Sensor Tempetature of Tank Root"
+  },
+  {
+    "$dtId": "sensorTemperatureRoofTank_12",
     "$metadata": {
       "$model": "dtmi:example:FeatureOfInterest;1"
     },
@@ -1198,7 +2065,20 @@
     "comment": "it's an instance of a Furnace Tank"
   },
   {
+    "$dtId": "tank_12",
+    "$metadata": {
+      "$model": "dtmi:example:FeatureOfInterest;1"
+    },
+    "comment": "it's an instance of a Furnace Tank"
+  },
+  {
     "$dtId": "eventFunctionCasting_10",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionCasting_12",
     "$metadata": {
       "$model": "dtmi:example:Function;1"
     }
@@ -1210,7 +2090,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionHolding_12",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionLaboratoryAnalysis_10",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionLaboratoryAnalysis_12",
     "$metadata": {
       "$model": "dtmi:example:Function;1"
     }
@@ -1222,7 +2114,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionLoadingScrapAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionLoadingScrap_10",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionLoadingScrap_12",
     "$metadata": {
       "$model": "dtmi:example:Function;1"
     }
@@ -1234,7 +2138,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionPouringAluminiumAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionPouringAluminium_10",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionPouringAluminium_12",
     "$metadata": {
       "$model": "dtmi:example:Function;1"
     }
@@ -1246,7 +2162,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionPouringMetalsAdjustment_12",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionPouringMetals_10",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionPouringMetals_12",
     "$metadata": {
       "$model": "dtmi:example:Function;1"
     }
@@ -1258,7 +2186,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionPreheating_12",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionSampling_10",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionSampling_12",
     "$metadata": {
       "$model": "dtmi:example:Function;1"
     }
@@ -1270,7 +2210,19 @@
     }
   },
   {
+    "$dtId": "eventFunctionSkimming_12",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
     "$dtId": "eventFunctionStirring_10",
+    "$metadata": {
+      "$model": "dtmi:example:Function;1"
+    }
+  },
+  {
+    "$dtId": "eventFunctionStirring_12",
     "$metadata": {
       "$model": "dtmi:example:Function;1"
     }
@@ -1279,91 +2231,41 @@
     "$dtId": "Dimensionless",
     "$metadata": {
       "$model": "dtmi:example:Property;1"
-    },
-    "description": "In dimensional analysis, a dimensionless quantity or quantity of dimension one is a quantity without an associated physical dimension. It is thus a \"pure\" number, and as such always has a dimension of 1. Dimensionless quantities are widely used in mathematics, physics, engineering, economics, and in everyday life (such as in counting). Numerous well-known quantities, such as $\\pi$, $\\epsilon$, and $\\psi$, are dimensionless. By contrast, non-dimensionless quantities are measured in units of length, area, time, etc. Dimensionless quantities are often defined as products or ratios of quantities that are not dimensionless, but whose dimensions cancel out when their powers are multiplied.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Dimensionless_quantity",
-    "informativeReference": "http://en.wikipedia.org/wiki/Dimensionless_quantity",
-    "symbol": "U",
-    "comment": "Applicable units are those of quantitykind:Dimensionless",
-    "label": "Dimensionless"
+    }
   },
   {
     "$dtId": "DimensionlessRatio",
     "$metadata": {
       "$model": "dtmi:example:Property;1"
-    },
-    "comment": "Applicable units are those of quantitykind:DimensionlessRatio",
-    "label": "Dimensionless Ratio"
-  },
-  {
-    "$dtId": "ElectricCurrent",
-    "$metadata": {
-      "$model": "dtmi:example:Property;1"
-    },
-    "description": "\n  The quantity kind $\\textit{Electric Current}$ is the flow (movement) of electric charge. \n  The amount of electric current through some surface, for example, a section through a copper conductor,\n   is defined as the amount of electric charge flowing through that surface over time. \n  Current is a scalar-valued quantity. \n  Electric current is one of the base quantities in the International System of Quantities, ISQ,\n   on which the International System of Units, SI, is based.\n  ",
-    "dbpediaMatch": "http://dbpedia.org/resource/Electric_current",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec61987/iec61987.nsf/ListsOfUnitsAllVersions/0112-2---62720%23UAD039",
-    "symbol": "I",
-    "comment": "Applicable units are those of quantitykind:ElectricCurrent",
-    "label": "electric current"
-  },
-  {
-    "$dtId": "Power",
-    "$metadata": {
-      "$model": "dtmi:example:Property;1"
-    },
-    "description": "Power is the rate at which work is performed or energy is transmitted, or the amount of energy required or expended for a given unit of time. As a rate of change of work done or the energy of a subsystem, power is: $P = W/t$, where $P$ is power, $W$ is work and {t} is time.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Power",
-    "informativeReference": "http://en.wikipedia.org/wiki/Power_%28physics%29",
-    "symbol": "P",
-    "comment": "Applicable units are those of quantitykind:Power",
-    "label": "power"
+    }
   },
   {
     "$dtId": "Pressure",
     "$metadata": {
       "$model": "dtmi:example:Property;1"
-    },
-    "description": "Pressure is an effect which occurs when a force is applied on a surface. Pressure is the amount of force acting on a unit area. Pressure is distinct from stress, as the former is the ratio of the component of force normal to a surface to the surface area. Stress is a tensor that relates the vector force to the vector area.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Pressure",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec61987/iec61987.nsf/ListsOfUnitsAllVersions/0112-2---62720%23UAD142",
-    "comment": "Applicable units are those of quantitykind:ForcePerArea",
-    "label": "pressure"
-  },
-  {
-    "$dtId": "Speed",
-    "$metadata": {
-      "$model": "dtmi:example:Property;1"
-    },
-    "description": "Speed is the magnitude of velocity.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Speed",
-    "comment": "Applicable units are those of quantitykind:Speed",
-    "label": "Speed"
+    }
   },
   {
     "$dtId": "Temperature",
     "$metadata": {
       "$model": "dtmi:example:Property;1"
-    },
-    "description": "Temperature is a physical property of matter that quantitatively expresses the common notions of hot and cold. Objects of low temperature are cold, while various degrees of higher temperatures are referred to as warm or hot. Heat spontaneously flows from bodies of a higher temperature to bodies of lower temperature, at a rate that increases with the temperature difference and the thermal conductivity.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Temperature",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec61987/iec61987.nsf/ListsOfUnitsAllVersions/0112-2---62720%23UAD374",
-    "comment": "Applicable units are those of quantitykind:Temperature",
-    "label": "Temperature"
+    }
   },
   {
     "$dtId": "VolumeFlowRate",
     "$metadata": {
       "$model": "dtmi:example:Property;1"
-    },
-    "description": "Volumetric Flow Rate, (also known as volume flow rate, rate of fluid flow or volume velocity) is the volume of fluid which passes through a given surface per unit time.",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec61987/iec61987.nsf/ListsOfUnitsAllVersions/0112-2---62720%23UAD239",
-    "symbol": "q_V",
-    "comment": "Applicable units are those of quantitykind:VolumeFlowRate",
-    "label": "Volume Flow Rate"
+    }
   },
   {
     "$dtId": "propertyOfInterestCastingStatusFurnace_10",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Furnace Casting  Property of Interset"
+  },
+  {
+    "$dtId": "propertyOfInterestCastingStatusFurnace_12",
     "$metadata": {
       "$model": "dtmi:example:PropertyOfInterest;1"
     },
@@ -1377,7 +2279,21 @@
     "comment": "Oxygen content in air mixture"
   },
   {
+    "$dtId": "propertyOfInterestConcentrationAirBurner_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Oxygen content in air mixture"
+  },
+  {
     "$dtId": "propertyOfInterestFlowRateGasBurner_10",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Gas volume delivery rate through burner"
+  },
+  {
+    "$dtId": "propertyOfInterestFlowRateGasBurner_12",
     "$metadata": {
       "$model": "dtmi:example:PropertyOfInterest;1"
     },
@@ -1391,7 +2307,21 @@
     "comment": "Thermal energy input for bath"
   },
   {
+    "$dtId": "propertyOfInterestHeatingPowerPercentBathTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Thermal energy input for bath"
+  },
+  {
     "$dtId": "propertyOfInterestHeatingPowerPercentRoofTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Thermal energy input for roof"
+  },
+  {
+    "$dtId": "propertyOfInterestHeatingPowerPercentRoofTank_12",
     "$metadata": {
       "$model": "dtmi:example:PropertyOfInterest;1"
     },
@@ -1405,7 +2335,21 @@
     "comment": "Operating pressure at furnace combustion interface"
   },
   {
+    "$dtId": "propertyOfInterestPressureFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Operating pressure at furnace combustion interface"
+  },
+  {
     "$dtId": "propertyOfInterestTemperatureBatchTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Specific temperature mesurement at bath level"
+  },
+  {
+    "$dtId": "propertyOfInterestTemperatureBatchTank_12",
     "$metadata": {
       "$model": "dtmi:example:PropertyOfInterest;1"
     },
@@ -1419,7 +2363,21 @@
     "comment": "Specific temperature Set Point at bath  level in Tank"
   },
   {
+    "$dtId": "propertyOfInterestTemperatureBathThresholdTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Specific temperature Set Point at bath  level in Tank"
+  },
+  {
     "$dtId": "propertyOfInterestTemperatureExhaustFurnace_10",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Exit temperature of combustion gases from furnace system"
+  },
+  {
+    "$dtId": "propertyOfInterestTemperatureExhaustFurnace_12",
     "$metadata": {
       "$model": "dtmi:example:PropertyOfInterest;1"
     },
@@ -1433,7 +2391,21 @@
     "comment": "Specific temperature mesurement at roof level"
   },
   {
+    "$dtId": "propertyOfInterestTemperatureRoofTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Specific temperature mesurement at roof level"
+  },
+  {
     "$dtId": "propertyOfInterestTemperatureRoofThresholdTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyOfInterest;1"
+    },
+    "comment": "Specific temperature Set Point at Roof  level in Tank"
+  },
+  {
+    "$dtId": "propertyOfInterestTemperatureRoofThresholdTank_12",
     "$metadata": {
       "$model": "dtmi:example:PropertyOfInterest;1"
     },
@@ -1444,113 +2416,274 @@
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "casting_status",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Furnace Casting status value"
+    "hasTag": [
+      "casting_status"
+    ],
+    "comment": "Furnace Casting status value",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueCastingStatusFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "casting_status"
+    ],
+    "comment": "Furnace Casting status value",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValueConcentrationAirBurner_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_oxygen_pv",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of oxygen concentration at burner"
+    "hasTag": [
+      "fce_oxygen_pv"
+    ],
+    "comment": "Numerical reading of oxygen concentration at burner",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueConcentrationAirBurner_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_oxygen_pv"
+    ],
+    "comment": "Numerical reading of oxygen concentration at burner",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValueFlowRateGasBurner_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_gas_flow_burner_pv",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of gas flow through burner"
+    "hasTag": [
+      "fce_gas_flow_burner_pv"
+    ],
+    "comment": "Numerical reading of gas flow through burner",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueFlowRateGasBurner_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_gas_flow_burner_pv"
+    ],
+    "comment": "Numerical reading of gas flow through burner",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValueHeatingPowerPercentBathTank_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_bath_temp_cv",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of bath heating power"
+    "hasTag": [
+      "fce_bath_temp_cv"
+    ],
+    "comment": "Numerical reading of bath heating power",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueHeatingPowerPercentBathTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_bath_temp_cv"
+    ],
+    "comment": "Numerical reading of bath heating power",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValueHeatingPowerPercentRoofTank_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_roof_temp_cv",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of roof heating power"
+    "hasTag": [
+      "fce_roof_temp_cv"
+    ],
+    "comment": "Numerical reading of roof heating power",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueHeatingPowerPercentRoofTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_roof_temp_cv"
+    ],
+    "comment": "Numerical reading of roof heating power",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValuePressureFurnace_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_pressure_pv",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of furnace pressure"
+    "hasTag": [
+      "fce_pressure_pv"
+    ],
+    "comment": "Numerical reading of furnace pressure",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValuePressureFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_pressure_pv"
+    ],
+    "comment": "Numerical reading of furnace pressure",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValueTemperatureBathTank_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_bath_temp_pv",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of bath temperature"
+    "hasTag": [
+      "fce_bath_temp_pv"
+    ],
+    "comment": "Numerical reading of bath temperature",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueTemperatureBathTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_bath_temp_pv"
+    ],
+    "comment": "Numerical reading of bath temperature",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValueTemperatureBathThresholdTank_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_bath_temp_sp",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of bath temperature Set Point"
+    "hasTag": [
+      "fce_bath_temp_sp"
+    ],
+    "comment": "Numerical reading of bath temperature Set Point",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueTemperatureBathThresholdTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_bath_temp_sp"
+    ],
+    "comment": "Numerical reading of bath temperature Set Point",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValueTemperatureExhaustFurnace_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_exhaust_temp_pv",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of exhaust gas temperature"
+    "hasTag": [
+      "fce_exhaust_temp_pv"
+    ],
+    "comment": "Numerical reading of exhaust gas temperature",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueTemperatureExhaustFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_exhaust_temp_pv"
+    ],
+    "comment": "Numerical reading of exhaust gas temperature",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValueTemperatureRoofTank_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_roof_temp_pv",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of roof temperature"
+    "hasTag": [
+      "fce_roof_temp_pv"
+    ],
+    "comment": "Numerical reading of roof temperature",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueTemperatureRoofTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_roof_temp_pv"
+    ],
+    "comment": "Numerical reading of roof temperature",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "propertyValueTemperatureRoofThresholdTank_10",
     "$metadata": {
       "$model": "dtmi:example:PropertyValue;1"
     },
-    "hasTag": "fce_roof_temp_sp",
-    "hasTimestamp": "2025-05-26T20:34:34.520377",
-    "hasValue": 0.0,
-    "comment": "Numerical reading of Roof temperature Set Point"
+    "hasTag": [
+      "fce_roof_temp_sp"
+    ],
+    "comment": "Numerical reading of Roof temperature Set Point",
+    "hasTimestamp": "2025-05-28T17:06:09.275242",
+    "hasValue": 0.0
+  },
+  {
+    "$dtId": "propertyValueTemperatureRoofThresholdTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:PropertyValue;1"
+    },
+    "hasTag": [
+      "fce_roof_temp_sp"
+    ],
+    "comment": "Numerical reading of Roof temperature Set Point",
+    "hasTimestamp": "2025-05-28T17:06:10.062007",
+    "hasValue": 0.0
   },
   {
     "$dtId": "sensorCastingStatusFurnace_10",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    },
+    "comment": "Sensor that Obserse Casting Status"
+  },
+  {
+    "$dtId": "sensorCastingStatusFurnace_12",
     "$metadata": {
       "$model": "dtmi:example:Sensor;1"
     },
@@ -1564,7 +2697,21 @@
     "comment": "Burner Air Supply  Air Sensor"
   },
   {
+    "$dtId": "sensorFlowAir_12",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    },
+    "comment": "Burner Air Supply  Air Sensor"
+  },
+  {
     "$dtId": "sensorFlowGas_10",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    },
+    "comment": "Burner Gas Supply Sensor"
+  },
+  {
+    "$dtId": "sensorFlowGas_12",
     "$metadata": {
       "$model": "dtmi:example:Sensor;1"
     },
@@ -1578,7 +2725,21 @@
     "comment": "Burner Air Supply Oxygen sensor"
   },
   {
+    "$dtId": "sensorOxygen_12",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    },
+    "comment": "Burner Air Supply Oxygen sensor"
+  },
+  {
     "$dtId": "sensorPowerPercentBathTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Bath"
+  },
+  {
+    "$dtId": "sensorPowerPercentBathTank_12",
     "$metadata": {
       "$model": "dtmi:example:Sensor;1"
     },
@@ -1592,13 +2753,33 @@
     "comment": "Sensor Power of Power Percent of Tank Roof"
   },
   {
+    "$dtId": "sensorPowerPercentRoofTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Roof"
+  },
+  {
     "$dtId": "sensorPressureFurnace_10",
     "$metadata": {
       "$model": "dtmi:example:Sensor;1"
     }
   },
   {
+    "$dtId": "sensorPressureFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    }
+  },
+  {
     "$dtId": "sensorTemperatureBathTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    },
+    "comment": "Sensor Tempetature of Tank Bath"
+  },
+  {
+    "$dtId": "sensorTemperatureBathTank_12",
     "$metadata": {
       "$model": "dtmi:example:Sensor;1"
     },
@@ -1612,7 +2793,21 @@
     "comment": "Sensor Tempetature of Furnace"
   },
   {
+    "$dtId": "sensorTemperatureExhaustFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    },
+    "comment": "Sensor Tempetature of Furnace"
+  },
+  {
     "$dtId": "sensorTemperatureRoofTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:Sensor;1"
+    },
+    "comment": "Sensor Tempetature of Tank Root"
+  },
+  {
+    "$dtId": "sensorTemperatureRoofTank_12",
     "$metadata": {
       "$model": "dtmi:example:Sensor;1"
     },
@@ -1623,92 +2818,68 @@
     "$metadata": {
       "$model": "dtmi:example:State;1"
     },
-    "hasTag": "fce_door_closed",
+    "hasTag": [
+      "fce_door_closed",
+      "fce_door_open_reason"
+    ],
+    "hasOpenReason": "Unknown",
+    "hasStateValue": "CLOSE",
+    "isStateOf": "door_10",
+    "comment": "Open Close State of Furnace Door"
+  },
+  {
+    "$dtId": "stateOpenCloseDoor_12",
+    "$metadata": {
+      "$model": "dtmi:example:State;1"
+    },
+    "hasTag": [
+      "fce_door_closed",
+      "fce_door_open_reason"
+    ],
+    "hasOpenReason": "Unknown",
+    "hasStateValue": "CLOSE",
+    "isStateOf": "door_12",
     "comment": "Open Close State of Furnace Door"
   },
   {
     "$dtId": "CentiM3-PER-HR",
     "$metadata": {
       "$model": "dtmi:example:UnitOfMeasure;1"
-    },
-    "hasSymbol": "cm\u00b3/h",
-    "description": "0,000 001-fold of the power of the SI base unit metre with the exponent 3 divided by the unit hour",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA391",
-    "symbol": "cm\u00b3/h",
-    "label": "Cubic Centimetre per Hour"
+    }
   },
   {
     "$dtId": "DEG_C",
     "$metadata": {
       "$model": "dtmi:example:UnitOfMeasure;1"
-    },
-    "hasSymbol": "\u00b0C",
-    "description": "\n  The unit $\\textit{Celsius}$, also known as centigrade, is a scale and unit of measurement for temperature. \n  It can refer to a specific temperature on the Celsius scale as well as a unit to indicate a temperature interval, \n  a difference between two temperatures or an uncertainty. \n  This definition fixes the magnitude of both the degree Celsius and the kelvin as precisely 1 part \n  in 273.16 (approximately 0.00366) of the difference between absolute zero and the triple point of water. \n  Thus, it sets the magnitude of one degree Celsius and that of one kelvin as exactly the same. \n  Additionally, it establishes the difference between the two scales' null points as being precisely $273.15^{\\circ}\\text{C}$.\n  ",
-    "dbpediaMatch": "http://dbpedia.org/resource/Celsius",
-    "expression": "$degC$",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA033",
-    "symbol": "\u00b0C",
-    "label": "degree Celsius"
-  },
-  {
-    "$dtId": "K",
-    "$metadata": {
-      "$model": "dtmi:example:UnitOfMeasure;1"
-    },
-    "hasSymbol": "K",
-    "description": "\n  The unit $\\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin. \n  One kelvin represents the same temperature difference as one degree Celsius. \n  In 1967 the General Conference on Weights and Measures defined the temperature of the triple point of water\n   (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins. \n  Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius. \n  The kelvin equals exactly 1.8 degrees Fahrenheit. \n  The unit is named for the British mathematician and physicist William Thomson (1824-1907),\n   later known as Lord Kelvin after he was named Baron Kelvin of Largs.\n  ",
-    "dbpediaMatch": "http://dbpedia.org/resource/Kelvin",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA185",
-    "symbol": "K",
-    "label": "kelvin"
+    }
   },
   {
     "$dtId": "MilliBAR",
     "$metadata": {
       "$model": "dtmi:example:UnitOfMeasure;1"
-    },
-    "hasSymbol": "mbar",
-    "description": "The bar is a non-SI unit of pressure, defined by the IUPAC as exactly equal to 100,000 Pa. It is about equal to the atmospheric pressure on Earth at sea level, and since 1982 the IUPAC has recommended that the standard for atmospheric pressure should be harmonized to $100,000 Pa = 1 bar \\approx 750.0616827 Torr$. Units derived from the bar are the megabar (symbol: Mbar), kilobar (symbol: kbar), decibar (symbol: dbar), centibar (symbol: cbar), and millibar (symbol: mbar or mb). They are not SI or cgs units, but they are accepted for use with the SI.",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA810",
-    "symbol": "mbar",
-    "label": "Millibar"
+    }
   },
   {
     "$dtId": "NUM",
     "$metadata": {
       "$model": "dtmi:example:UnitOfMeasure;1"
-    },
-    "hasSymbol": "#",
-    "description": "\"Number\" is a unit for  'Dimensionless' expressed as (\\#$.",
-    "symbol": "#",
-    "label": "Number"
+    }
   },
   {
     "$dtId": "PERCENT",
     "$metadata": {
       "$model": "dtmi:example:UnitOfMeasure;1"
-    },
-    "hasSymbol": "%",
-    "description": "\"Percent\" is a unit for  'Dimensionless Ratio' expressed as $\\%$.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Percentage",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA000",
-    "symbol": "%",
-    "label": "Percent"
-  },
-  {
-    "$dtId": "W",
-    "$metadata": {
-      "$model": "dtmi:example:UnitOfMeasure;1"
-    },
-    "hasSymbol": "W",
-    "description": "The SI unit of power. Power is the rate at which work is done, or (equivalently) the rate at which energy is expended. One watt is equal to a power rate of one joule of work per second of time. This unit is used both in mechanics and in electricity, so it links the mechanical and electrical units to one another. In mechanical terms, one watt equals about 0.001 341 02 horsepower (hp) or 0.737 562 foot-pound per second (lbf/s). In electrical terms, one watt is the power produced by a current of one ampere flowing through an electric potential of one volt. The name of the unit honors James Watt (1736-1819), the British engineer whose improvements to the steam engine are often credited with igniting the Industrial Revolution.",
-    "dbpediaMatch": "http://dbpedia.org/resource/Watt",
-    "informativeReference": "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA306",
-    "symbol": "W",
-    "label": "watt"
+    }
   },
   {
     "$dtId": "rawMaterialBatch_10",
+    "$metadata": {
+      "$model": "dtmi:example:Batch;1"
+    },
+    "comment": "Raw Material in Tank"
+  },
+  {
+    "$dtId": "rawMaterialBatch_12",
     "$metadata": {
       "$model": "dtmi:example:Batch;1"
     },
@@ -1722,7 +2893,21 @@
     "comment": "Raw Material in Tank"
   },
   {
+    "$dtId": "rawMaterialBatch_12",
+    "$metadata": {
+      "$model": "dtmi:example:MaterialBatch;1"
+    },
+    "comment": "Raw Material in Tank"
+  },
+  {
     "$dtId": "airSupply_10",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Burner Air Supply"
+  },
+  {
+    "$dtId": "airSupply_12",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     },
@@ -1735,7 +2920,19 @@
     }
   },
   {
+    "$dtId": "burner_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    }
+  },
+  {
     "$dtId": "castingSystem_10",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    }
+  },
+  {
+    "$dtId": "castingSystem_12",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     }
@@ -1747,7 +2944,20 @@
     }
   },
   {
+    "$dtId": "coolingSystem_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    }
+  },
+  {
     "$dtId": "door_10",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "it'is instance of Furnace Door"
+  },
+  {
+    "$dtId": "door_12",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     },
@@ -1761,7 +2971,21 @@
     "comment": "it's an Instance of a Furnace "
   },
   {
+    "$dtId": "furnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "it's an Instance of a Furnace "
+  },
+  {
     "$dtId": "gasSupply_10",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Burner Gas Supply"
+  },
+  {
+    "$dtId": "gasSupply_12",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     },
@@ -1774,13 +2998,32 @@
     }
   },
   {
+    "$dtId": "lining_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    }
+  },
+  {
     "$dtId": "rawMaterialFeederSystem_10",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     }
   },
   {
+    "$dtId": "rawMaterialFeederSystem_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    }
+  },
+  {
     "$dtId": "sensorCastingStatusFurnace_10",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Sensor that Obserse Casting Status"
+  },
+  {
+    "$dtId": "sensorCastingStatusFurnace_12",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     },
@@ -1794,7 +3037,21 @@
     "comment": "Burner Air Supply  Air Sensor"
   },
   {
+    "$dtId": "sensorFlowAir_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Burner Air Supply  Air Sensor"
+  },
+  {
     "$dtId": "sensorFlowGas_10",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Burner Gas Supply Sensor"
+  },
+  {
+    "$dtId": "sensorFlowGas_12",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     },
@@ -1808,7 +3065,21 @@
     "comment": "Burner Air Supply Oxygen sensor"
   },
   {
+    "$dtId": "sensorOxygen_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Burner Air Supply Oxygen sensor"
+  },
+  {
     "$dtId": "sensorPowerPercentBathTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Bath"
+  },
+  {
+    "$dtId": "sensorPowerPercentBathTank_12",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     },
@@ -1822,13 +3093,33 @@
     "comment": "Sensor Power of Power Percent of Tank Roof"
   },
   {
+    "$dtId": "sensorPowerPercentRoofTank_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Sensor Power of Power Percent of Tank Roof"
+  },
+  {
     "$dtId": "sensorPressureFurnace_10",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     }
   },
   {
+    "$dtId": "sensorPressureFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    }
+  },
+  {
     "$dtId": "sensorTemperatureBathTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Sensor Tempetature of Tank Bath"
+  },
+  {
+    "$dtId": "sensorTemperatureBathTank_12",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     },
@@ -1842,7 +3133,21 @@
     "comment": "Sensor Tempetature of Furnace"
   },
   {
+    "$dtId": "sensorTemperatureExhaustFurnace_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Sensor Tempetature of Furnace"
+  },
+  {
     "$dtId": "sensorTemperatureRoofTank_10",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "Sensor Tempetature of Tank Root"
+  },
+  {
+    "$dtId": "sensorTemperatureRoofTank_12",
     "$metadata": {
       "$model": "dtmi:example:System;1"
     },
@@ -1856,10 +3161,203 @@
     "comment": "it's an instance of a Furnace Tank"
   },
   {
+    "$dtId": "tank_12",
+    "$metadata": {
+      "$model": "dtmi:example:System;1"
+    },
+    "comment": "it's an instance of a Furnace Tank"
+  },
+  {
+    "$relationshipId": "airSupply_10-consistsOf-sensorFlowAir_10",
+    "$sourceId": "airSupply_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorFlowAir_10"
+  },
+  {
+    "$relationshipId": "airSupply_10-consistsOf-sensorOxygen_10",
+    "$sourceId": "airSupply_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorOxygen_10"
+  },
+  {
+    "$relationshipId": "airSupply_12-consistsOf-sensorFlowAir_12",
+    "$sourceId": "airSupply_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorFlowAir_12"
+  },
+  {
+    "$relationshipId": "airSupply_12-consistsOf-sensorOxygen_12",
+    "$sourceId": "airSupply_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorOxygen_12"
+  },
+  {
+    "$relationshipId": "burner_10-consistsOf-airSupply_10",
+    "$sourceId": "burner_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "airSupply_10"
+  },
+  {
+    "$relationshipId": "burner_10-consistsOf-gasSupply_10",
+    "$sourceId": "burner_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "gasSupply_10"
+  },
+  {
+    "$relationshipId": "burner_12-consistsOf-airSupply_12",
+    "$sourceId": "burner_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "airSupply_12"
+  },
+  {
+    "$relationshipId": "burner_12-consistsOf-gasSupply_12",
+    "$sourceId": "burner_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "gasSupply_12"
+  },
+  {
+    "$relationshipId": "door_10-hasState-stateOpenCloseDoor_10",
+    "$sourceId": "door_10",
+    "$relationshipName": "hasState",
+    "$targetId": "stateOpenCloseDoor_10"
+  },
+  {
+    "$relationshipId": "door_12-hasState-stateOpenCloseDoor_12",
+    "$sourceId": "door_12",
+    "$relationshipName": "hasState",
+    "$targetId": "stateOpenCloseDoor_12"
+  },
+  {
+    "$relationshipId": "furnace_10-feeds-castingSystem_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "feeds",
+    "$targetId": "castingSystem_10"
+  },
+  {
     "$relationshipId": "furnace_10-hasProcess-processFurnace_10",
     "$sourceId": "furnace_10",
     "$relationshipName": "hasProcess",
     "$targetId": "processFurnace_10"
+  },
+  {
+    "$relationshipId": "furnace_10-isFedBy-rawMaterialFeederSystem_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "isFedBy",
+    "$targetId": "rawMaterialFeederSystem_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-burner_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "burner_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-door_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "door_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-sensorCastingStatusFurnace_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorCastingStatusFurnace_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-sensorPressureFurnace_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPressureFurnace_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-sensorTemperatureExhaustFurnace_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureExhaustFurnace_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-tank_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "furnace_12-feeds-castingSystem_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "feeds",
+    "$targetId": "castingSystem_12"
+  },
+  {
+    "$relationshipId": "furnace_12-hasProcess-processFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "hasProcess",
+    "$targetId": "processFurnace_12"
+  },
+  {
+    "$relationshipId": "furnace_12-isFedBy-rawMaterialFeederSystem_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "isFedBy",
+    "$targetId": "rawMaterialFeederSystem_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-burner_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "burner_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-door_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "door_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-sensorCastingStatusFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorCastingStatusFurnace_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-sensorPressureFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPressureFurnace_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-sensorTemperatureExhaustFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureExhaustFurnace_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-tank_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "tank_12"
+  },
+  {
+    "$relationshipId": "gasSupply_10-consistsOf-sensorFlowGas_10",
+    "$sourceId": "gasSupply_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorFlowGas_10"
+  },
+  {
+    "$relationshipId": "gasSupply_12-consistsOf-sensorFlowGas_12",
+    "$sourceId": "gasSupply_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorFlowGas_12"
+  },
+  {
+    "$relationshipId": "lining_10-consistsOf-coolingSystem_10",
+    "$sourceId": "lining_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "coolingSystem_10"
+  },
+  {
+    "$relationshipId": "lining_12-consistsOf-coolingSystem_12",
+    "$sourceId": "lining_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "coolingSystem_12"
   },
   {
     "$relationshipId": "stateOpenCloseDoor_10-hasOpenReason-Unknown",
@@ -1868,10 +3366,82 @@
     "$targetId": "Unknown"
   },
   {
+    "$relationshipId": "stateOpenCloseDoor_12-hasOpenReason-Unknown",
+    "$sourceId": "stateOpenCloseDoor_12",
+    "$relationshipName": "hasOpenReason",
+    "$targetId": "Unknown"
+  },
+  {
     "$relationshipId": "tank_10-contains-rawMaterialBatch_10",
     "$sourceId": "tank_10",
     "$relationshipName": "contains",
     "$targetId": "rawMaterialBatch_10"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-lining_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "lining_10"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-sensorPowerPercentBathTank_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPowerPercentBathTank_10"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-sensorPowerPercentRoofTank_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPowerPercentRoofTank_10"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-sensorTemperatureBathTank_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureBathTank_10"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-sensorTemperatureRoofTank_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureRoofTank_10"
+  },
+  {
+    "$relationshipId": "tank_12-contains-rawMaterialBatch_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "contains",
+    "$targetId": "rawMaterialBatch_12"
+  },
+  {
+    "$relationshipId": "tank_12-consistsOf-lining_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "lining_12"
+  },
+  {
+    "$relationshipId": "tank_12-consistsOf-sensorPowerPercentBathTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPowerPercentBathTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-consistsOf-sensorPowerPercentRoofTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPowerPercentRoofTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-consistsOf-sensorTemperatureBathTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureBathTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-consistsOf-sensorTemperatureRoofTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureRoofTank_12"
   },
   {
     "$relationshipId": "eventFunctionCasting_10-hasThresholdPropertyValue-propertyValueCastingStatusFurnace_10",
@@ -1884,6 +3454,18 @@
     "$sourceId": "eventFunctionCasting_10",
     "$relationshipName": "hasThresholdPropertyValue",
     "$targetId": "propertyValueTemperatureBathTank_10"
+  },
+  {
+    "$relationshipId": "eventFunctionCasting_12-hasThresholdPropertyValue-propertyValueCastingStatusFurnace_12",
+    "$sourceId": "eventFunctionCasting_12",
+    "$relationshipName": "hasThresholdPropertyValue",
+    "$targetId": "propertyValueCastingStatusFurnace_12"
+  },
+  {
+    "$relationshipId": "eventFunctionCasting_12-hasThresholdPropertyValue-propertyValueTemperatureBathTank_12",
+    "$sourceId": "eventFunctionCasting_12",
+    "$relationshipName": "hasThresholdPropertyValue",
+    "$targetId": "propertyValueTemperatureBathTank_12"
   },
   {
     "$relationshipId": "eventFunctionHolding_10-hasSpecificState-stateOpenCloseDoor_10",
@@ -1904,10 +3486,34 @@
     "$targetId": "propertyValueTemperatureBathThresholdTank_10"
   },
   {
+    "$relationshipId": "eventFunctionHolding_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionHolding_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
+  },
+  {
+    "$relationshipId": "eventFunctionHolding_12-hasThresholdPropertyValue-propertyValueTemperatureBathTank_12",
+    "$sourceId": "eventFunctionHolding_12",
+    "$relationshipName": "hasThresholdPropertyValue",
+    "$targetId": "propertyValueTemperatureBathTank_12"
+  },
+  {
+    "$relationshipId": "eventFunctionHolding_12-hasThresholdPropertyValue-propertyValueTemperatureBathThresholdTank_12",
+    "$sourceId": "eventFunctionHolding_12",
+    "$relationshipName": "hasThresholdPropertyValue",
+    "$targetId": "propertyValueTemperatureBathThresholdTank_12"
+  },
+  {
     "$relationshipId": "eventFunctionLaboratoryAnalysis_10-hasThresholdPropertyValue-propertyValueTemperatureExhaustFurnace_10",
     "$sourceId": "eventFunctionLaboratoryAnalysis_10",
     "$relationshipName": "hasThresholdPropertyValue",
     "$targetId": "propertyValueTemperatureExhaustFurnace_10"
+  },
+  {
+    "$relationshipId": "eventFunctionLaboratoryAnalysis_12-hasThresholdPropertyValue-propertyValueTemperatureExhaustFurnace_12",
+    "$sourceId": "eventFunctionLaboratoryAnalysis_12",
+    "$relationshipName": "hasThresholdPropertyValue",
+    "$targetId": "propertyValueTemperatureExhaustFurnace_12"
   },
   {
     "$relationshipId": "eventFunctionLoadingScrapAdjustment_10-hasSpecificState-stateOpenCloseDoor_10",
@@ -1916,10 +3522,22 @@
     "$targetId": "stateOpenCloseDoor_10"
   },
   {
+    "$relationshipId": "eventFunctionLoadingScrapAdjustment_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionLoadingScrapAdjustment_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
+  },
+  {
     "$relationshipId": "eventFunctionLoadingScrap_10-hasSpecificState-stateOpenCloseDoor_10",
     "$sourceId": "eventFunctionLoadingScrap_10",
     "$relationshipName": "hasSpecificState",
     "$targetId": "stateOpenCloseDoor_10"
+  },
+  {
+    "$relationshipId": "eventFunctionLoadingScrap_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionLoadingScrap_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
   },
   {
     "$relationshipId": "eventFunctionPouringAluminiumAdjustment_10-hasSpecificState-stateOpenCloseDoor_10",
@@ -1928,10 +3546,22 @@
     "$targetId": "stateOpenCloseDoor_10"
   },
   {
+    "$relationshipId": "eventFunctionPouringAluminiumAdjustment_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionPouringAluminiumAdjustment_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
+  },
+  {
     "$relationshipId": "eventFunctionPouringAluminium_10-hasSpecificState-stateOpenCloseDoor_10",
     "$sourceId": "eventFunctionPouringAluminium_10",
     "$relationshipName": "hasSpecificState",
     "$targetId": "stateOpenCloseDoor_10"
+  },
+  {
+    "$relationshipId": "eventFunctionPouringAluminium_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionPouringAluminium_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
   },
   {
     "$relationshipId": "eventFunctionPouringMetalsAdjustment_10-hasSpecificState-stateOpenCloseDoor_10",
@@ -1940,10 +3570,22 @@
     "$targetId": "stateOpenCloseDoor_10"
   },
   {
+    "$relationshipId": "eventFunctionPouringMetalsAdjustment_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionPouringMetalsAdjustment_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
+  },
+  {
     "$relationshipId": "eventFunctionPouringMetals_10-hasSpecificState-stateOpenCloseDoor_10",
     "$sourceId": "eventFunctionPouringMetals_10",
     "$relationshipName": "hasSpecificState",
     "$targetId": "stateOpenCloseDoor_10"
+  },
+  {
+    "$relationshipId": "eventFunctionPouringMetals_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionPouringMetals_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
   },
   {
     "$relationshipId": "eventFunctionPreheating_10-hasSpecificState-stateOpenCloseDoor_10",
@@ -1970,10 +3612,40 @@
     "$targetId": "propertyValueTemperatureBathThresholdTank_10"
   },
   {
+    "$relationshipId": "eventFunctionPreheating_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionPreheating_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
+  },
+  {
+    "$relationshipId": "eventFunctionPreheating_12-hasThresholdPropertyValue-propertyValueFlowRateGasBurner_12",
+    "$sourceId": "eventFunctionPreheating_12",
+    "$relationshipName": "hasThresholdPropertyValue",
+    "$targetId": "propertyValueFlowRateGasBurner_12"
+  },
+  {
+    "$relationshipId": "eventFunctionPreheating_12-hasThresholdPropertyValue-propertyValueTemperatureBathTank_12",
+    "$sourceId": "eventFunctionPreheating_12",
+    "$relationshipName": "hasThresholdPropertyValue",
+    "$targetId": "propertyValueTemperatureBathTank_12"
+  },
+  {
+    "$relationshipId": "eventFunctionPreheating_12-hasThresholdPropertyValue-propertyValueTemperatureBathThresholdTank_12",
+    "$sourceId": "eventFunctionPreheating_12",
+    "$relationshipName": "hasThresholdPropertyValue",
+    "$targetId": "propertyValueTemperatureBathThresholdTank_12"
+  },
+  {
     "$relationshipId": "eventFunctionSampling_10-hasSpecificState-stateOpenCloseDoor_10",
     "$sourceId": "eventFunctionSampling_10",
     "$relationshipName": "hasSpecificState",
     "$targetId": "stateOpenCloseDoor_10"
+  },
+  {
+    "$relationshipId": "eventFunctionSampling_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionSampling_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
   },
   {
     "$relationshipId": "eventFunctionSkimming_10-hasSpecificState-stateOpenCloseDoor_10",
@@ -1982,10 +3654,22 @@
     "$targetId": "stateOpenCloseDoor_10"
   },
   {
+    "$relationshipId": "eventFunctionSkimming_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionSkimming_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
+  },
+  {
     "$relationshipId": "eventFunctionStirring_10-hasSpecificState-stateOpenCloseDoor_10",
     "$sourceId": "eventFunctionStirring_10",
     "$relationshipName": "hasSpecificState",
     "$targetId": "stateOpenCloseDoor_10"
+  },
+  {
+    "$relationshipId": "eventFunctionStirring_12-hasSpecificState-stateOpenCloseDoor_12",
+    "$sourceId": "eventFunctionStirring_12",
+    "$relationshipName": "hasSpecificState",
+    "$targetId": "stateOpenCloseDoor_12"
   },
   {
     "$relationshipId": "conditionCasting_10-isTriggeredBy-eventFunctionCasting_10",
@@ -1994,10 +3678,22 @@
     "$targetId": "eventFunctionCasting_10"
   },
   {
+    "$relationshipId": "conditionCasting_12-isTriggeredBy-eventFunctionCasting_12",
+    "$sourceId": "conditionCasting_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionCasting_12"
+  },
+  {
     "$relationshipId": "conditionHolding_10-isTriggeredBy-eventFunctionHolding_10",
     "$sourceId": "conditionHolding_10",
     "$relationshipName": "isTriggeredBy",
     "$targetId": "eventFunctionHolding_10"
+  },
+  {
+    "$relationshipId": "conditionHolding_12-isTriggeredBy-eventFunctionHolding_12",
+    "$sourceId": "conditionHolding_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionHolding_12"
   },
   {
     "$relationshipId": "conditionLaboratoryAnalysis_10-isTriggeredBy-eventFunctionLaboratoryAnalysis_10",
@@ -2006,10 +3702,22 @@
     "$targetId": "eventFunctionLaboratoryAnalysis_10"
   },
   {
+    "$relationshipId": "conditionLaboratoryAnalysis_12-isTriggeredBy-eventFunctionLaboratoryAnalysis_12",
+    "$sourceId": "conditionLaboratoryAnalysis_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionLaboratoryAnalysis_12"
+  },
+  {
     "$relationshipId": "conditionLoadingScrapAdjustment_10-isTriggeredBy-eventFunctionLoadingScrapAdjustment_10",
     "$sourceId": "conditionLoadingScrapAdjustment_10",
     "$relationshipName": "isTriggeredBy",
     "$targetId": "eventFunctionLoadingScrapAdjustment_10"
+  },
+  {
+    "$relationshipId": "conditionLoadingScrapAdjustment_12-isTriggeredBy-eventFunctionLoadingScrapAdjustment_12",
+    "$sourceId": "conditionLoadingScrapAdjustment_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionLoadingScrapAdjustment_12"
   },
   {
     "$relationshipId": "conditionLoadingScrap_10-isTriggeredBy-eventFunctionLoadingScrap_10",
@@ -2018,10 +3726,22 @@
     "$targetId": "eventFunctionLoadingScrap_10"
   },
   {
+    "$relationshipId": "conditionLoadingScrap_12-isTriggeredBy-eventFunctionLoadingScrap_12",
+    "$sourceId": "conditionLoadingScrap_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionLoadingScrap_12"
+  },
+  {
     "$relationshipId": "conditionPouringAluminiumAdjustment_10-isTriggeredBy-eventFunctionPouringAluminiumAdjustment_10",
     "$sourceId": "conditionPouringAluminiumAdjustment_10",
     "$relationshipName": "isTriggeredBy",
     "$targetId": "eventFunctionPouringAluminiumAdjustment_10"
+  },
+  {
+    "$relationshipId": "conditionPouringAluminiumAdjustment_12-isTriggeredBy-eventFunctionPouringAluminiumAdjustment_12",
+    "$sourceId": "conditionPouringAluminiumAdjustment_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionPouringAluminiumAdjustment_12"
   },
   {
     "$relationshipId": "conditionPouringAluminium_10-isTriggeredBy-eventFunctionPouringAluminium_10",
@@ -2030,10 +3750,22 @@
     "$targetId": "eventFunctionPouringAluminium_10"
   },
   {
+    "$relationshipId": "conditionPouringAluminium_12-isTriggeredBy-eventFunctionPouringAluminium_12",
+    "$sourceId": "conditionPouringAluminium_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionPouringAluminium_12"
+  },
+  {
     "$relationshipId": "conditionPouringMetalsAdjustment_10-isTriggeredBy-eventFunctionPouringMetalsAdjustment_10",
     "$sourceId": "conditionPouringMetalsAdjustment_10",
     "$relationshipName": "isTriggeredBy",
     "$targetId": "eventFunctionPouringMetalsAdjustment_10"
+  },
+  {
+    "$relationshipId": "conditionPouringMetalsAdjustment_12-isTriggeredBy-eventFunctionPouringMetalsAdjustment_12",
+    "$sourceId": "conditionPouringMetalsAdjustment_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionPouringMetalsAdjustment_12"
   },
   {
     "$relationshipId": "conditionPouringMetals_10-isTriggeredBy-eventFunctionPouringMetals_10",
@@ -2042,10 +3774,22 @@
     "$targetId": "eventFunctionPouringMetals_10"
   },
   {
+    "$relationshipId": "conditionPouringMetals_12-isTriggeredBy-eventFunctionPouringMetals_12",
+    "$sourceId": "conditionPouringMetals_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionPouringMetals_12"
+  },
+  {
     "$relationshipId": "conditionPreheating_10-isTriggeredBy-eventFunctionPreheating_10",
     "$sourceId": "conditionPreheating_10",
     "$relationshipName": "isTriggeredBy",
     "$targetId": "eventFunctionPreheating_10"
+  },
+  {
+    "$relationshipId": "conditionPreheating_12-isTriggeredBy-eventFunctionPreheating_12",
+    "$sourceId": "conditionPreheating_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionPreheating_12"
   },
   {
     "$relationshipId": "conditionSampling_10-isTriggeredBy-eventFunctionSampling_10",
@@ -2054,16 +3798,34 @@
     "$targetId": "eventFunctionSampling_10"
   },
   {
+    "$relationshipId": "conditionSampling_12-isTriggeredBy-eventFunctionSampling_12",
+    "$sourceId": "conditionSampling_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionSampling_12"
+  },
+  {
     "$relationshipId": "conditionSkimming_10-isTriggeredBy-eventFunctionSkimming_10",
     "$sourceId": "conditionSkimming_10",
     "$relationshipName": "isTriggeredBy",
     "$targetId": "eventFunctionSkimming_10"
   },
   {
+    "$relationshipId": "conditionSkimming_12-isTriggeredBy-eventFunctionSkimming_12",
+    "$sourceId": "conditionSkimming_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionSkimming_12"
+  },
+  {
     "$relationshipId": "conditionStirring_10-isTriggeredBy-eventFunctionStirring_10",
     "$sourceId": "conditionStirring_10",
     "$relationshipName": "isTriggeredBy",
     "$targetId": "eventFunctionStirring_10"
+  },
+  {
+    "$relationshipId": "conditionStirring_12-isTriggeredBy-eventFunctionStirring_12",
+    "$sourceId": "conditionStirring_12",
+    "$relationshipName": "isTriggeredBy",
+    "$targetId": "eventFunctionStirring_12"
   },
   {
     "$relationshipId": "subProcessSampleCheck_10-hasNextSubProcessOnFailure-subProcessAdjustment_10",
@@ -2082,6 +3844,24 @@
     "$sourceId": "subProcessSampleCheck_10",
     "$relationshipName": "pathDependsOnStep",
     "$targetId": "stepLaboratoryAnalysis_10"
+  },
+  {
+    "$relationshipId": "subProcessSampleCheck_12-hasNextSubProcessOnFailure-subProcessAdjustment_12",
+    "$sourceId": "subProcessSampleCheck_12",
+    "$relationshipName": "hasNextSubProcessOnFailure",
+    "$targetId": "subProcessAdjustment_12"
+  },
+  {
+    "$relationshipId": "subProcessSampleCheck_12-hasNextSubProcessOnSuccess-SubProcessCasting_12",
+    "$sourceId": "subProcessSampleCheck_12",
+    "$relationshipName": "hasNextSubProcessOnSuccess",
+    "$targetId": "SubProcessCasting_12"
+  },
+  {
+    "$relationshipId": "subProcessSampleCheck_12-pathDependsOnStep-stepLaboratoryAnalysis_12",
+    "$sourceId": "subProcessSampleCheck_12",
+    "$relationshipName": "pathDependsOnStep",
+    "$targetId": "stepLaboratoryAnalysis_12"
   },
   {
     "$relationshipId": "processFurnace_10-hasSubProcess-SubProcessCasting_10",
@@ -2120,6 +3900,42 @@
     "$targetId": "subProcessSampleCheck_10"
   },
   {
+    "$relationshipId": "processFurnace_12-hasSubProcess-SubProcessCasting_12",
+    "$sourceId": "processFurnace_12",
+    "$relationshipName": "hasSubProcess",
+    "$targetId": "SubProcessCasting_12"
+  },
+  {
+    "$relationshipId": "processFurnace_12-hasSubProcess-subProcessAdjustment_12",
+    "$sourceId": "processFurnace_12",
+    "$relationshipName": "hasSubProcess",
+    "$targetId": "subProcessAdjustment_12"
+  },
+  {
+    "$relationshipId": "processFurnace_12-hasSubProcess-subProcessMaterialLoading_12",
+    "$sourceId": "processFurnace_12",
+    "$relationshipName": "hasSubProcess",
+    "$targetId": "subProcessMaterialLoading_12"
+  },
+  {
+    "$relationshipId": "processFurnace_12-hasSubProcess-subProcessMelting_12",
+    "$sourceId": "processFurnace_12",
+    "$relationshipName": "hasSubProcess",
+    "$targetId": "subProcessMelting_12"
+  },
+  {
+    "$relationshipId": "processFurnace_12-hasSubProcess-subProcessPreparation_12",
+    "$sourceId": "processFurnace_12",
+    "$relationshipName": "hasSubProcess",
+    "$targetId": "subProcessPreparation_12"
+  },
+  {
+    "$relationshipId": "processFurnace_12-hasSubProcess-subProcessSampleCheck_12",
+    "$sourceId": "processFurnace_12",
+    "$relationshipName": "hasSubProcess",
+    "$targetId": "subProcessSampleCheck_12"
+  },
+  {
     "$relationshipId": "stepCastingStep_10-hasCondition-conditionCasting_10",
     "$sourceId": "stepCastingStep_10",
     "$relationshipName": "hasCondition",
@@ -2130,6 +3946,42 @@
     "$sourceId": "stepCastingStep_10",
     "$relationshipName": "hasStepType",
     "$targetId": "Machine"
+  },
+  {
+    "$relationshipId": "stepCastingStep_10-isStepOf-SubProcessCasting_10",
+    "$sourceId": "stepCastingStep_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "SubProcessCasting_10"
+  },
+  {
+    "$relationshipId": "stepCastingStep_10-useAsset-castingSystem_10",
+    "$sourceId": "stepCastingStep_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "castingSystem_10"
+  },
+  {
+    "$relationshipId": "stepCastingStep_12-hasCondition-conditionCasting_12",
+    "$sourceId": "stepCastingStep_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionCasting_12"
+  },
+  {
+    "$relationshipId": "stepCastingStep_12-hasStepType-Machine",
+    "$sourceId": "stepCastingStep_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Machine"
+  },
+  {
+    "$relationshipId": "stepCastingStep_12-isStepOf-SubProcessCasting_12",
+    "$sourceId": "stepCastingStep_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "SubProcessCasting_12"
+  },
+  {
+    "$relationshipId": "stepCastingStep_12-useAsset-castingSystem_12",
+    "$sourceId": "stepCastingStep_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "castingSystem_12"
   },
   {
     "$relationshipId": "stepHolding_10-hasCondition-conditionHolding_10",
@@ -2150,6 +4002,48 @@
     "$targetId": "Machine"
   },
   {
+    "$relationshipId": "stepHolding_10-isStepOf-subProcessMelting_10",
+    "$sourceId": "stepHolding_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMelting_10"
+  },
+  {
+    "$relationshipId": "stepHolding_10-useAsset-tank_10",
+    "$sourceId": "stepHolding_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepHolding_12-hasCondition-conditionHolding_12",
+    "$sourceId": "stepHolding_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionHolding_12"
+  },
+  {
+    "$relationshipId": "stepHolding_12-hasPreviousStep-stepStirring_12",
+    "$sourceId": "stepHolding_12",
+    "$relationshipName": "hasPreviousStep",
+    "$targetId": "stepStirring_12"
+  },
+  {
+    "$relationshipId": "stepHolding_12-hasStepType-Machine",
+    "$sourceId": "stepHolding_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Machine"
+  },
+  {
+    "$relationshipId": "stepHolding_12-isStepOf-subProcessMelting_12",
+    "$sourceId": "stepHolding_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMelting_12"
+  },
+  {
+    "$relationshipId": "stepHolding_12-useAsset-tank_12",
+    "$sourceId": "stepHolding_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "stepLaboratoryAnalysis_10-hasCondition-conditionLaboratoryAnalysis_10",
     "$sourceId": "stepLaboratoryAnalysis_10",
     "$relationshipName": "hasCondition",
@@ -2166,6 +4060,48 @@
     "$sourceId": "stepLaboratoryAnalysis_10",
     "$relationshipName": "hasStepType",
     "$targetId": "Machine"
+  },
+  {
+    "$relationshipId": "stepLaboratoryAnalysis_10-isStepOf-subProcessSampleCheck_10",
+    "$sourceId": "stepLaboratoryAnalysis_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessSampleCheck_10"
+  },
+  {
+    "$relationshipId": "stepLaboratoryAnalysis_10-useAsset-tank_10",
+    "$sourceId": "stepLaboratoryAnalysis_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepLaboratoryAnalysis_12-hasCondition-conditionLaboratoryAnalysis_12",
+    "$sourceId": "stepLaboratoryAnalysis_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionLaboratoryAnalysis_12"
+  },
+  {
+    "$relationshipId": "stepLaboratoryAnalysis_12-hasPreviousStep-stepSampling_12",
+    "$sourceId": "stepLaboratoryAnalysis_12",
+    "$relationshipName": "hasPreviousStep",
+    "$targetId": "stepSampling_12"
+  },
+  {
+    "$relationshipId": "stepLaboratoryAnalysis_12-hasStepType-Machine",
+    "$sourceId": "stepLaboratoryAnalysis_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Machine"
+  },
+  {
+    "$relationshipId": "stepLaboratoryAnalysis_12-isStepOf-subProcessSampleCheck_12",
+    "$sourceId": "stepLaboratoryAnalysis_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessSampleCheck_12"
+  },
+  {
+    "$relationshipId": "stepLaboratoryAnalysis_12-useAsset-tank_12",
+    "$sourceId": "stepLaboratoryAnalysis_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
   },
   {
     "$relationshipId": "stepLoadingScrapAdjustment_10-hasCondition-conditionLoadingScrapAdjustment_10",
@@ -2186,6 +4122,48 @@
     "$targetId": "Operator"
   },
   {
+    "$relationshipId": "stepLoadingScrapAdjustment_10-isStepOf-subProcessAdjustment_10",
+    "$sourceId": "stepLoadingScrapAdjustment_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessAdjustment_10"
+  },
+  {
+    "$relationshipId": "stepLoadingScrapAdjustment_10-useAsset-tank_10",
+    "$sourceId": "stepLoadingScrapAdjustment_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepLoadingScrapAdjustment_12-hasCondition-conditionLoadingScrapAdjustment_12",
+    "$sourceId": "stepLoadingScrapAdjustment_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionLoadingScrapAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepLoadingScrapAdjustment_12-hasNextStep-stepPouringAluminiumAdjustment_12",
+    "$sourceId": "stepLoadingScrapAdjustment_12",
+    "$relationshipName": "hasNextStep",
+    "$targetId": "stepPouringAluminiumAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepLoadingScrapAdjustment_12-hasStepType-Operator",
+    "$sourceId": "stepLoadingScrapAdjustment_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepLoadingScrapAdjustment_12-isStepOf-subProcessAdjustment_12",
+    "$sourceId": "stepLoadingScrapAdjustment_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepLoadingScrapAdjustment_12-useAsset-tank_12",
+    "$sourceId": "stepLoadingScrapAdjustment_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "stepLoadingScrap_10-hasCondition-conditionLoadingScrap_10",
     "$sourceId": "stepLoadingScrap_10",
     "$relationshipName": "hasCondition",
@@ -2202,6 +4180,48 @@
     "$sourceId": "stepLoadingScrap_10",
     "$relationshipName": "hasStepType",
     "$targetId": "Machine"
+  },
+  {
+    "$relationshipId": "stepLoadingScrap_10-isStepOf-subProcessMaterialLoading_10",
+    "$sourceId": "stepLoadingScrap_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMaterialLoading_10"
+  },
+  {
+    "$relationshipId": "stepLoadingScrap_10-useAsset-tank_10",
+    "$sourceId": "stepLoadingScrap_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepLoadingScrap_12-hasCondition-conditionLoadingScrap_12",
+    "$sourceId": "stepLoadingScrap_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionLoadingScrap_12"
+  },
+  {
+    "$relationshipId": "stepLoadingScrap_12-hasNextStep-stepPouringAluminium_12",
+    "$sourceId": "stepLoadingScrap_12",
+    "$relationshipName": "hasNextStep",
+    "$targetId": "stepPouringAluminium_12"
+  },
+  {
+    "$relationshipId": "stepLoadingScrap_12-hasStepType-Machine",
+    "$sourceId": "stepLoadingScrap_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Machine"
+  },
+  {
+    "$relationshipId": "stepLoadingScrap_12-isStepOf-subProcessMaterialLoading_12",
+    "$sourceId": "stepLoadingScrap_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMaterialLoading_12"
+  },
+  {
+    "$relationshipId": "stepLoadingScrap_12-useAsset-tank_12",
+    "$sourceId": "stepLoadingScrap_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
   },
   {
     "$relationshipId": "stepPouringAluminiumAdjustment_10-hasCondition-conditionPouringAluminiumAdjustment_10",
@@ -2228,6 +4248,54 @@
     "$targetId": "Machine"
   },
   {
+    "$relationshipId": "stepPouringAluminiumAdjustment_10-isStepOf-subProcessAdjustment_10",
+    "$sourceId": "stepPouringAluminiumAdjustment_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessAdjustment_10"
+  },
+  {
+    "$relationshipId": "stepPouringAluminiumAdjustment_10-useAsset-tank_10",
+    "$sourceId": "stepPouringAluminiumAdjustment_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepPouringAluminiumAdjustment_12-hasCondition-conditionPouringAluminiumAdjustment_12",
+    "$sourceId": "stepPouringAluminiumAdjustment_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionPouringAluminiumAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepPouringAluminiumAdjustment_12-hasNextStep-stepPouringMetalsAdjustment_12",
+    "$sourceId": "stepPouringAluminiumAdjustment_12",
+    "$relationshipName": "hasNextStep",
+    "$targetId": "stepPouringMetalsAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepPouringAluminiumAdjustment_12-hasPreviousStep-stepLoadingScrapAdjustment_12",
+    "$sourceId": "stepPouringAluminiumAdjustment_12",
+    "$relationshipName": "hasPreviousStep",
+    "$targetId": "stepLoadingScrapAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepPouringAluminiumAdjustment_12-hasStepType-Machine",
+    "$sourceId": "stepPouringAluminiumAdjustment_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Machine"
+  },
+  {
+    "$relationshipId": "stepPouringAluminiumAdjustment_12-isStepOf-subProcessAdjustment_12",
+    "$sourceId": "stepPouringAluminiumAdjustment_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepPouringAluminiumAdjustment_12-useAsset-tank_12",
+    "$sourceId": "stepPouringAluminiumAdjustment_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "stepPouringAluminium_10-hasCondition-conditionPouringAluminium_10",
     "$sourceId": "stepPouringAluminium_10",
     "$relationshipName": "hasCondition",
@@ -2252,6 +4320,54 @@
     "$targetId": "Operator"
   },
   {
+    "$relationshipId": "stepPouringAluminium_10-isStepOf-subProcessMaterialLoading_10",
+    "$sourceId": "stepPouringAluminium_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMaterialLoading_10"
+  },
+  {
+    "$relationshipId": "stepPouringAluminium_10-useAsset-tank_10",
+    "$sourceId": "stepPouringAluminium_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepPouringAluminium_12-hasCondition-conditionPouringAluminium_12",
+    "$sourceId": "stepPouringAluminium_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionPouringAluminium_12"
+  },
+  {
+    "$relationshipId": "stepPouringAluminium_12-hasNextStep-stepPouringMetals_12",
+    "$sourceId": "stepPouringAluminium_12",
+    "$relationshipName": "hasNextStep",
+    "$targetId": "stepPouringMetals_12"
+  },
+  {
+    "$relationshipId": "stepPouringAluminium_12-hasPreviousStep-stepLoadingScrap_12",
+    "$sourceId": "stepPouringAluminium_12",
+    "$relationshipName": "hasPreviousStep",
+    "$targetId": "stepLoadingScrap_12"
+  },
+  {
+    "$relationshipId": "stepPouringAluminium_12-hasStepType-Operator",
+    "$sourceId": "stepPouringAluminium_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepPouringAluminium_12-isStepOf-subProcessMaterialLoading_12",
+    "$sourceId": "stepPouringAluminium_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMaterialLoading_12"
+  },
+  {
+    "$relationshipId": "stepPouringAluminium_12-useAsset-tank_12",
+    "$sourceId": "stepPouringAluminium_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "stepPouringMetalsAdjustment_10-hasCondition-conditionPouringMetalsAdjustment_10",
     "$sourceId": "stepPouringMetalsAdjustment_10",
     "$relationshipName": "hasCondition",
@@ -2268,6 +4384,48 @@
     "$sourceId": "stepPouringMetalsAdjustment_10",
     "$relationshipName": "hasStepType",
     "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepPouringMetalsAdjustment_10-isStepOf-subProcessAdjustment_10",
+    "$sourceId": "stepPouringMetalsAdjustment_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessAdjustment_10"
+  },
+  {
+    "$relationshipId": "stepPouringMetalsAdjustment_10-useAsset-tank_10",
+    "$sourceId": "stepPouringMetalsAdjustment_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepPouringMetalsAdjustment_12-hasCondition-conditionPouringMetalsAdjustment_12",
+    "$sourceId": "stepPouringMetalsAdjustment_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionPouringMetalsAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepPouringMetalsAdjustment_12-hasPreviousStep-stepPouringAluminiumAdjustment_12",
+    "$sourceId": "stepPouringMetalsAdjustment_12",
+    "$relationshipName": "hasPreviousStep",
+    "$targetId": "stepPouringAluminiumAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepPouringMetalsAdjustment_12-hasStepType-Operator",
+    "$sourceId": "stepPouringMetalsAdjustment_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepPouringMetalsAdjustment_12-isStepOf-subProcessAdjustment_12",
+    "$sourceId": "stepPouringMetalsAdjustment_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessAdjustment_12"
+  },
+  {
+    "$relationshipId": "stepPouringMetalsAdjustment_12-useAsset-tank_12",
+    "$sourceId": "stepPouringMetalsAdjustment_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
   },
   {
     "$relationshipId": "stepPouringMetals_10-hasCondition-conditionPouringMetals_10",
@@ -2288,6 +4446,48 @@
     "$targetId": "Machine"
   },
   {
+    "$relationshipId": "stepPouringMetals_10-isStepOf-subProcessMaterialLoading_10",
+    "$sourceId": "stepPouringMetals_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMaterialLoading_10"
+  },
+  {
+    "$relationshipId": "stepPouringMetals_10-useAsset-tank_10",
+    "$sourceId": "stepPouringMetals_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepPouringMetals_12-hasCondition-conditionPouringMetals_12",
+    "$sourceId": "stepPouringMetals_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionPouringMetals_12"
+  },
+  {
+    "$relationshipId": "stepPouringMetals_12-hasPreviousStep-stepPouringAluminium_12",
+    "$sourceId": "stepPouringMetals_12",
+    "$relationshipName": "hasPreviousStep",
+    "$targetId": "stepPouringAluminium_12"
+  },
+  {
+    "$relationshipId": "stepPouringMetals_12-hasStepType-Machine",
+    "$sourceId": "stepPouringMetals_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Machine"
+  },
+  {
+    "$relationshipId": "stepPouringMetals_12-isStepOf-subProcessMaterialLoading_12",
+    "$sourceId": "stepPouringMetals_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMaterialLoading_12"
+  },
+  {
+    "$relationshipId": "stepPouringMetals_12-useAsset-tank_12",
+    "$sourceId": "stepPouringMetals_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "stepPreheating_10-hasCondition-conditionPreheating_10",
     "$sourceId": "stepPreheating_10",
     "$relationshipName": "hasCondition",
@@ -2304,6 +4504,48 @@
     "$sourceId": "stepPreheating_10",
     "$relationshipName": "hasStepType",
     "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepPreheating_10-isStepOf-subProcessPreparation_10",
+    "$sourceId": "stepPreheating_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessPreparation_10"
+  },
+  {
+    "$relationshipId": "stepPreheating_10-useAsset-burner_10",
+    "$sourceId": "stepPreheating_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "burner_10"
+  },
+  {
+    "$relationshipId": "stepPreheating_12-hasCondition-conditionPreheating_12",
+    "$sourceId": "stepPreheating_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionPreheating_12"
+  },
+  {
+    "$relationshipId": "stepPreheating_12-hasNextStep-stepSkimming_12",
+    "$sourceId": "stepPreheating_12",
+    "$relationshipName": "hasNextStep",
+    "$targetId": "stepSkimming_12"
+  },
+  {
+    "$relationshipId": "stepPreheating_12-hasStepType-Operator",
+    "$sourceId": "stepPreheating_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepPreheating_12-isStepOf-subProcessPreparation_12",
+    "$sourceId": "stepPreheating_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessPreparation_12"
+  },
+  {
+    "$relationshipId": "stepPreheating_12-useAsset-burner_12",
+    "$sourceId": "stepPreheating_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "burner_12"
   },
   {
     "$relationshipId": "stepSampling_10-hasCondition-conditionSampling_10",
@@ -2324,6 +4566,48 @@
     "$targetId": "Operator"
   },
   {
+    "$relationshipId": "stepSampling_10-isStepOf-subProcessSampleCheck_10",
+    "$sourceId": "stepSampling_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessSampleCheck_10"
+  },
+  {
+    "$relationshipId": "stepSampling_10-useAsset-tank_10",
+    "$sourceId": "stepSampling_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepSampling_12-hasCondition-conditionSampling_12",
+    "$sourceId": "stepSampling_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionSampling_12"
+  },
+  {
+    "$relationshipId": "stepSampling_12-hasNextStep-stepLaboratoryAnalysis_12",
+    "$sourceId": "stepSampling_12",
+    "$relationshipName": "hasNextStep",
+    "$targetId": "stepLaboratoryAnalysis_12"
+  },
+  {
+    "$relationshipId": "stepSampling_12-hasStepType-Operator",
+    "$sourceId": "stepSampling_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepSampling_12-isStepOf-subProcessSampleCheck_12",
+    "$sourceId": "stepSampling_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessSampleCheck_12"
+  },
+  {
+    "$relationshipId": "stepSampling_12-useAsset-tank_12",
+    "$sourceId": "stepSampling_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "stepSkimming_10-hasCondition-conditionSkimming_10",
     "$sourceId": "stepSkimming_10",
     "$relationshipName": "hasCondition",
@@ -2340,6 +4624,48 @@
     "$sourceId": "stepSkimming_10",
     "$relationshipName": "hasStepType",
     "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepSkimming_10-isStepOf-subProcessPreparation_10",
+    "$sourceId": "stepSkimming_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessPreparation_10"
+  },
+  {
+    "$relationshipId": "stepSkimming_10-useAsset-tank_10",
+    "$sourceId": "stepSkimming_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepSkimming_12-hasCondition-conditionSkimming_12",
+    "$sourceId": "stepSkimming_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionSkimming_12"
+  },
+  {
+    "$relationshipId": "stepSkimming_12-hasPreviousStep-stepPreheating_12",
+    "$sourceId": "stepSkimming_12",
+    "$relationshipName": "hasPreviousStep",
+    "$targetId": "stepPreheating_12"
+  },
+  {
+    "$relationshipId": "stepSkimming_12-hasStepType-Operator",
+    "$sourceId": "stepSkimming_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepSkimming_12-isStepOf-subProcessPreparation_12",
+    "$sourceId": "stepSkimming_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessPreparation_12"
+  },
+  {
+    "$relationshipId": "stepSkimming_12-useAsset-tank_12",
+    "$sourceId": "stepSkimming_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
   },
   {
     "$relationshipId": "stepStirring_10-hasCondition-conditionStirring_10",
@@ -2360,6 +4686,48 @@
     "$targetId": "Operator"
   },
   {
+    "$relationshipId": "stepStirring_10-isStepOf-subProcessMelting_10",
+    "$sourceId": "stepStirring_10",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMelting_10"
+  },
+  {
+    "$relationshipId": "stepStirring_10-useAsset-tank_10",
+    "$sourceId": "stepStirring_10",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "stepStirring_12-hasCondition-conditionStirring_12",
+    "$sourceId": "stepStirring_12",
+    "$relationshipName": "hasCondition",
+    "$targetId": "conditionStirring_12"
+  },
+  {
+    "$relationshipId": "stepStirring_12-hasNextStep-stepHolding_12",
+    "$sourceId": "stepStirring_12",
+    "$relationshipName": "hasNextStep",
+    "$targetId": "stepHolding_12"
+  },
+  {
+    "$relationshipId": "stepStirring_12-hasStepType-Operator",
+    "$sourceId": "stepStirring_12",
+    "$relationshipName": "hasStepType",
+    "$targetId": "Operator"
+  },
+  {
+    "$relationshipId": "stepStirring_12-isStepOf-subProcessMelting_12",
+    "$sourceId": "stepStirring_12",
+    "$relationshipName": "isStepOf",
+    "$targetId": "subProcessMelting_12"
+  },
+  {
+    "$relationshipId": "stepStirring_12-useAsset-tank_12",
+    "$sourceId": "stepStirring_12",
+    "$relationshipName": "useAsset",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "SubProcessCasting_10-hasEndStep-stepCastingStep_10",
     "$sourceId": "SubProcessCasting_10",
     "$relationshipName": "hasEndStep",
@@ -2376,6 +4744,24 @@
     "$sourceId": "SubProcessCasting_10",
     "$relationshipName": "hasStep",
     "$targetId": "stepCastingStep_10"
+  },
+  {
+    "$relationshipId": "SubProcessCasting_12-hasEndStep-stepCastingStep_12",
+    "$sourceId": "SubProcessCasting_12",
+    "$relationshipName": "hasEndStep",
+    "$targetId": "stepCastingStep_12"
+  },
+  {
+    "$relationshipId": "SubProcessCasting_12-hasStartStep-stepCastingStep_12",
+    "$sourceId": "SubProcessCasting_12",
+    "$relationshipName": "hasStartStep",
+    "$targetId": "stepCastingStep_12"
+  },
+  {
+    "$relationshipId": "SubProcessCasting_12-hasStep-stepCastingStep_12",
+    "$sourceId": "SubProcessCasting_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepCastingStep_12"
   },
   {
     "$relationshipId": "subProcessAdjustment_10-hasEndStep-stepPouringMetalsAdjustment_10",
@@ -2414,6 +4800,42 @@
     "$targetId": "stepPouringMetalsAdjustment_10"
   },
   {
+    "$relationshipId": "subProcessAdjustment_12-hasEndStep-stepPouringMetalsAdjustment_12",
+    "$sourceId": "subProcessAdjustment_12",
+    "$relationshipName": "hasEndStep",
+    "$targetId": "stepPouringMetalsAdjustment_12"
+  },
+  {
+    "$relationshipId": "subProcessAdjustment_12-hasNextSubProcess-subProcessSampleCheck_12",
+    "$sourceId": "subProcessAdjustment_12",
+    "$relationshipName": "hasNextSubProcess",
+    "$targetId": "subProcessSampleCheck_12"
+  },
+  {
+    "$relationshipId": "subProcessAdjustment_12-hasStartStep-stepLoadingScrapAdjustment_12",
+    "$sourceId": "subProcessAdjustment_12",
+    "$relationshipName": "hasStartStep",
+    "$targetId": "stepLoadingScrapAdjustment_12"
+  },
+  {
+    "$relationshipId": "subProcessAdjustment_12-hasStep-stepLoadingScrapAdjustment_12",
+    "$sourceId": "subProcessAdjustment_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepLoadingScrapAdjustment_12"
+  },
+  {
+    "$relationshipId": "subProcessAdjustment_12-hasStep-stepPouringAluminiumAdjustment_12",
+    "$sourceId": "subProcessAdjustment_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepPouringAluminiumAdjustment_12"
+  },
+  {
+    "$relationshipId": "subProcessAdjustment_12-hasStep-stepPouringMetalsAdjustment_12",
+    "$sourceId": "subProcessAdjustment_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepPouringMetalsAdjustment_12"
+  },
+  {
     "$relationshipId": "subProcessMaterialLoading_10-hasEndStep-stepPouringMetals_10",
     "$sourceId": "subProcessMaterialLoading_10",
     "$relationshipName": "hasEndStep",
@@ -2450,6 +4872,42 @@
     "$targetId": "stepPouringMetals_10"
   },
   {
+    "$relationshipId": "subProcessMaterialLoading_12-hasEndStep-stepPouringMetals_12",
+    "$sourceId": "subProcessMaterialLoading_12",
+    "$relationshipName": "hasEndStep",
+    "$targetId": "stepPouringMetals_12"
+  },
+  {
+    "$relationshipId": "subProcessMaterialLoading_12-hasNextSubProcess-subProcessMelting_12",
+    "$sourceId": "subProcessMaterialLoading_12",
+    "$relationshipName": "hasNextSubProcess",
+    "$targetId": "subProcessMelting_12"
+  },
+  {
+    "$relationshipId": "subProcessMaterialLoading_12-hasStartStep-stepLoadingScrap_12",
+    "$sourceId": "subProcessMaterialLoading_12",
+    "$relationshipName": "hasStartStep",
+    "$targetId": "stepLoadingScrap_12"
+  },
+  {
+    "$relationshipId": "subProcessMaterialLoading_12-hasStep-stepLoadingScrap_12",
+    "$sourceId": "subProcessMaterialLoading_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepLoadingScrap_12"
+  },
+  {
+    "$relationshipId": "subProcessMaterialLoading_12-hasStep-stepPouringAluminium_12",
+    "$sourceId": "subProcessMaterialLoading_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepPouringAluminium_12"
+  },
+  {
+    "$relationshipId": "subProcessMaterialLoading_12-hasStep-stepPouringMetals_12",
+    "$sourceId": "subProcessMaterialLoading_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepPouringMetals_12"
+  },
+  {
     "$relationshipId": "subProcessMelting_10-hasEndStep-stepHolding_10",
     "$sourceId": "subProcessMelting_10",
     "$relationshipName": "hasEndStep",
@@ -2478,6 +4936,36 @@
     "$sourceId": "subProcessMelting_10",
     "$relationshipName": "hasStep",
     "$targetId": "stepStirring_10"
+  },
+  {
+    "$relationshipId": "subProcessMelting_12-hasEndStep-stepHolding_12",
+    "$sourceId": "subProcessMelting_12",
+    "$relationshipName": "hasEndStep",
+    "$targetId": "stepHolding_12"
+  },
+  {
+    "$relationshipId": "subProcessMelting_12-hasNextSubProcess-subProcessSampleCheck_12",
+    "$sourceId": "subProcessMelting_12",
+    "$relationshipName": "hasNextSubProcess",
+    "$targetId": "subProcessSampleCheck_12"
+  },
+  {
+    "$relationshipId": "subProcessMelting_12-hasStartStep-stepStirring_12",
+    "$sourceId": "subProcessMelting_12",
+    "$relationshipName": "hasStartStep",
+    "$targetId": "stepStirring_12"
+  },
+  {
+    "$relationshipId": "subProcessMelting_12-hasStep-stepHolding_12",
+    "$sourceId": "subProcessMelting_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepHolding_12"
+  },
+  {
+    "$relationshipId": "subProcessMelting_12-hasStep-stepStirring_12",
+    "$sourceId": "subProcessMelting_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepStirring_12"
   },
   {
     "$relationshipId": "subProcessPreparation_10-hasEndStep-stepSkimming_10",
@@ -2510,6 +4998,36 @@
     "$targetId": "stepSkimming_10"
   },
   {
+    "$relationshipId": "subProcessPreparation_12-hasEndStep-stepSkimming_12",
+    "$sourceId": "subProcessPreparation_12",
+    "$relationshipName": "hasEndStep",
+    "$targetId": "stepSkimming_12"
+  },
+  {
+    "$relationshipId": "subProcessPreparation_12-hasNextSubProcess-subProcessMaterialLoading_12",
+    "$sourceId": "subProcessPreparation_12",
+    "$relationshipName": "hasNextSubProcess",
+    "$targetId": "subProcessMaterialLoading_12"
+  },
+  {
+    "$relationshipId": "subProcessPreparation_12-hasStartStep-stepPreheating_12",
+    "$sourceId": "subProcessPreparation_12",
+    "$relationshipName": "hasStartStep",
+    "$targetId": "stepPreheating_12"
+  },
+  {
+    "$relationshipId": "subProcessPreparation_12-hasStep-stepPreheating_12",
+    "$sourceId": "subProcessPreparation_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepPreheating_12"
+  },
+  {
+    "$relationshipId": "subProcessPreparation_12-hasStep-stepSkimming_12",
+    "$sourceId": "subProcessPreparation_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepSkimming_12"
+  },
+  {
     "$relationshipId": "subProcessSampleCheck_10-hasEndStep-stepLaboratoryAnalysis_10",
     "$sourceId": "subProcessSampleCheck_10",
     "$relationshipName": "hasEndStep",
@@ -2540,10 +5058,130 @@
     "$targetId": "stepSampling_10"
   },
   {
+    "$relationshipId": "subProcessSampleCheck_12-hasEndStep-stepLaboratoryAnalysis_12",
+    "$sourceId": "subProcessSampleCheck_12",
+    "$relationshipName": "hasEndStep",
+    "$targetId": "stepLaboratoryAnalysis_12"
+  },
+  {
+    "$relationshipId": "subProcessSampleCheck_12-hasNextSubProcess-subProcessAdjustment_12",
+    "$sourceId": "subProcessSampleCheck_12",
+    "$relationshipName": "hasNextSubProcess",
+    "$targetId": "subProcessAdjustment_12"
+  },
+  {
+    "$relationshipId": "subProcessSampleCheck_12-hasStartStep-stepSampling_12",
+    "$sourceId": "subProcessSampleCheck_12",
+    "$relationshipName": "hasStartStep",
+    "$targetId": "stepSampling_12"
+  },
+  {
+    "$relationshipId": "subProcessSampleCheck_12-hasStep-stepLaboratoryAnalysis_12",
+    "$sourceId": "subProcessSampleCheck_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepLaboratoryAnalysis_12"
+  },
+  {
+    "$relationshipId": "subProcessSampleCheck_12-hasStep-stepSampling_12",
+    "$sourceId": "subProcessSampleCheck_12",
+    "$relationshipName": "hasStep",
+    "$targetId": "stepSampling_12"
+  },
+  {
+    "$relationshipId": "airSupply_10-consistsOf-sensorFlowAir_10",
+    "$sourceId": "airSupply_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorFlowAir_10"
+  },
+  {
+    "$relationshipId": "airSupply_10-consistsOf-sensorOxygen_10",
+    "$sourceId": "airSupply_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorOxygen_10"
+  },
+  {
     "$relationshipId": "airSupply_10-hasPropertyOfInterest-propertyOfInterestConcentrationAirBurner_10",
     "$sourceId": "airSupply_10",
     "$relationshipName": "hasPropertyOfInterest",
     "$targetId": "propertyOfInterestConcentrationAirBurner_10"
+  },
+  {
+    "$relationshipId": "airSupply_12-consistsOf-sensorFlowAir_12",
+    "$sourceId": "airSupply_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorFlowAir_12"
+  },
+  {
+    "$relationshipId": "airSupply_12-consistsOf-sensorOxygen_12",
+    "$sourceId": "airSupply_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorOxygen_12"
+  },
+  {
+    "$relationshipId": "airSupply_12-hasPropertyOfInterest-propertyOfInterestConcentrationAirBurner_12",
+    "$sourceId": "airSupply_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestConcentrationAirBurner_12"
+  },
+  {
+    "$relationshipId": "burner_10-consistsOf-airSupply_10",
+    "$sourceId": "burner_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "airSupply_10"
+  },
+  {
+    "$relationshipId": "burner_10-consistsOf-gasSupply_10",
+    "$sourceId": "burner_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "gasSupply_10"
+  },
+  {
+    "$relationshipId": "burner_12-consistsOf-airSupply_12",
+    "$sourceId": "burner_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "airSupply_12"
+  },
+  {
+    "$relationshipId": "burner_12-consistsOf-gasSupply_12",
+    "$sourceId": "burner_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "gasSupply_12"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-burner_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "burner_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-door_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "door_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-sensorCastingStatusFurnace_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorCastingStatusFurnace_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-sensorPressureFurnace_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPressureFurnace_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-sensorTemperatureExhaustFurnace_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureExhaustFurnace_10"
+  },
+  {
+    "$relationshipId": "furnace_10-consistsOf-tank_10",
+    "$sourceId": "furnace_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "tank_10"
   },
   {
     "$relationshipId": "furnace_10-hasPropertyOfInterest-propertyOfInterestCastingStatusFurnace_10",
@@ -2564,10 +5202,124 @@
     "$targetId": "propertyOfInterestTemperatureExhaustFurnace_10"
   },
   {
+    "$relationshipId": "furnace_12-consistsOf-burner_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "burner_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-door_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "door_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-sensorCastingStatusFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorCastingStatusFurnace_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-sensorPressureFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPressureFurnace_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-sensorTemperatureExhaustFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureExhaustFurnace_12"
+  },
+  {
+    "$relationshipId": "furnace_12-consistsOf-tank_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "tank_12"
+  },
+  {
+    "$relationshipId": "furnace_12-hasPropertyOfInterest-propertyOfInterestCastingStatusFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestCastingStatusFurnace_12"
+  },
+  {
+    "$relationshipId": "furnace_12-hasPropertyOfInterest-propertyOfInterestPressureFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestPressureFurnace_12"
+  },
+  {
+    "$relationshipId": "furnace_12-hasPropertyOfInterest-propertyOfInterestTemperatureExhaustFurnace_12",
+    "$sourceId": "furnace_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestTemperatureExhaustFurnace_12"
+  },
+  {
+    "$relationshipId": "gasSupply_10-consistsOf-sensorFlowGas_10",
+    "$sourceId": "gasSupply_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorFlowGas_10"
+  },
+  {
     "$relationshipId": "gasSupply_10-hasPropertyOfInterest-propertyOfInterestFlowRateGasBurner_10",
     "$sourceId": "gasSupply_10",
     "$relationshipName": "hasPropertyOfInterest",
     "$targetId": "propertyOfInterestFlowRateGasBurner_10"
+  },
+  {
+    "$relationshipId": "gasSupply_12-consistsOf-sensorFlowGas_12",
+    "$sourceId": "gasSupply_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorFlowGas_12"
+  },
+  {
+    "$relationshipId": "gasSupply_12-hasPropertyOfInterest-propertyOfInterestFlowRateGasBurner_12",
+    "$sourceId": "gasSupply_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestFlowRateGasBurner_12"
+  },
+  {
+    "$relationshipId": "lining_10-consistsOf-coolingSystem_10",
+    "$sourceId": "lining_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "coolingSystem_10"
+  },
+  {
+    "$relationshipId": "lining_12-consistsOf-coolingSystem_12",
+    "$sourceId": "lining_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "coolingSystem_12"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-lining_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "lining_10"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-sensorPowerPercentBathTank_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPowerPercentBathTank_10"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-sensorPowerPercentRoofTank_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPowerPercentRoofTank_10"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-sensorTemperatureBathTank_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureBathTank_10"
+  },
+  {
+    "$relationshipId": "tank_10-consistsOf-sensorTemperatureRoofTank_10",
+    "$sourceId": "tank_10",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureRoofTank_10"
   },
   {
     "$relationshipId": "tank_10-hasPropertyOfInterest-propertyOfInterestHeatingPowerPercentBathTank_10",
@@ -2606,10 +5358,82 @@
     "$targetId": "propertyOfInterestTemperatureRoofThresholdTank_10"
   },
   {
+    "$relationshipId": "tank_12-consistsOf-lining_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "lining_12"
+  },
+  {
+    "$relationshipId": "tank_12-consistsOf-sensorPowerPercentBathTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPowerPercentBathTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-consistsOf-sensorPowerPercentRoofTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorPowerPercentRoofTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-consistsOf-sensorTemperatureBathTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureBathTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-consistsOf-sensorTemperatureRoofTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "consistsOf",
+    "$targetId": "sensorTemperatureRoofTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-hasPropertyOfInterest-propertyOfInterestHeatingPowerPercentBathTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestHeatingPowerPercentBathTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-hasPropertyOfInterest-propertyOfInterestHeatingPowerPercentRoofTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestHeatingPowerPercentRoofTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-hasPropertyOfInterest-propertyOfInterestTemperatureBatchTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestTemperatureBatchTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-hasPropertyOfInterest-propertyOfInterestTemperatureBathThresholdTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestTemperatureBathThresholdTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-hasPropertyOfInterest-propertyOfInterestTemperatureRoofTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestTemperatureRoofTank_12"
+  },
+  {
+    "$relationshipId": "tank_12-hasPropertyOfInterest-propertyOfInterestTemperatureRoofThresholdTank_12",
+    "$sourceId": "tank_12",
+    "$relationshipName": "hasPropertyOfInterest",
+    "$targetId": "propertyOfInterestTemperatureRoofThresholdTank_12"
+  },
+  {
     "$relationshipId": "Dimensionless-isPropertyOf-furnace_10",
     "$sourceId": "Dimensionless",
     "$relationshipName": "isPropertyOf",
     "$targetId": "furnace_10"
+  },
+  {
+    "$relationshipId": "Dimensionless-isPropertyOf-furnace_12",
+    "$sourceId": "Dimensionless",
+    "$relationshipName": "isPropertyOf",
+    "$targetId": "furnace_12"
   },
   {
     "$relationshipId": "DimensionlessRatio-isPropertyOf-airSupply_10",
@@ -2618,10 +5442,22 @@
     "$targetId": "airSupply_10"
   },
   {
+    "$relationshipId": "DimensionlessRatio-isPropertyOf-airSupply_12",
+    "$sourceId": "DimensionlessRatio",
+    "$relationshipName": "isPropertyOf",
+    "$targetId": "airSupply_12"
+  },
+  {
     "$relationshipId": "DimensionlessRatio-isPropertyOf-tank_10",
     "$sourceId": "DimensionlessRatio",
     "$relationshipName": "isPropertyOf",
     "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "DimensionlessRatio-isPropertyOf-tank_12",
+    "$sourceId": "DimensionlessRatio",
+    "$relationshipName": "isPropertyOf",
+    "$targetId": "tank_12"
   },
   {
     "$relationshipId": "Pressure-isPropertyOf-furnace_10",
@@ -2630,10 +5466,22 @@
     "$targetId": "furnace_10"
   },
   {
+    "$relationshipId": "Pressure-isPropertyOf-furnace_12",
+    "$sourceId": "Pressure",
+    "$relationshipName": "isPropertyOf",
+    "$targetId": "furnace_12"
+  },
+  {
     "$relationshipId": "Temperature-isPropertyOf-furnace_10",
     "$sourceId": "Temperature",
     "$relationshipName": "isPropertyOf",
     "$targetId": "furnace_10"
+  },
+  {
+    "$relationshipId": "Temperature-isPropertyOf-furnace_12",
+    "$sourceId": "Temperature",
+    "$relationshipName": "isPropertyOf",
+    "$targetId": "furnace_12"
   },
   {
     "$relationshipId": "Temperature-isPropertyOf-tank_10",
@@ -2642,10 +5490,22 @@
     "$targetId": "tank_10"
   },
   {
+    "$relationshipId": "Temperature-isPropertyOf-tank_12",
+    "$sourceId": "Temperature",
+    "$relationshipName": "isPropertyOf",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "VolumeFlowRate-isPropertyOf-gasSupply_10",
     "$sourceId": "VolumeFlowRate",
     "$relationshipName": "isPropertyOf",
     "$targetId": "gasSupply_10"
+  },
+  {
+    "$relationshipId": "VolumeFlowRate-isPropertyOf-gasSupply_12",
+    "$sourceId": "VolumeFlowRate",
+    "$relationshipName": "isPropertyOf",
+    "$targetId": "gasSupply_12"
   },
   {
     "$relationshipId": "propertyOfInterestCastingStatusFurnace_10-hasPropertyKind-Dimensionless",
@@ -2660,6 +5520,18 @@
     "$targetId": "furnace_10"
   },
   {
+    "$relationshipId": "propertyOfInterestCastingStatusFurnace_12-hasPropertyKind-Dimensionless",
+    "$sourceId": "propertyOfInterestCastingStatusFurnace_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "Dimensionless"
+  },
+  {
+    "$relationshipId": "propertyOfInterestCastingStatusFurnace_12-isPropertyOfInterestOf-furnace_12",
+    "$sourceId": "propertyOfInterestCastingStatusFurnace_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "furnace_12"
+  },
+  {
     "$relationshipId": "propertyOfInterestConcentrationAirBurner_10-hasPropertyKind-DimensionlessRatio",
     "$sourceId": "propertyOfInterestConcentrationAirBurner_10",
     "$relationshipName": "hasPropertyKind",
@@ -2670,6 +5542,18 @@
     "$sourceId": "propertyOfInterestConcentrationAirBurner_10",
     "$relationshipName": "isPropertyOfInterestOf",
     "$targetId": "airSupply_10"
+  },
+  {
+    "$relationshipId": "propertyOfInterestConcentrationAirBurner_12-hasPropertyKind-DimensionlessRatio",
+    "$sourceId": "propertyOfInterestConcentrationAirBurner_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "DimensionlessRatio"
+  },
+  {
+    "$relationshipId": "propertyOfInterestConcentrationAirBurner_12-isPropertyOfInterestOf-airSupply_12",
+    "$sourceId": "propertyOfInterestConcentrationAirBurner_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "airSupply_12"
   },
   {
     "$relationshipId": "propertyOfInterestFlowRateGasBurner_10-hasPropertyKind-VolumeFlowRate",
@@ -2684,6 +5568,18 @@
     "$targetId": "gasSupply_10"
   },
   {
+    "$relationshipId": "propertyOfInterestFlowRateGasBurner_12-hasPropertyKind-VolumeFlowRate",
+    "$sourceId": "propertyOfInterestFlowRateGasBurner_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "VolumeFlowRate"
+  },
+  {
+    "$relationshipId": "propertyOfInterestFlowRateGasBurner_12-isPropertyOfInterestOf-gasSupply_12",
+    "$sourceId": "propertyOfInterestFlowRateGasBurner_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "gasSupply_12"
+  },
+  {
     "$relationshipId": "propertyOfInterestHeatingPowerPercentBathTank_10-hasPropertyKind-DimensionlessRatio",
     "$sourceId": "propertyOfInterestHeatingPowerPercentBathTank_10",
     "$relationshipName": "hasPropertyKind",
@@ -2694,6 +5590,18 @@
     "$sourceId": "propertyOfInterestHeatingPowerPercentBathTank_10",
     "$relationshipName": "isPropertyOfInterestOf",
     "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "propertyOfInterestHeatingPowerPercentBathTank_12-hasPropertyKind-DimensionlessRatio",
+    "$sourceId": "propertyOfInterestHeatingPowerPercentBathTank_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "DimensionlessRatio"
+  },
+  {
+    "$relationshipId": "propertyOfInterestHeatingPowerPercentBathTank_12-isPropertyOfInterestOf-tank_12",
+    "$sourceId": "propertyOfInterestHeatingPowerPercentBathTank_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "tank_12"
   },
   {
     "$relationshipId": "propertyOfInterestHeatingPowerPercentRoofTank_10-hasPropertyKind-DimensionlessRatio",
@@ -2708,6 +5616,18 @@
     "$targetId": "tank_10"
   },
   {
+    "$relationshipId": "propertyOfInterestHeatingPowerPercentRoofTank_12-hasPropertyKind-DimensionlessRatio",
+    "$sourceId": "propertyOfInterestHeatingPowerPercentRoofTank_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "DimensionlessRatio"
+  },
+  {
+    "$relationshipId": "propertyOfInterestHeatingPowerPercentRoofTank_12-isPropertyOfInterestOf-tank_12",
+    "$sourceId": "propertyOfInterestHeatingPowerPercentRoofTank_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "propertyOfInterestPressureFurnace_10-hasPropertyKind-Pressure",
     "$sourceId": "propertyOfInterestPressureFurnace_10",
     "$relationshipName": "hasPropertyKind",
@@ -2718,6 +5638,18 @@
     "$sourceId": "propertyOfInterestPressureFurnace_10",
     "$relationshipName": "isPropertyOfInterestOf",
     "$targetId": "furnace_10"
+  },
+  {
+    "$relationshipId": "propertyOfInterestPressureFurnace_12-hasPropertyKind-Pressure",
+    "$sourceId": "propertyOfInterestPressureFurnace_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "Pressure"
+  },
+  {
+    "$relationshipId": "propertyOfInterestPressureFurnace_12-isPropertyOfInterestOf-furnace_12",
+    "$sourceId": "propertyOfInterestPressureFurnace_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "furnace_12"
   },
   {
     "$relationshipId": "propertyOfInterestTemperatureBatchTank_10-hasPropertyKind-Temperature",
@@ -2732,6 +5664,18 @@
     "$targetId": "tank_10"
   },
   {
+    "$relationshipId": "propertyOfInterestTemperatureBatchTank_12-hasPropertyKind-Temperature",
+    "$sourceId": "propertyOfInterestTemperatureBatchTank_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyOfInterestTemperatureBatchTank_12-isPropertyOfInterestOf-tank_12",
+    "$sourceId": "propertyOfInterestTemperatureBatchTank_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "tank_12"
+  },
+  {
     "$relationshipId": "propertyOfInterestTemperatureBathThresholdTank_10-hasPropertyKind-Temperature",
     "$sourceId": "propertyOfInterestTemperatureBathThresholdTank_10",
     "$relationshipName": "hasPropertyKind",
@@ -2742,6 +5686,18 @@
     "$sourceId": "propertyOfInterestTemperatureBathThresholdTank_10",
     "$relationshipName": "isPropertyOfInterestOf",
     "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "propertyOfInterestTemperatureBathThresholdTank_12-hasPropertyKind-Temperature",
+    "$sourceId": "propertyOfInterestTemperatureBathThresholdTank_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyOfInterestTemperatureBathThresholdTank_12-isPropertyOfInterestOf-tank_12",
+    "$sourceId": "propertyOfInterestTemperatureBathThresholdTank_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "tank_12"
   },
   {
     "$relationshipId": "propertyOfInterestTemperatureExhaustFurnace_10-hasPropertyKind-Temperature",
@@ -2756,6 +5712,18 @@
     "$targetId": "furnace_10"
   },
   {
+    "$relationshipId": "propertyOfInterestTemperatureExhaustFurnace_12-hasPropertyKind-Temperature",
+    "$sourceId": "propertyOfInterestTemperatureExhaustFurnace_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyOfInterestTemperatureExhaustFurnace_12-isPropertyOfInterestOf-furnace_12",
+    "$sourceId": "propertyOfInterestTemperatureExhaustFurnace_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "furnace_12"
+  },
+  {
     "$relationshipId": "propertyOfInterestTemperatureRoofTank_10-hasPropertyKind-Temperature",
     "$sourceId": "propertyOfInterestTemperatureRoofTank_10",
     "$relationshipName": "hasPropertyKind",
@@ -2766,6 +5734,18 @@
     "$sourceId": "propertyOfInterestTemperatureRoofTank_10",
     "$relationshipName": "isPropertyOfInterestOf",
     "$targetId": "tank_10"
+  },
+  {
+    "$relationshipId": "propertyOfInterestTemperatureRoofTank_12-hasPropertyKind-Temperature",
+    "$sourceId": "propertyOfInterestTemperatureRoofTank_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyOfInterestTemperatureRoofTank_12-isPropertyOfInterestOf-tank_12",
+    "$sourceId": "propertyOfInterestTemperatureRoofTank_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "tank_12"
   },
   {
     "$relationshipId": "propertyOfInterestTemperatureRoofThresholdTank_10-hasPropertyKind-Temperature",
@@ -2780,6 +5760,24 @@
     "$targetId": "tank_10"
   },
   {
+    "$relationshipId": "propertyOfInterestTemperatureRoofThresholdTank_12-hasPropertyKind-Temperature",
+    "$sourceId": "propertyOfInterestTemperatureRoofThresholdTank_12",
+    "$relationshipName": "hasPropertyKind",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyOfInterestTemperatureRoofThresholdTank_12-isPropertyOfInterestOf-tank_12",
+    "$sourceId": "propertyOfInterestTemperatureRoofThresholdTank_12",
+    "$relationshipName": "isPropertyOfInterestOf",
+    "$targetId": "tank_12"
+  },
+  {
+    "$relationshipId": "propertyValueCastingStatusFurnace_10-isMeasuredIn-NUM",
+    "$sourceId": "propertyValueCastingStatusFurnace_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "NUM"
+  },
+  {
     "$relationshipId": "propertyValueCastingStatusFurnace_10-isValueOfProperty-Dimensionless",
     "$sourceId": "propertyValueCastingStatusFurnace_10",
     "$relationshipName": "isValueOfProperty",
@@ -2790,6 +5788,30 @@
     "$sourceId": "propertyValueCastingStatusFurnace_10",
     "$relationshipName": "isValueOfProperty",
     "$targetId": "propertyOfInterestCastingStatusFurnace_10"
+  },
+  {
+    "$relationshipId": "propertyValueCastingStatusFurnace_12-isMeasuredIn-NUM",
+    "$sourceId": "propertyValueCastingStatusFurnace_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "NUM"
+  },
+  {
+    "$relationshipId": "propertyValueCastingStatusFurnace_12-isValueOfProperty-Dimensionless",
+    "$sourceId": "propertyValueCastingStatusFurnace_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "Dimensionless"
+  },
+  {
+    "$relationshipId": "propertyValueCastingStatusFurnace_12-isValueOfProperty-propertyOfInterestCastingStatusFurnace_12",
+    "$sourceId": "propertyValueCastingStatusFurnace_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestCastingStatusFurnace_12"
+  },
+  {
+    "$relationshipId": "propertyValueConcentrationAirBurner_10-isMeasuredIn-PERCENT",
+    "$sourceId": "propertyValueConcentrationAirBurner_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "PERCENT"
   },
   {
     "$relationshipId": "propertyValueConcentrationAirBurner_10-isValueOfProperty-DimensionlessRatio",
@@ -2804,6 +5826,30 @@
     "$targetId": "propertyOfInterestConcentrationAirBurner_10"
   },
   {
+    "$relationshipId": "propertyValueConcentrationAirBurner_12-isMeasuredIn-PERCENT",
+    "$sourceId": "propertyValueConcentrationAirBurner_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "PERCENT"
+  },
+  {
+    "$relationshipId": "propertyValueConcentrationAirBurner_12-isValueOfProperty-DimensionlessRatio",
+    "$sourceId": "propertyValueConcentrationAirBurner_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "DimensionlessRatio"
+  },
+  {
+    "$relationshipId": "propertyValueConcentrationAirBurner_12-isValueOfProperty-propertyOfInterestConcentrationAirBurner_12",
+    "$sourceId": "propertyValueConcentrationAirBurner_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestConcentrationAirBurner_12"
+  },
+  {
+    "$relationshipId": "propertyValueFlowRateGasBurner_10-isMeasuredIn-CentiM3-PER-HR",
+    "$sourceId": "propertyValueFlowRateGasBurner_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "CentiM3-PER-HR"
+  },
+  {
     "$relationshipId": "propertyValueFlowRateGasBurner_10-isValueOfProperty-VolumeFlowRate",
     "$sourceId": "propertyValueFlowRateGasBurner_10",
     "$relationshipName": "isValueOfProperty",
@@ -2814,6 +5860,30 @@
     "$sourceId": "propertyValueFlowRateGasBurner_10",
     "$relationshipName": "isValueOfProperty",
     "$targetId": "propertyOfInterestFlowRateGasBurner_10"
+  },
+  {
+    "$relationshipId": "propertyValueFlowRateGasBurner_12-isMeasuredIn-CentiM3-PER-HR",
+    "$sourceId": "propertyValueFlowRateGasBurner_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "CentiM3-PER-HR"
+  },
+  {
+    "$relationshipId": "propertyValueFlowRateGasBurner_12-isValueOfProperty-VolumeFlowRate",
+    "$sourceId": "propertyValueFlowRateGasBurner_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "VolumeFlowRate"
+  },
+  {
+    "$relationshipId": "propertyValueFlowRateGasBurner_12-isValueOfProperty-propertyOfInterestFlowRateGasBurner_12",
+    "$sourceId": "propertyValueFlowRateGasBurner_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestFlowRateGasBurner_12"
+  },
+  {
+    "$relationshipId": "propertyValueHeatingPowerPercentBathTank_10-isMeasuredIn-PERCENT",
+    "$sourceId": "propertyValueHeatingPowerPercentBathTank_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "PERCENT"
   },
   {
     "$relationshipId": "propertyValueHeatingPowerPercentBathTank_10-isValueOfProperty-DimensionlessRatio",
@@ -2828,6 +5898,30 @@
     "$targetId": "propertyOfInterestHeatingPowerPercentBathTank_10"
   },
   {
+    "$relationshipId": "propertyValueHeatingPowerPercentBathTank_12-isMeasuredIn-PERCENT",
+    "$sourceId": "propertyValueHeatingPowerPercentBathTank_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "PERCENT"
+  },
+  {
+    "$relationshipId": "propertyValueHeatingPowerPercentBathTank_12-isValueOfProperty-DimensionlessRatio",
+    "$sourceId": "propertyValueHeatingPowerPercentBathTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "DimensionlessRatio"
+  },
+  {
+    "$relationshipId": "propertyValueHeatingPowerPercentBathTank_12-isValueOfProperty-propertyOfInterestHeatingPowerPercentBathTank_12",
+    "$sourceId": "propertyValueHeatingPowerPercentBathTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestHeatingPowerPercentBathTank_12"
+  },
+  {
+    "$relationshipId": "propertyValueHeatingPowerPercentRoofTank_10-isMeasuredIn-PERCENT",
+    "$sourceId": "propertyValueHeatingPowerPercentRoofTank_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "PERCENT"
+  },
+  {
     "$relationshipId": "propertyValueHeatingPowerPercentRoofTank_10-isValueOfProperty-DimensionlessRatio",
     "$sourceId": "propertyValueHeatingPowerPercentRoofTank_10",
     "$relationshipName": "isValueOfProperty",
@@ -2838,6 +5932,30 @@
     "$sourceId": "propertyValueHeatingPowerPercentRoofTank_10",
     "$relationshipName": "isValueOfProperty",
     "$targetId": "propertyOfInterestHeatingPowerPercentRoofTank_10"
+  },
+  {
+    "$relationshipId": "propertyValueHeatingPowerPercentRoofTank_12-isMeasuredIn-PERCENT",
+    "$sourceId": "propertyValueHeatingPowerPercentRoofTank_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "PERCENT"
+  },
+  {
+    "$relationshipId": "propertyValueHeatingPowerPercentRoofTank_12-isValueOfProperty-DimensionlessRatio",
+    "$sourceId": "propertyValueHeatingPowerPercentRoofTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "DimensionlessRatio"
+  },
+  {
+    "$relationshipId": "propertyValueHeatingPowerPercentRoofTank_12-isValueOfProperty-propertyOfInterestHeatingPowerPercentRoofTank_12",
+    "$sourceId": "propertyValueHeatingPowerPercentRoofTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestHeatingPowerPercentRoofTank_12"
+  },
+  {
+    "$relationshipId": "propertyValuePressureFurnace_10-isMeasuredIn-MilliBAR",
+    "$sourceId": "propertyValuePressureFurnace_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "MilliBAR"
   },
   {
     "$relationshipId": "propertyValuePressureFurnace_10-isValueOfProperty-Pressure",
@@ -2852,6 +5970,30 @@
     "$targetId": "propertyOfInterestPressureFurnace_10"
   },
   {
+    "$relationshipId": "propertyValuePressureFurnace_12-isMeasuredIn-MilliBAR",
+    "$sourceId": "propertyValuePressureFurnace_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "MilliBAR"
+  },
+  {
+    "$relationshipId": "propertyValuePressureFurnace_12-isValueOfProperty-Pressure",
+    "$sourceId": "propertyValuePressureFurnace_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "Pressure"
+  },
+  {
+    "$relationshipId": "propertyValuePressureFurnace_12-isValueOfProperty-propertyOfInterestPressureFurnace_12",
+    "$sourceId": "propertyValuePressureFurnace_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestPressureFurnace_12"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureBathTank_10-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureBathTank_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
+  },
+  {
     "$relationshipId": "propertyValueTemperatureBathTank_10-isValueOfProperty-Temperature",
     "$sourceId": "propertyValueTemperatureBathTank_10",
     "$relationshipName": "isValueOfProperty",
@@ -2862,6 +6004,30 @@
     "$sourceId": "propertyValueTemperatureBathTank_10",
     "$relationshipName": "isValueOfProperty",
     "$targetId": "propertyOfInterestTemperatureBatchTank_10"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureBathTank_12-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureBathTank_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureBathTank_12-isValueOfProperty-Temperature",
+    "$sourceId": "propertyValueTemperatureBathTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureBathTank_12-isValueOfProperty-propertyOfInterestTemperatureBatchTank_12",
+    "$sourceId": "propertyValueTemperatureBathTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestTemperatureBatchTank_12"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureBathThresholdTank_10-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureBathThresholdTank_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
   },
   {
     "$relationshipId": "propertyValueTemperatureBathThresholdTank_10-isValueOfProperty-Temperature",
@@ -2876,6 +6042,30 @@
     "$targetId": "propertyOfInterestTemperatureBathThresholdTank_10"
   },
   {
+    "$relationshipId": "propertyValueTemperatureBathThresholdTank_12-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureBathThresholdTank_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureBathThresholdTank_12-isValueOfProperty-Temperature",
+    "$sourceId": "propertyValueTemperatureBathThresholdTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureBathThresholdTank_12-isValueOfProperty-propertyOfInterestTemperatureBathThresholdTank_12",
+    "$sourceId": "propertyValueTemperatureBathThresholdTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestTemperatureBathThresholdTank_12"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureExhaustFurnace_10-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureExhaustFurnace_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
+  },
+  {
     "$relationshipId": "propertyValueTemperatureExhaustFurnace_10-isValueOfProperty-Temperature",
     "$sourceId": "propertyValueTemperatureExhaustFurnace_10",
     "$relationshipName": "isValueOfProperty",
@@ -2886,6 +6076,30 @@
     "$sourceId": "propertyValueTemperatureExhaustFurnace_10",
     "$relationshipName": "isValueOfProperty",
     "$targetId": "propertyOfInterestTemperatureExhaustFurnace_10"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureExhaustFurnace_12-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureExhaustFurnace_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureExhaustFurnace_12-isValueOfProperty-Temperature",
+    "$sourceId": "propertyValueTemperatureExhaustFurnace_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureExhaustFurnace_12-isValueOfProperty-propertyOfInterestTemperatureExhaustFurnace_12",
+    "$sourceId": "propertyValueTemperatureExhaustFurnace_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestTemperatureExhaustFurnace_12"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureRoofTank_10-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureRoofTank_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
   },
   {
     "$relationshipId": "propertyValueTemperatureRoofTank_10-isValueOfProperty-Temperature",
@@ -2900,6 +6114,30 @@
     "$targetId": "propertyOfInterestTemperatureRoofTank_10"
   },
   {
+    "$relationshipId": "propertyValueTemperatureRoofTank_12-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureRoofTank_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureRoofTank_12-isValueOfProperty-Temperature",
+    "$sourceId": "propertyValueTemperatureRoofTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureRoofTank_12-isValueOfProperty-propertyOfInterestTemperatureRoofTank_12",
+    "$sourceId": "propertyValueTemperatureRoofTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestTemperatureRoofTank_12"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureRoofThresholdTank_10-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureRoofThresholdTank_10",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
+  },
+  {
     "$relationshipId": "propertyValueTemperatureRoofThresholdTank_10-isValueOfProperty-Temperature",
     "$sourceId": "propertyValueTemperatureRoofThresholdTank_10",
     "$relationshipName": "isValueOfProperty",
@@ -2912,9 +6150,33 @@
     "$targetId": "propertyOfInterestTemperatureRoofThresholdTank_10"
   },
   {
+    "$relationshipId": "propertyValueTemperatureRoofThresholdTank_12-isMeasuredIn-DEG_C",
+    "$sourceId": "propertyValueTemperatureRoofThresholdTank_12",
+    "$relationshipName": "isMeasuredIn",
+    "$targetId": "DEG_C"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureRoofThresholdTank_12-isValueOfProperty-Temperature",
+    "$sourceId": "propertyValueTemperatureRoofThresholdTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "Temperature"
+  },
+  {
+    "$relationshipId": "propertyValueTemperatureRoofThresholdTank_12-isValueOfProperty-propertyOfInterestTemperatureRoofThresholdTank_12",
+    "$sourceId": "propertyValueTemperatureRoofThresholdTank_12",
+    "$relationshipName": "isValueOfProperty",
+    "$targetId": "propertyOfInterestTemperatureRoofThresholdTank_12"
+  },
+  {
     "$relationshipId": "stateOpenCloseDoor_10-isStateOf-door_10",
     "$sourceId": "stateOpenCloseDoor_10",
     "$relationshipName": "isStateOf",
     "$targetId": "door_10"
+  },
+  {
+    "$relationshipId": "stateOpenCloseDoor_12-isStateOf-door_12",
+    "$sourceId": "stateOpenCloseDoor_12",
+    "$relationshipName": "isStateOf",
+    "$targetId": "door_12"
   }
 ]
