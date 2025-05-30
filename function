@@ -1,0 +1,52 @@
+function.json
+[
+  {
+    "scriptFile": "__init__.py",
+    "entryPoint": "main_fur10",
+    "bindings": [
+      {
+        "name": "blob",
+        "type": "blobTrigger",
+        "direction": "in",
+        "path": "%ADLS_PATH_F10%/{name}",
+        "connection": "MES_CASTHOUSE_URL"
+      }
+    ]
+  },
+  {
+    "scriptFile": "__init__.py",
+    "entryPoint": "main_fur12",
+    "bindings": [
+      {
+        "name": "blob",
+        "type": "blobTrigger",
+        "direction": "in",
+        "path": "%ADLS_PATH_F12%/{name}",
+        "connection": "MES_CASTHOUSE_URL"
+      }
+    ]
+  }
+]
+
+
+host.json
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    }
+  },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[4.*, 5.0.0)"
+  },
+  "extensions": {
+    "blobs": {
+      "maxDegreeOfParallelism": 2
+    }
+  }
+}
