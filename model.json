@@ -2,11 +2,12 @@
   {
     "@id": "dtmi:ega:ConceptScheme;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Concept Scheme",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentConceptScheme",
         "schema": "string",
         "description": "A comment for the sensor instance"
       }
@@ -16,27 +17,23 @@
   {
     "@id": "dtmi:ega:TemporalEntity;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "TemporalEntity",
     "contents": []
   },
   {
     "@id": "dtmi:ega:TemporalPosition;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "TemporalPosition",
     "contents": []
   },
   {
     "@id": "dtmi:ega:ActuatingFunction;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Actuating Function",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "A function that allows to transmit data to device, binary switching (e.g., open/close, on/off), etc.",
     "extends": [
       "dtmi:ega:Function;1"
@@ -45,15 +42,9 @@
   {
     "@id": "dtmi:ega:AirFlowSensor;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Air Flow Sensor",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Measurement device for Air flow",
     "extends": [
       "dtmi:ega:Sensor;1"
@@ -62,14 +53,9 @@
   {
     "@id": "dtmi:ega:AirSupply;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Air Supply",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "consistsOf",
@@ -84,15 +70,9 @@
   {
     "@id": "dtmi:ega:Aluminium;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Aluminium",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Primary raw material processed in Furnance",
     "extends": [
       "dtmi:ega:MaterialBatch;1"
@@ -101,17 +81,12 @@
   {
     "@id": "dtmi:ega:Burner;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Burner",
     "contents": [
       {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
-      {
         "@type": "Relationship",
-        "name": "consistsOf",
+        "name": "BurnerconsistsOf",
         "target": "dtmi:ega:AirSupply;1"
       }
     ],
@@ -123,6 +98,7 @@
   {
     "@id": "dtmi:ega:CastingStatusSensor;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Casting Status Sensor",
     "contents": [],
     "extends": [
@@ -132,15 +108,9 @@
   {
     "@id": "dtmi:ega:CastingSystem;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Casting System",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Downstream component that receives processed aluminium to form final products (billets, sheets, ingots)",
     "extends": [
       "dtmi:ega:IndustrySystem;1"
@@ -149,15 +119,9 @@
   {
     "@id": "dtmi:ega:CloseCommand;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Close Command",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Represents a command to close a device",
     "extends": [
       "dtmi:ega:Command;1"
@@ -166,15 +130,9 @@
   {
     "@id": "dtmi:ega:CoolingSystem;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Cooling System",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Heat management infrastructure that prevents overheating of furnace components",
     "extends": [
       "dtmi:ega:IndustrySystem;1"
@@ -183,14 +141,9 @@
   {
     "@id": "dtmi:ega:Door;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Door",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "hasFunction",
@@ -210,14 +163,9 @@
   {
     "@id": "dtmi:ega:Furnace;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Furnace",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "feeds",
@@ -235,7 +183,7 @@
       },
       {
         "@type": "Relationship",
-        "name": "consistsOf",
+        "name": "FurnaceconsistsOf",
         "target": "dtmi:ega:Burner;1"
       }
     ],
@@ -247,15 +195,9 @@
   {
     "@id": "dtmi:ega:GasFlowSensor;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Gas Flow Sensor",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Measurement Sensor device for Gas flow",
     "extends": [
       "dtmi:ega:Sensor;1"
@@ -264,17 +206,12 @@
   {
     "@id": "dtmi:ega:GasSupply;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Gas Supply",
     "contents": [
       {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
-      {
         "@type": "Relationship",
-        "name": "consistsOf",
+        "name": "GasconsistsOf",
         "target": "dtmi:ega:GasFlowSensor;1"
       }
     ],
@@ -286,15 +223,9 @@
   {
     "@id": "dtmi:ega:IndustrySystem;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "IndustrySystem",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "It's designed a group of Device of Feature of Interest which has an objective or functional around the activity of furnance",
     "extends": [
       "dtmi:ega:System;1"
@@ -303,17 +234,12 @@
   {
     "@id": "dtmi:ega:Lining;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Lining",
     "contents": [
       {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
-      {
         "@type": "Relationship",
-        "name": "consistsOf",
+        "name": "LiningconsistsOf",
         "target": "dtmi:ega:CoolingSystem;1"
       }
     ],
@@ -325,15 +251,9 @@
   {
     "@id": "dtmi:ega:Metals;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Metals",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Alloying elements added to aluminum to achieve specific chemical composition and physical properties in the final product",
     "extends": [
       "dtmi:ega:MaterialBatch;1"
@@ -342,14 +262,9 @@
   {
     "@id": "dtmi:ega:OpenCloseFunction;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Open Close Function",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "hasCommand",
@@ -364,6 +279,7 @@
   {
     "@id": "dtmi:ega:OpenCloseState;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "OpenCloseState",
     "contents": [
       {
@@ -375,19 +291,52 @@
           "enumValues": [
             {
               "name": "CLOSE",
-              "value": "CLOSE"
+              "enumValue": "CLOSE"
             },
             {
               "name": "OPEN",
-              "value": "OPEN"
+              "enumValue": "OPEN"
             }
           ]
         }
       },
       {
-        "@type": "Relationship",
+        "@type": "Property",
         "name": "hasOpenReason",
-        "target": "dtmi:ega:OpenReason;1"
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "Unknown",
+              "enumValue": "Unknown"
+            },
+            {
+              "name": "ScrapCharging",
+              "enumValue": "ScrapCharging"
+            },
+            {
+              "name": "Skimming",
+              "enumValue": "Skimming"
+            },
+            {
+              "name": "AluminiumCharging",
+              "enumValue": "AluminiumCharging"
+            },
+            {
+              "name": "Stirring",
+              "enumValue": "Stirring"
+            },
+            {
+              "name": "Sampling",
+              "enumValue": "Sampling"
+            },
+            {
+              "name": "AlloyAddition",
+              "enumValue": "AlloyAddition"
+            }
+          ]
+        }
       }
     ],
     "extends": [
@@ -397,14 +346,9 @@
   {
     "@id": "dtmi:ega:OpenCloseStateValue;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Open Close State Value",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Property",
         "name": "OpenCloseStateValueEnum",
@@ -414,11 +358,11 @@
           "enumValues": [
             {
               "name": "CLOSE",
-              "value": "CLOSE"
+              "enumValue": "CLOSE"
             },
             {
               "name": "OPEN",
-              "value": "OPEN"
+              "enumValue": "OPEN"
             }
           ]
         }
@@ -432,15 +376,9 @@
   {
     "@id": "dtmi:ega:OpenCommand;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Open Command",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Represents a command to open a device",
     "extends": [
       "dtmi:ega:Command;1"
@@ -449,14 +387,9 @@
   {
     "@id": "dtmi:ega:OpenReason;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Open Reason",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Property",
         "name": "OpenReasonEnum",
@@ -466,34 +399,39 @@
           "enumValues": [
             {
               "name": "AlloyAddition",
-              "value": "AlloyAddition"
+              "enumValue": "AlloyAddition"
             },
             {
               "name": "AluminiumCharging",
-              "value": "AluminiumCharging"
+              "enumValue": "AluminiumCharging"
             },
             {
               "name": "Sampling",
-              "value": "Sampling"
+              "enumValue": "Sampling"
             },
             {
               "name": "ScrapCharging",
-              "value": "ScrapCharging"
+              "enumValue": "ScrapCharging"
             },
             {
               "name": "Skimming",
-              "value": "Skimming"
+              "enumValue": "Skimming"
             },
             {
               "name": "Stirring",
-              "value": "Stirring"
+              "enumValue": "Stirring"
             },
             {
               "name": "Unknown",
-              "value": "Unknown"
+              "enumValue": "Unknown"
             }
           ]
         }
+      },
+      {
+        "@type": "Property",
+        "name": "hasTag",
+        "schema": "string"
       }
     ],
     "description": "A subclass of 'Reason' that specifies the causes for  openings. This includes enumerated reasons such as: Casting, Skimming, Sampling, Unknow, etc.. These reasons may relate to technical interventions, events, or manual actions.\" It's a controlled vocabulary representing opening reasons",
@@ -504,15 +442,9 @@
   {
     "@id": "dtmi:ega:OxygenSensor;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Oxygen Sensor",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Measurement device for Oxygen",
     "extends": [
       "dtmi:ega:Sensor;1"
@@ -521,15 +453,9 @@
   {
     "@id": "dtmi:ega:PowerSensor;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Power Sensor",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Measurement device for Power",
     "extends": [
       "dtmi:ega:Sensor;1"
@@ -538,15 +464,9 @@
   {
     "@id": "dtmi:ega:PressureSensor;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Pressure Sensor",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Measurement device for Pressure",
     "extends": [
       "dtmi:ega:Sensor;1"
@@ -555,17 +475,12 @@
   {
     "@id": "dtmi:ega:RawMaterialBatch;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Raw Material Batch",
     "contents": [
       {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
-      {
         "@type": "Relationship",
-        "name": "consistsOfBatch",
+        "name": "consistsOfRawMaterial",
         "target": "dtmi:ega:Aluminium;1"
       }
     ],
@@ -577,15 +492,9 @@
   {
     "@id": "dtmi:ega:RawMaterialFeederSystem;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Raw Material Feeder System",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Delivery system for introducing aluminium and alloying elements into the furnace",
     "extends": [
       "dtmi:ega:IndustrySystem;1"
@@ -594,15 +503,9 @@
   {
     "@id": "dtmi:ega:Reason;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Reason",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "A general category representing various reasons related to actions or states within the system, such as door openings or security alerts.",
     "extends": [
       "dtmi:ega:ConceptScheme;1"
@@ -611,15 +514,9 @@
   {
     "@id": "dtmi:ega:Scrap;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Scrap",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Recycled aluminium material reintroduced into the production process",
     "extends": [
       "dtmi:ega:MaterialBatch;1"
@@ -628,15 +525,9 @@
   {
     "@id": "dtmi:ega:StartStopFunction;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Start Stop Function",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "An actuating function that allows to start and stop a device",
     "extends": [
       "dtmi:ega:ActuatingFunction;1"
@@ -645,14 +536,9 @@
   {
     "@id": "dtmi:ega:Tank;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Tank",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "contains",
@@ -660,7 +546,7 @@
       },
       {
         "@type": "Relationship",
-        "name": "consistsOf",
+        "name": "TankconsistsOf",
         "target": "dtmi:ega:Lining;1"
       }
     ],
@@ -672,15 +558,9 @@
   {
     "@id": "dtmi:ega:TemperatureSensor;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Temperature Sensor",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Measurement device for temperature",
     "extends": [
       "dtmi:ega:Sensor;1"
@@ -689,68 +569,39 @@
   {
     "@id": "dtmi:ega:DimensionlessProperty;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Dimensionless Property",
     "contents": [],
     "extends": [
       "dtmi:ega:Property;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:NumberUnit;1",
-      "dtmi:ega:PercentUnit;1",
-      "dtmi:ega:PowerUnit;1",
-      "dtmi:ega:PressureUnit;1",
-      "dtmi:ega:TemperatureUnit;1",
-      "dtmi:ega:VolumeFlowRateUnit;1",
-      "dtmi:ega:UnitOfMeasure;1"
     ]
   },
   {
     "@id": "dtmi:ega:DimensionlessRatioProperty;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Dimensionless Ratio Property",
     "contents": [],
     "extends": [
       "dtmi:ega:Property;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:NumberUnit;1",
-      "dtmi:ega:PercentUnit;1",
-      "dtmi:ega:PowerUnit;1",
-      "dtmi:ega:PressureUnit;1",
-      "dtmi:ega:TemperatureUnit;1",
-      "dtmi:ega:VolumeFlowRateUnit;1",
-      "dtmi:ega:UnitOfMeasure;1"
     ]
   },
   {
     "@id": "dtmi:ega:ElectricCurrentProperty;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "ElectricCurrent Property",
     "contents": [],
     "extends": [
       "dtmi:ega:Property;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:NumberUnit;1",
-      "dtmi:ega:PercentUnit;1",
-      "dtmi:ega:PowerUnit;1",
-      "dtmi:ega:PressureUnit;1",
-      "dtmi:ega:TemperatureUnit;1",
-      "dtmi:ega:VolumeFlowRateUnit;1",
-      "dtmi:ega:UnitOfMeasure;1"
     ]
   },
   {
     "@id": "dtmi:ega:EventFunction;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "EventFunction",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "hasSpecificState",
@@ -770,197 +621,132 @@
   {
     "@id": "dtmi:ega:NumberUnit;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Number Unit",
     "contents": [],
     "extends": [
       "dtmi:ega:UnitOfMeasure;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:OxygenProperty;1",
-      "dtmi:ega:PowerProperty;1",
-      "dtmi:ega:PressureProperty;1",
-      "dtmi:ega:SpeedProperty;1",
-      "dtmi:ega:TemperatureProperty;1",
-      "dtmi:ega:VolumeFlowRateProperty;1",
-      "dtmi:ega:Property;1",
-      "dtmi:ega:Size;1"
     ]
   },
   {
     "@id": "dtmi:ega:OxygenProperty;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Oxygen Property",
     "contents": [],
     "extends": [
       "dtmi:ega:Property;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:PercentUnit;1",
-      "dtmi:ega:PowerUnit;1",
-      "dtmi:ega:PressureUnit;1",
-      "dtmi:ega:TemperatureUnit;1",
-      "dtmi:ega:VolumeFlowRateUnit;1",
-      "dtmi:ega:UnitOfMeasure;1"
     ]
   },
   {
     "@id": "dtmi:ega:PercentUnit;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Percent Unit",
     "contents": [],
     "extends": [
       "dtmi:ega:UnitOfMeasure;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:PowerProperty;1",
-      "dtmi:ega:PressureProperty;1",
-      "dtmi:ega:SpeedProperty;1",
-      "dtmi:ega:TemperatureProperty;1",
-      "dtmi:ega:VolumeFlowRateProperty;1",
-      "dtmi:ega:Property;1",
-      "dtmi:ega:Size;1"
     ]
   },
   {
     "@id": "dtmi:ega:PowerProperty;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Power Property",
     "contents": [],
     "extends": [
       "dtmi:ega:Property;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:PowerUnit;1",
-      "dtmi:ega:PressureUnit;1",
-      "dtmi:ega:TemperatureUnit;1",
-      "dtmi:ega:VolumeFlowRateUnit;1",
-      "dtmi:ega:UnitOfMeasure;1"
     ]
   },
   {
     "@id": "dtmi:ega:PowerUnit;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Power Unit",
     "contents": [],
     "extends": [
       "dtmi:ega:UnitOfMeasure;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:PressureProperty;1",
-      "dtmi:ega:SpeedProperty;1",
-      "dtmi:ega:TemperatureProperty;1",
-      "dtmi:ega:VolumeFlowRateProperty;1",
-      "dtmi:ega:Property;1",
-      "dtmi:ega:Size;1"
     ]
   },
   {
     "@id": "dtmi:ega:PressureProperty;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Pressure Property",
     "contents": [],
     "extends": [
       "dtmi:ega:Property;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:PressureUnit;1",
-      "dtmi:ega:TemperatureUnit;1",
-      "dtmi:ega:VolumeFlowRateUnit;1",
-      "dtmi:ega:UnitOfMeasure;1"
     ]
   },
   {
     "@id": "dtmi:ega:PressureUnit;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Pressure Unit",
     "contents": [],
     "extends": [
       "dtmi:ega:UnitOfMeasure;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:SpeedProperty;1",
-      "dtmi:ega:TemperatureProperty;1",
-      "dtmi:ega:VolumeFlowRateProperty;1",
-      "dtmi:ega:Property;1",
-      "dtmi:ega:Size;1"
     ]
   },
   {
     "@id": "dtmi:ega:SpeedProperty;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Speed Property",
     "contents": [],
     "extends": [
       "dtmi:ega:Property;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:TemperatureUnit;1",
-      "dtmi:ega:VolumeFlowRateUnit;1",
-      "dtmi:ega:UnitOfMeasure;1"
     ]
   },
   {
     "@id": "dtmi:ega:TemperatureProperty;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Temperature Property",
     "contents": [],
     "extends": [
       "dtmi:ega:Property;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:TemperatureUnit;1",
-      "dtmi:ega:VolumeFlowRateUnit;1",
-      "dtmi:ega:UnitOfMeasure;1"
     ]
   },
   {
     "@id": "dtmi:ega:TemperatureUnit;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Temperature Unit",
     "contents": [],
     "extends": [
       "dtmi:ega:UnitOfMeasure;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:VolumeFlowRateProperty;1",
-      "dtmi:ega:Property;1",
-      "dtmi:ega:Size;1"
     ]
   },
   {
     "@id": "dtmi:ega:VolumeFlowRateProperty;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Volume Flow Rate Property",
     "contents": [],
     "extends": [
       "dtmi:ega:Property;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:VolumeFlowRateUnit;1",
-      "dtmi:ega:UnitOfMeasure;1"
     ]
   },
   {
     "@id": "dtmi:ega:VolumeFlowRateUnit;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Volume Flow Rate Unit",
     "contents": [],
     "extends": [
       "dtmi:ega:UnitOfMeasure;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:Property;1",
-      "dtmi:ega:Size;1"
     ]
   },
   {
     "@id": "dtmi:ega:Condition;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Condition",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentCondition",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -980,44 +766,25 @@
   {
     "@id": "dtmi:ega:ConditionalSubProcess;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "ConditionalSubProcess",
     "contents": [
       {
         "@type": "Relationship",
         "name": "pathDependsOnStep",
         "target": "dtmi:ega:IterativeStep;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasNextSubProcessOnFailure",
-        "target": "dtmi:ega:SubProcess;1",
-        "displayName": "has next subprocess onfailure"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasNextSubProcessOnSuccess",
-        "target": "dtmi:ega:SubProcess;1",
-        "displayName": "has next subprocess onsuccess"
       }
     ],
     "extends": [
       "dtmi:ega:SubProcess;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:SequentialSubProcess;1"
     ]
   },
   {
     "@id": "dtmi:ega:IterativeStep;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "IterativeStep",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Property",
         "name": "isIterationCompleted",
@@ -1032,23 +799,14 @@
     "description": "it is a Step that implements the notion of a condition based loop, a step that manage a loop",
     "extends": [
       "dtmi:ega:Step;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:NormalStep;1"
     ]
   },
   {
     "@id": "dtmi:ega:NormalStep;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "NormalStep",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "It's a Step without loop concept",
     "extends": [
       "dtmi:ega:Step;1"
@@ -1057,11 +815,12 @@
   {
     "@id": "dtmi:ega:Process;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Process",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentProcess",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -1104,12 +863,6 @@
         "@type": "Property",
         "name": "isRunning",
         "schema": "boolean"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasCurrentSubProcess",
-        "target": "dtmi:ega:SubProcess;1",
-        "displayName": "has current subprocess"
       }
     ],
     "description": "Represents a complete Process."
@@ -1117,6 +870,7 @@
   {
     "@id": "dtmi:ega:SequentialSubProcess;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "SequentialSubProcess",
     "contents": [],
     "extends": [
@@ -1126,11 +880,12 @@
   {
     "@id": "dtmi:ega:Step;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Step",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentStep",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -1145,9 +900,22 @@
         "target": "dtmi:ega:Step;1"
       },
       {
-        "@type": "Relationship",
+        "@type": "Property",
         "name": "hasStepType",
-        "target": "dtmi:ega:StepType;1"
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "Operator",
+              "enumValue": "Operator"
+            },
+            {
+              "name": "Machine",
+              "enumValue": "Machine"
+            }
+          ]
+        }
       },
       {
         "@type": "Relationship",
@@ -1173,27 +941,6 @@
         "@type": "Property",
         "name": "isCurrentStep",
         "schema": "boolean"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasPreviousStep",
-        "target": "dtmi:ega:Step;1",
-        "displayName": "has previous step",
-        "description": "connects a step to its predecessor"
-      },
-      {
-        "@type": "Relationship",
-        "name": "useAsset",
-        "target": "dtmi:ega:IndustrySystem;1",
-        "displayName": "use asset",
-        "description": "Links a Process Step to a Asset Element"
-      },
-      {
-        "@type": "Relationship",
-        "name": "useAsset",
-        "target": "dtmi:ega:Device;1",
-        "displayName": "use asset",
-        "description": "Links a Process Step to a Asset Element"
       }
     ],
     "description": "Atomic action unit of a process"
@@ -1201,11 +948,12 @@
   {
     "@id": "dtmi:ega:StepType;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "StepType",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentStepType",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -1218,11 +966,11 @@
           "enumValues": [
             {
               "name": "Machine",
-              "value": "Machine"
+              "enumValue": "Machine"
             },
             {
               "name": "Operator",
-              "value": "Operator"
+              "enumValue": "Operator"
             }
           ]
         }
@@ -1233,11 +981,12 @@
   {
     "@id": "dtmi:ega:SubProcess;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "SubProcess",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentSubProcess",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -1275,19 +1024,6 @@
         "@type": "Property",
         "name": "isCurrentSubProcess",
         "schema": "boolean"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasCurrentStep",
-        "target": "dtmi:ega:Step;1",
-        "displayName": "has current step"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasNextSubProcess",
-        "target": "dtmi:ega:SubProcess;1",
-        "displayName": "has next subprocess",
-        "description": "Links a Subprocess to its next process"
       }
     ],
     "description": "a Logical grouping of related steps of process"
@@ -1295,18 +1031,18 @@
   {
     "@id": "dtmi:ega:Actuation;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Actuation",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "madeBy",
         "target": "dtmi:ega:Actuator;1"
+      },
+      {
+        "@type": "Relationship",
+        "name": "controls",
+        "target": "dtmi:ega:Unknown;1"
       }
     ],
     "description": "A saref:Actuation is the act of carrying out a procedure to control the state of the world using an actuator. It links to an actuator to describe what made the actuation, and to the controlled feature, property, property of interest, state, or state of interest. Typically, its input is a property value or a state. An actuation of a state (OP saref:controls) should have a state as input (OP saref:hasInput). Respectively, an actuation of a property should have a property value as input.",
@@ -1317,13 +1053,13 @@
   {
     "@id": "dtmi:ega:Actuator;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Actuator",
     "contents": [
       {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
+        "@type": "Relationship",
+        "name": "controls",
+        "target": "dtmi:ega:Unknown;1"
       }
     ],
     "description": "A device designed to control one or more properties or states of one or more features of interest.",
@@ -1334,15 +1070,9 @@
   {
     "@id": "dtmi:ega:Appliance;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Appliance",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "A device designed to accomplish a particular task for occupant use. It consumes, produces, or stores, some commodity.",
     "extends": [
       "dtmi:ega:Device;1"
@@ -1351,37 +1081,24 @@
   {
     "@id": "dtmi:ega:Command;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Command",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentCommand",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "broader",
+        "name": "broaderCommand",
         "target": "dtmi:ega:Command;1"
       },
       {
         "@type": "Relationship",
-        "name": "narrower",
+        "name": "narrowerCommand",
         "target": "dtmi:ega:Command;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isCommandOf",
-        "target": "dtmi:ega:Function;1",
-        "displayName": "is command of",
-        "description": "Links a command and a function or function of interest that supports it."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isCommandOf",
-        "target": "dtmi:ega:FunctionOfInterest;1",
-        "displayName": "is command of",
-        "description": "Links a command and a function or function of interest that supports it."
       }
     ],
     "description": "The lowest-level directives a function exposes to some network. Commands can target (OP saref:targets and its sub-properties) features, properties, or states. An instance of saref:Command is independent of any device."
@@ -1389,23 +1106,13 @@
   {
     "@id": "dtmi:ega:CommandExecution;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Command Execution",
     "contents": [
       {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
-      {
         "@type": "Relationship",
         "name": "isExecutionOf",
-        "target": "dtmi:ega:Command;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isExecutionOf",
-        "target": "dtmi:ega:CommandOfInterest;1"
+        "target": "dtmi:ega:Nd70e8c239da5415a976378cfa45006c1;1"
       }
     ],
     "description": "Describes the execution of a command. Typically, its inputs and outputs are human understandable and relate to some feature of interest, such as its state (e.g., s4abcd:On), or the value of its temperature (e.g., property value 21.0 \u00b0C).",
@@ -1416,11 +1123,12 @@
   {
     "@id": "dtmi:ega:CommandOfInterest;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Command Of Interest",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentCommandOfInterest",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -1428,13 +1136,6 @@
         "@type": "Relationship",
         "name": "isCommandOfInterestOf",
         "target": "dtmi:ega:FunctionOfInterest;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasCommandKind",
-        "target": "dtmi:ega:Command;1",
-        "displayName": "has command kind",
-        "description": "links a command of interest to its kind, a command."
       }
     ],
     "description": "The lowest-level directives a device supports and exposes to some network. Commands can target (OP saref:targets and its sub-properties) features, properties, or states. A saref:CommandOfInterest is a directives actually supported by a device and exposed to some network."
@@ -1442,107 +1143,24 @@
   {
     "@id": "dtmi:ega:Commodity;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Commodity",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentCommodity",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "broader",
+        "name": "broaderCommodity",
         "target": "dtmi:ega:Commodity;1"
       },
       {
         "@type": "Relationship",
-        "name": "narrower",
+        "name": "narrowerCommodity",
         "target": "dtmi:ega:Commodity;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isConsumedBy",
-        "target": "dtmi:ega:Device;1",
-        "displayName": "is consumed by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that consumes it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isConsumedBy",
-        "target": "dtmi:ega:DeviceKind;1",
-        "displayName": "is consumed by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that consumes it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isConsumedBy",
-        "target": "dtmi:ega:FeatureKind;1",
-        "displayName": "is consumed by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that consumes it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isConsumedBy",
-        "target": "dtmi:ega:FeatureOfInterest;1",
-        "displayName": "is consumed by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that consumes it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isProducedBy",
-        "target": "dtmi:ega:Device;1",
-        "displayName": "is produced by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that produces it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isProducedBy",
-        "target": "dtmi:ega:DeviceKind;1",
-        "displayName": "is produced by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that produces it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isProducedBy",
-        "target": "dtmi:ega:FeatureKind;1",
-        "displayName": "is produced by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that produces it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isProducedBy",
-        "target": "dtmi:ega:FeatureOfInterest;1",
-        "displayName": "is produced by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that produces it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isStoredBy",
-        "target": "dtmi:ega:Device;1",
-        "displayName": "is stored by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that stores it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isStoredBy",
-        "target": "dtmi:ega:DeviceKind;1",
-        "displayName": "is stored by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that stores it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isStoredBy",
-        "target": "dtmi:ega:FeatureKind;1",
-        "displayName": "is stored by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that stores it"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isStoredBy",
-        "target": "dtmi:ega:FeatureOfInterest;1",
-        "displayName": "is stored by",
-        "description": "Links a commodity to the feature kind, feature of interest, or device, that stores it"
       }
     ],
     "description": "A marketable item which may be supplied without qualitative differentiation."
@@ -1550,36 +1168,9 @@
   {
     "@id": "dtmi:ega:Device;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Device",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasDeviceKind",
-        "target": "dtmi:ega:DeviceKind;1",
-        "displayName": "has device kind",
-        "description": "Links a device to its kind, a device kind. Kinds of devices describe models of devices, with common properties and common states having the same value, targeting the same properties and states, common functions, and common services."
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasFunctionOfInterest",
-        "target": "dtmi:ega:FunctionOfInterest;1",
-        "displayName": "has function of interest",
-        "description": "Links a device to one of its functions of interest."
-      },
-      {
-        "@type": "Relationship",
-        "name": "offers",
-        "target": "dtmi:ega:Service;1",
-        "displayName": "offers",
-        "description": "Links a device to a service it exposes to a network."
-      }
-    ],
+    "contents": [],
     "description": "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. An instance of saref:Device represents one specific real world entity.",
     "extends": [
       "dtmi:ega:FeatureOfInterest;1",
@@ -1589,22 +1180,17 @@
   {
     "@id": "dtmi:ega:DeviceKind;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Device kinds",
     "contents": [
       {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
-      {
         "@type": "Relationship",
-        "name": "broader",
+        "name": "broaderDeviceKind",
         "target": "dtmi:ega:FeatureKind;1"
       },
       {
         "@type": "Relationship",
-        "name": "narrower",
+        "name": "narrowerDeviceKind",
         "target": "dtmi:ega:FeatureKind;1"
       }
     ],
@@ -1616,27 +1202,28 @@
   {
     "@id": "dtmi:ega:FeatureKind;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Feature kinds",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentFeatureKind",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "broader",
+        "name": "broaderFeatureKind",
         "target": "dtmi:ega:FeatureKind;1"
       },
       {
         "@type": "Relationship",
-        "name": "narrower",
+        "name": "narrowerFeatureKind",
         "target": "dtmi:ega:FeatureKind;1"
       },
       {
         "@type": "Relationship",
-        "name": "consistsOf",
+        "name": "FeatureKindconsistsOf",
         "target": "dtmi:ega:FeatureKind;1"
       }
     ],
@@ -1645,46 +1232,19 @@
   {
     "@id": "dtmi:ega:FeatureOfInterest;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Feature of interest",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentFeatureOfInterest",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "consistsOf",
+        "name": "FeatureOfInterestconsistsOf",
         "target": "dtmi:ega:FeatureOfInterest;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasFeatureKind",
-        "target": "dtmi:ega:FeatureKind;1",
-        "displayName": "has feature kind",
-        "description": "links a feature of interest to its kind, a feature kind"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasPropertyOfInterest",
-        "target": "dtmi:ega:PropertyOfInterest;1",
-        "displayName": "has property of interest",
-        "description": "Links a feature of interest to one of its properties of interest."
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasStateOfInterest",
-        "target": "dtmi:ega:StateOfInterest;1",
-        "displayName": "has state of interest",
-        "description": "Links a feature of interest to one of its states of interest."
-      },
-      {
-        "@type": "Relationship",
-        "name": "madeExecution",
-        "target": "dtmi:ega:ProcedureExecution;1",
-        "displayName": "made execution",
-        "description": "Links an entity (e.g., device) to the procedure execution it made."
       }
     ],
     "description": "A feature of interest represents any real world entity from which a property is measured."
@@ -1692,37 +1252,24 @@
   {
     "@id": "dtmi:ega:Function;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Function",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentFunction",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "broader",
+        "name": "broaderFunction",
         "target": "dtmi:ega:Function;1"
       },
       {
         "@type": "Relationship",
-        "name": "narrower",
+        "name": "narrowerFunction",
         "target": "dtmi:ega:Function;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isFunctionOf",
-        "target": "dtmi:ega:FeatureKind;1",
-        "displayName": "is function of",
-        "description": "Links a function to the feature kind or device it is a function of."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isFunctionOf",
-        "target": "dtmi:ega:FeatureOfInterest;1",
-        "displayName": "is function of",
-        "description": "Links a function to the feature kind or device it is a function of."
       }
     ],
     "description": "Logical groups of commands that devices support to accomplish their tasks. Function can target (OP saref:targets and its sub-properties) features, properties, or states. An instance of saref:Function can apply to different devices."
@@ -1730,11 +1277,12 @@
   {
     "@id": "dtmi:ega:FunctionOfInterest;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Function of Interest",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentFunctionOfInterest",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -1742,20 +1290,6 @@
         "@type": "Relationship",
         "name": "isFunctionOfInterestOf",
         "target": "dtmi:ega:Device;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasCommandOfInterest",
-        "target": "dtmi:ega:CommandOfInterest;1",
-        "displayName": "has command of interest",
-        "description": "Links a function of interest to one of its commands of interest."
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasFunctionKind",
-        "target": "dtmi:ega:Function;1",
-        "displayName": "has function kind",
-        "description": "links a function of interest to its kind, a function"
       }
     ],
     "description": "Logical groups of commands that devices support to accomplish their tasks. Function can target (OP saref:targets and its sub-properties) features, properties, or states. An instance of saref:FunctionOfInterest is supported by exactly one device."
@@ -1763,11 +1297,12 @@
   {
     "@id": "dtmi:ega:Measurement;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Measurement",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentMeasurement",
         "schema": "string",
         "description": "A comment for the sensor instance"
       }
@@ -1777,13 +1312,13 @@
   {
     "@id": "dtmi:ega:Meter;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Meter",
     "contents": [
       {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
+        "@type": "Relationship",
+        "name": "observesMeter",
+        "target": "dtmi:ega:Unknown;1"
       }
     ],
     "description": "A device designed to observe and additionally do some computation and/or display one or more properties of one or more features of interest.",
@@ -1794,21 +1329,21 @@
   {
     "@id": "dtmi:ega:Observation;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Observation",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "madeBy",
         "target": "dtmi:ega:Sensor;1"
+      },
+      {
+        "@type": "Relationship",
+        "name": "observes",
+        "target": "dtmi:ega:Unknown;1"
       }
     ],
-    "description": "A saref:Observation is the act of carrying out a procedure to estimate or calculate a value of a property of a feature of interest, or a state of a feature of interest. It links to a sensor to describe what made the observation, and to the observed feature, property, property of interest, state, or state of interest. Typically, its result is a property value or a state. An observation of a state (OP saref:observes) should have a state as a result (OP saref:hasResult). Respectively, an observation of a property should have a property value as a result.",
+    "description": "A saref:Observation is the act of carrying out a procedure to estimate or calculate a value of a property of a feature of interest, or a state of a feature of interest. It links to a sensor to describe what made the observation, and to the observed feature, property, property of interest, state, or state of interest. Typically, its result is a property value or a state. An observation of a state (OP saref:observes) should have a state as a result (OP saref:hasResult). Respectively, an observation of a prope",
     "extends": [
       "dtmi:ega:ProcedureExecution;1"
     ]
@@ -1816,23 +1351,19 @@
   {
     "@id": "dtmi:ega:Operation;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Operation",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentOperation",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
         "name": "represents",
-        "target": "dtmi:ega:Command;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "represents",
-        "target": "dtmi:ega:CommandOfInterest;1"
+        "target": "dtmi:ega:N1621296ae3704801b0918bf4819cd757;1"
       },
       {
         "@type": "Relationship",
@@ -1845,14 +1376,9 @@
   {
     "@id": "dtmi:ega:OperationExecution;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Operation Execution",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "isExecutionOf",
@@ -1867,11 +1393,12 @@
   {
     "@id": "dtmi:ega:ProcedureExecution;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Procedure Execution",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentProcedureExecution",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -1881,34 +1408,6 @@
         "schema": "dateTime",
         "displayName": "has result time",
         "description": "Links a procedure execution to the instant of time when the activity was completed, expressed as an xsd:dateTime literal."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isExecutionOf",
-        "target": "dtmi:ega:Command;1",
-        "displayName": "is execution of",
-        "description": "Links a command execution to the command or command of interest that was executed. Also liks an operation execution to the operation that was executed"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isExecutionOf",
-        "target": "dtmi:ega:CommandOfInterest;1",
-        "displayName": "is execution of",
-        "description": "Links a command execution to the command or command of interest that was executed. Also liks an operation execution to the operation that was executed"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isExecutionOf",
-        "target": "dtmi:ega:Operation;1",
-        "displayName": "is execution of",
-        "description": "Links a command execution to the command or command of interest that was executed. Also liks an operation execution to the operation that was executed"
-      },
-      {
-        "@type": "Relationship",
-        "name": "madeBy",
-        "target": "dtmi:ega:FeatureOfInterest;1",
-        "displayName": "made by",
-        "description": "Links a procedure execution to the entity (e.g., device) that made it."
       }
     ],
     "description": "Represents the act of carrying out a procedure."
@@ -1916,48 +1415,14 @@
   {
     "@id": "dtmi:ega:Profile;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Profile",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentProfile",
         "schema": "string",
         "description": "A comment for the sensor instance"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isProfileOf",
-        "target": "dtmi:ega:Device;1",
-        "displayName": "is profile of",
-        "description": "Links a profile to the device it describes. The device should be linked to a certain commodity using OP saref:consumes, saref:produces, or saref:stores, and optionally to some property or state using OP saref:targets or its sub-properties."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isProfileOf",
-        "target": "dtmi:ega:DeviceKind;1",
-        "displayName": "is profile of",
-        "description": "Links a profile to the device it describes. The device should be linked to a certain commodity using OP saref:consumes, saref:produces, or saref:stores, and optionally to some property or state using OP saref:targets or its sub-properties."
-      },
-      {
-        "@type": "Relationship",
-        "name": "profileHasPrice",
-        "target": "dtmi:ega:PropertyValue;1",
-        "displayName": "has price",
-        "description": "Links a profile to the money earned (negative values) or paid (positive values) for the use (production or consumption) of the commodity by the device"
-      },
-      {
-        "@type": "Relationship",
-        "name": "whenPropertyValue",
-        "target": "dtmi:ega:PropertyValue;1",
-        "displayName": "when property value",
-        "description": "Links a profile to a property value that contributes to restricting its applicable context."
-      },
-      {
-        "@type": "Relationship",
-        "name": "whenState",
-        "target": "dtmi:ega:State;1",
-        "displayName": "when state",
-        "description": "Links a profile to a state that contributes to restricting its applicable context."
       }
     ],
     "description": "A saref:Profile describes the money earned (negative values) or paied (positive values) for the use (production or consumption) of a commodity by a device in a certain context."
@@ -1965,106 +1430,54 @@
   {
     "@id": "dtmi:ega:Property;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Property",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentProperty",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "broader",
+        "name": "broaderProperty",
         "target": "dtmi:ega:Property;1"
       },
       {
         "@type": "Relationship",
-        "name": "narrower",
+        "name": "narrowerProperty",
         "target": "dtmi:ega:Property;1"
       },
       {
         "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:FeatureKind;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:Property;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:State;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isPropertyOf",
-        "target": "dtmi:ega:FeatureKind;1",
-        "displayName": "is property of",
-        "description": "Links a property to the feature kind or feature of interest it is a property of."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isPropertyOf",
-        "target": "dtmi:ega:FeatureOfInterest;1",
-        "displayName": "is property of",
-        "description": "Links a property to the feature kind or feature of interest it is a property of."
+        "name": "PropertyconsistsOf",
+        "target": "dtmi:ega:Nfb6974a3a0e9430283e66a819c2ba474;1"
       }
     ],
-    "description": "An aspect of an entity that can be observable by a sensor.",
-    "disjointWith": [
-      "dtmi:ega:UnitOfMeasure;1"
-    ]
+    "description": "An aspect of an entity that can be observable by a sensor."
   },
   {
     "@id": "dtmi:ega:PropertyOfInterest;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Property of Interest",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentPropertyOfInterest",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:FeatureKind;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:Property;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:PropertyOfInterest;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:State;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:StateOfInterest;1"
+        "name": "PropertyOfInterestConsistsOf",
+        "target": "dtmi:ega:N61dc1d6acccb4703810aa3b8f70c58bb;1"
       },
       {
         "@type": "Relationship",
         "name": "isPropertyOfInterestOf",
         "target": "dtmi:ega:FeatureOfInterest;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasPropertyKind",
-        "target": "dtmi:ega:Property;1",
-        "displayName": "has property kind",
-        "description": "links a property of interest to its kind, a property."
       }
     ],
     "description": "Identifiable qualities of features of interest that can be target of devices, such as observed or controlled. An instance of saref:PropertyOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."
@@ -2072,61 +1485,26 @@
   {
     "@id": "dtmi:ega:PropertyValue;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Property Value",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentPropertyValue",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:FeatureKind;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:FeatureOfInterest;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:Property;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:PropertyOfInterest;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:PropertyValue;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:State;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:StateOfInterest;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "consistsOf",
-        "target": "dtmi:ega:StateValue;1"
+        "name": "PropertyValueConsistsOf",
+        "target": "dtmi:ega:N5b7f43317cb244dbaa882b104fc738f8;1"
       },
       {
         "@type": "Relationship",
         "name": "isMeasuredIn",
-        "target": "dtmi:ega:UnitOfMeasure;1",
-        "description": "(maxCardinality=1)"
+        "target": "dtmi:ega:UnitOfMeasure;1"
       },
-      {
+     {
         "@type": "Property",
         "name": "hasTag",
         "schema": "string"
@@ -2139,36 +1517,7 @@
       {
         "@type": "Property",
         "name": "hasValue",
-        "schema": "float",
-        "description": "(maxCardinality=1)"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isValueOfProperty",
-        "target": "dtmi:ega:FeatureKind;1",
-        "displayName": "is value of property",
-        "description": "Links a property value to the property or property of interest it is a value of."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isValueOfProperty",
-        "target": "dtmi:ega:FeatureOfInterest;1",
-        "displayName": "is value of property",
-        "description": "Links a property value to the property or property of interest it is a value of."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isValueOfProperty",
-        "target": "dtmi:ega:Property;1",
-        "displayName": "is value of property",
-        "description": "Links a property value to the property or property of interest it is a value of."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isValueOfProperty",
-        "target": "dtmi:ega:PropertyOfInterest;1",
-        "displayName": "is value of property",
-        "description": "Links a property value to the property or property of interest it is a value of."
+        "schema": "float"
       }
     ],
     "description": "Describes the value for a property. The property value is optionally linked to its value expressed as an RDF literal (DP saref:hasValue), optionally to the unit of measurement (OP saref:isMeasuredIn), and optionally to the properties or properties of interest it is a value of (OP saref:isValueOfProperty)."
@@ -2176,13 +1525,13 @@
   {
     "@id": "dtmi:ega:Sensor;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Sensor",
     "contents": [
       {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
+        "@type": "Relationship",
+        "name": "observesSensor",
+        "target": "dtmi:ega:Unknown;1"
       }
     ],
     "description": "A device designed to observe and measure one or more properties or states of one or more features of interest.",
@@ -2193,35 +1542,24 @@
   {
     "@id": "dtmi:ega:Service;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Service",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentService",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
         "name": "represents",
-        "target": "dtmi:ega:Function;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "represents",
-        "target": "dtmi:ega:FunctionOfInterest;1"
+        "target": "dtmi:ega:Na28611223b914ff0b18141445f737d69;1"
       },
       {
         "@type": "Relationship",
         "name": "isOfferedBy",
         "target": "dtmi:ega:Device;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasOperation",
-        "target": "dtmi:ega:Operation;1",
-        "displayName": "has operation",
-        "description": "Links a service to one of its operations."
       }
     ],
     "description": "A saref:Service is a digital representation of a function in a network, making it discoverable, registerable and remotely controllable in the network."
@@ -2229,37 +1567,29 @@
   {
     "@id": "dtmi:ega:State;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "State",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentState",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "broader",
+        "name": "broaderState",
         "target": "dtmi:ega:State;1"
       },
       {
         "@type": "Relationship",
-        "name": "narrower",
+        "name": "narrowerState",
         "target": "dtmi:ega:State;1"
       },
       {
-        "@type": "Relationship",
-        "name": "isStateOf",
-        "target": "dtmi:ega:FeatureKind;1",
-        "displayName": "is state of",
-        "description": "Links a state to the feature kind or feature of interest it is a state of."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isStateOf",
-        "target": "dtmi:ega:FeatureOfInterest;1",
-        "displayName": "is state of",
-        "description": "Links a state to the feature kind or feature of interest it is a state of."
+        "@type": "Property",
+        "name": "hasTag",
+        "schema": "string"
       }
     ],
     "description": "Identifiable conditions that features of interest are or may be in, and that can be target of devices, such as observed and controlled. A state can apply to different features of interest."
@@ -2267,11 +1597,12 @@
   {
     "@id": "dtmi:ega:StateOfInterest;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "State of Interest",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentStateOfInterest",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -2279,13 +1610,6 @@
         "@type": "Relationship",
         "name": "isStateOfInterestOf",
         "target": "dtmi:ega:FeatureOfInterest;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasStateKind",
-        "target": "dtmi:ega:State;1",
-        "displayName": "has state kind",
-        "description": "links a state of interest to its kind, a state"
       }
     ],
     "description": "Identifiable conditions that features of interest are or may be in, and that can be target of devices, such as observed and controlled. An instance of saref:StateOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."
@@ -2293,39 +1617,14 @@
   {
     "@id": "dtmi:ega:StateValue;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "State Value",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentStateValue",
         "schema": "string",
         "description": "A comment for the sensor instance"
-      },
-      {
-        "@type": "Property",
-        "name": "hasTag",
-        "schema": "string"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isValueOfState",
-        "target": "dtmi:ega:FeatureKind;1",
-        "displayName": "is value of state",
-        "description": "Links a state value to the state or state of interest it is a value of."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isValueOfState",
-        "target": "dtmi:ega:FeatureOfInterest;1",
-        "displayName": "is value of state",
-        "description": "Links a state value to the state or state of interest it is a value of."
-      },
-      {
-        "@type": "Relationship",
-        "name": "isValueOfState",
-        "target": "dtmi:ega:StateOfInterest;1",
-        "displayName": "is value of state",
-        "description": "Links a state value to the state or state of interest it is a value of."
       }
     ],
     "description": "Describes the value for a state. The state value is optionally linked the states or states of interest it is a value of (OP saref:isValueOfState)."
@@ -2333,22 +1632,23 @@
   {
     "@id": "dtmi:ega:Task;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Task",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentTask",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
       {
         "@type": "Relationship",
-        "name": "broader",
+        "name": "broaderTask",
         "target": "dtmi:ega:Task;1"
       },
       {
         "@type": "Relationship",
-        "name": "narrower",
+        "name": "narrowerTask",
         "target": "dtmi:ega:Task;1"
       }
     ],
@@ -2357,11 +1657,12 @@
   {
     "@id": "dtmi:ega:UnitOfMeasure;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Unit of measure",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentUnitOfMeasure",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -2373,19 +1674,17 @@
         "description": "Represents the symbol of unit of measure ex: Temperature unit in \u00b0C or Pressure  in B (Bar)"
       }
     ],
-    "description": "The unit of measure is a standard for measurement of a quantity, such as a Property.",
-    "disjointWith": [
-      "dtmi:ega:Size;1"
-    ]
+    "description": "The unit of measure is a standard for measurement of a quantity, such as a Property."
   },
   {
     "@id": "dtmi:ega:Building;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Building",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentBuilding",
         "schema": "string",
         "description": "A comment for the sensor instance"
       }
@@ -2395,11 +1694,12 @@
   {
     "@id": "dtmi:ega:BuildingSpace;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Building space",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentBuildingSpace",
         "schema": "string",
         "description": "A comment for the sensor instance"
       }
@@ -2409,11 +1709,12 @@
   {
     "@id": "dtmi:ega:PhysicalObject;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Physical object",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentPhysicalObject",
         "schema": "string",
         "description": "A comment for the sensor instance"
       }
@@ -2423,55 +1724,31 @@
   {
     "@id": "dtmi:ega:ActualMeasurement;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Actual measurement",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Describes whether the measurement is actually measured during the production process. Disjoint with ExpectedMeasurement.",
     "extends": [
       "dtmi:ega:Measurement;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:ExpectedMeasurement;1"
     ]
   },
   {
     "@id": "dtmi:ega:Area;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Area",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "A subclass of s4bldg:BuildingSpace used to define the physical spaces of the building. According to IEC 62264, areas are physical, geographical or logical groupings of resources determined by the site. A site can be divided in areas, whereas areas contain work centers.s.",
     "extends": [
       "dtmi:ega:BuildingSpace;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:Site;1",
-      "dtmi:ega:WorkCenter;1"
     ]
   },
   {
     "@id": "dtmi:ega:Batch;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Batch",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "consistsOfBatch",
@@ -2491,26 +1768,24 @@
         "@type": "Relationship",
         "name": "needsEquipment",
         "target": "dtmi:ega:ProductionEquipment;1"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasSize",
+        "target": "dtmi:ega:Unknown;1"
       }
     ],
     "description": "A uniform collection of tangible objects or Lot. This can either be a collection of produced items (i.e. the outflow of products) or a collection of raw material or required material (i.e. the inflow of products). It is assumed that the objects in a batch are similar and thus have shared attributes. Note that this definition is broader than the definition in IEC 61512, which defines a batch as the material that is being produced (whereas in SAREF4INMA a batch can be items or materials). ",
     "extends": [
-      "dtmi:ega:Thing;1",
       "dtmi:ega:FeatureOfInterest;1"
     ]
   },
   {
     "@id": "dtmi:ega:ExpectedMeasurement;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Expected measurement",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Describes whether the measurement is expected (i.e., planned before the production process). Disjoint with ActualMeasurement.",
     "extends": [
       "dtmi:ega:Measurement;1"
@@ -2519,15 +1794,9 @@
   {
     "@id": "dtmi:ega:Factory;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Factory",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "A subclass of s4bldg:Building specialized for the purpose of SAREF4INMA, a factory represents one or more organizations sharing a definit mission, goals and objectives which provides an output such as a product (definition taken from IEC 62264). A factory can be divided in one or multiple sites. ",
     "extends": [
       "dtmi:ega:Building;1"
@@ -2536,15 +1805,9 @@
   {
     "@id": "dtmi:ega:GTIN12ID;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "GTIN12ID",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "GTIN-12 (UPC-A) is a 12-digit number used primarily in North America",
     "extends": [
       "dtmi:ega:ID;1"
@@ -2553,15 +1816,9 @@
   {
     "@id": "dtmi:ega:GTIN13ID;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "GTIN13ID",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "GTIN-13 (EAN/UCC-13) is a 13-digit number used predominately outside of North America",
     "extends": [
       "dtmi:ega:ID;1"
@@ -2570,15 +1827,9 @@
   {
     "@id": "dtmi:ega:GTIN14ID;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "GTIN14ID",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "GTIN-14 (EAN/UCC-14 or ITF-14 or also known as ITF Symbol, SCC-14, DUN-14, UPC Case Code, UPC Shipping Container Code, UCC Code 128, EAN Code 128) is a 14-digit number used to identify trade items at various packaging levels.",
     "extends": [
       "dtmi:ega:ID;1"
@@ -2587,15 +1838,9 @@
   {
     "@id": "dtmi:ega:GTIN8ID;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "GTIN18ID",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "GTIN-8 (EAN/UCC-8) is an 8-digit number used predominately outside of North America.",
     "extends": [
       "dtmi:ega:ID;1"
@@ -2604,14 +1849,9 @@
   {
     "@id": "dtmi:ega:ID;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Identifier",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Property",
         "name": "hasIDValue",
@@ -2626,15 +1866,9 @@
   {
     "@id": "dtmi:ega:IRDI;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "IRDI",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "International Registration Data Identifier (IRDI) is based on the international standards ISO/IEC 11179-6, ISO 29002 and ISO 6532 and used in eCl@ss and the Asset Administration Shell as unique identifier.",
     "extends": [
       "dtmi:ega:ID;1"
@@ -2643,14 +1877,9 @@
   {
     "@id": "dtmi:ega:Item;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Item",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "hasIdentifier",
@@ -2690,14 +1919,9 @@
   {
     "@id": "dtmi:ega:ItemBatch;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Item Batch",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "belongsToCategory",
@@ -2709,7 +1933,7 @@
         "target": "dtmi:ega:Item;1"
       }
     ],
-    "description": "A uniform collection of tangible objects which are relevant for the prodcution process. The ItemBatch consists of a set of objects with similar properties (e.g. a certain type of sensors or metal sheets). The difference between ItemBatch and MaterialBatch is that individual items can be traced in a ItemBatch, whereas this is not possible in a MaterialBatch, meaning that, for example, it is possible to trace the individual metal sheet used in a ItemBatch. This implies that the objects in an ItemBatch have an unique identifier (e.g. a GTIN code in the form of a barcode/QR-code or RFID tag).",
+    "description": "A uniform collection of tangible objects which are relevant for the prodcution process. The ItemBatch consists of a set of objects with similar properties (e.g. a certain type of sensors or metal sheets). The difference between ItemBatch and MaterialBatch is that individual items can be traced in a ItemBatch, whereas this is not possible in a MaterialBatch, meaning that, for example, it is possible to trace the individual metal sheet used in a ItemBatch. This implies that the objects in an ItemBatch have an",
     "extends": [
       "dtmi:ega:Batch;1"
     ]
@@ -2717,11 +1941,12 @@
   {
     "@id": "dtmi:ega:ItemCategory;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Item category",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentItemCategory",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -2749,6 +1974,11 @@
         "@type": "Property",
         "name": "hasModelNumber",
         "schema": "string"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasVersion",
+        "target": "dtmi:ega:Unknown;1"
       }
     ],
     "description": "An ItemCategory describes a single type of item in terms of its static properties. Each ItemCategory can have multiple related ItemBatches, which all contain individual Items. The essential properties of each Item in all ItemBatches are the same. However, each batch might use different MaterialBatches and/or different ProductionEquipment. Therefore, small deviations between batches might occur, while the essential properties of all Items related to an ItemCategory are similar."
@@ -2756,14 +1986,9 @@
   {
     "@id": "dtmi:ega:MaterialBatch;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Material Batch",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "belongsToCategory",
@@ -2783,11 +2008,12 @@
   {
     "@id": "dtmi:ega:MaterialCategory;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Material category",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentMaterialCategory",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -2797,19 +2023,14 @@
         "target": "dtmi:ega:MaterialBatch;1"
       }
     ],
-    "description": "A MaterialCategory describes a category of material in terms of its static properties. Examples are: a certain category of steel or plastic. Each MaterialCategory can have multiple related MaterialBatches, which represent the physical material. The essential properties of the material in all MaterialBatches are the same. However, each batch might use different MaterialBatches and/or different ProductionEquipment. Therefore, small deviations between batches might occur, while the essential properties of the material related to an MaterialCategory are similar."
+    "description": "A MaterialCategory describes a category of material in terms of its static properties. Examples are: a certain category of steel or plastic. Each MaterialCategory can have multiple related MaterialBatches, which represent the physical material. The essential properties of the material in all MaterialBatches are the same. However, each batch might use different MaterialBatches and/or different ProductionEquipment. Therefore, small deviations between batches might occur, while the essential properties of the "
   },
   {
     "@id": "dtmi:ega:ProductionEquipment;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "ProductionEquipment",
     "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      },
       {
         "@type": "Relationship",
         "name": "hasFunction",
@@ -2846,7 +2067,7 @@
         "schema": "string"
       }
     ],
-    "description": "A production equipment is a specialization of a saref:Device and s4bldg:PhysicalObject that can produce items in a manufacturing process. This class represents an individual production equipment device and includes their specification in terms of functions, states and services. Different types of machines can be defined under this class as needed, for example, LaserCuttingMachine (i.e., a type of production equipment to cut steel material), MillingMachine (i.e., to drill holes in steel material), MouldingMachine (i.e., to mold liquid material, such as iron or plastic, and let it harden in a certain shape), WeldingMachine (i.e., join parts of material, such as steel, together), etc.",
+    "description": "A production equipment is a specialization of a saref:Device and s4bldg:PhysicalObject that can produce items in a manufacturing process. This class represents an individual production equipment device and includes their specification in terms of functions, states and services. Different types of machines can be defined under this class as needed, for example, LaserCuttingMachine (i.e., a type of production equipment to cut steel material), MillingMachine (i.e., to drill holes in steel material), MouldingMa",
     "extends": [
       "dtmi:ega:Device;1",
       "dtmi:ega:PhysicalObject;1"
@@ -2855,11 +2076,12 @@
   {
     "@id": "dtmi:ega:ProductionEquipmentCategory;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Production equipment category",
     "contents": [
       {
         "@type": "Property",
-        "name": "comment",
+        "name": "commentProductionEquipmentCategory",
         "schema": "string",
         "description": "A comment for the sensor instance"
       },
@@ -2879,53 +2101,31 @@
   {
     "@id": "dtmi:ega:ProductionEquipmentFunction;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Production equipment function",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "Functionallity neccessary to accomplish the task for which a production equipment is designed.",
     "extends": [
-      "dtmi:ega:Thing;1",
       "dtmi:ega:Function;1"
     ]
   },
   {
     "@id": "dtmi:ega:Site;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Site",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "A subclass of s4bldg:BuildingSpace used to define the physical spaces of the building. According to IEC 62264, sites are identified physical, geographical, and/or logical component groupings of a manufacturing enterprise. A factory can be divided in sites, whereas sites can be divided areas",
     "extends": [
       "dtmi:ega:BuildingSpace;1"
-    ],
-    "disjointWith": [
-      "dtmi:ega:WorkCenter;1"
     ]
   },
   {
     "@id": "dtmi:ega:Size;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Size",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "The amount of certain objects in a collection (e.g., size of a material batch).",
     "extends": [
       "dtmi:ega:Property;1"
@@ -2934,16 +2134,10 @@
   {
     "@id": "dtmi:ega:UUID;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "UUID",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
-    "description": "A universally unique identifier (UUID) is a 128-bit number used to identify items and is also known as: globally unique identifier (GUID). In its canonical textual representation, the sixteen octets of a UUID are represented as 32 hexadecimal (base 16) digits, displayed in five groups separated by hyphens, in the form 8-4-4-4-12 for a total of 36 characters (32 alphanumeric characters and four hyphens). UUID are documented in ISO/IEC 11578:1996 \"Information technology \u2013 Open Systems Interconnection \u2013 Remote Procedure Call (RPC)\" and in ITU-T Rec. X.667 | ISO/IEC 9834-8:2005.",
+    "contents": [],
+    "description": "A universally unique identifier (UUID) is a 128-bit number used to identify items and is also known as: globally unique identifier (GUID). In its canonical textual representation, the sixteen octets of a UUID are represented as 32 hexadecimal (base 16) digits, displayed in five groups separated by hyphens, in the form 8-4-4-4-12 for a total of 36 characters (32 alphanumeric characters and four hyphens). UUID are documented in ISO/IEC 11578:1996 \"Information technology \u2013 Open Systems Interconnection \u2013 Remote",
     "extends": [
       "dtmi:ega:ID;1"
     ]
@@ -2951,15 +2145,9 @@
   {
     "@id": "dtmi:ega:WorkCenter;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Work center",
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "comment",
-        "schema": "string",
-        "description": "A comment for the sensor instance"
-      }
-    ],
+    "contents": [],
     "description": "A subclass of s4inma:ProductionEquipment (and therefore of s4bld:PhysicalObject). It is an equipment element under an area in a role-based equipment hierarchy that performs production, storage or material movement (definition taken from IEC 62264). An Area contains work centers.",
     "extends": [
       "dtmi:ega:ProductionEquipment;1"
@@ -2968,6 +2156,7 @@
   {
     "@id": "dtmi:ega:System;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "System",
     "contents": []
   }
